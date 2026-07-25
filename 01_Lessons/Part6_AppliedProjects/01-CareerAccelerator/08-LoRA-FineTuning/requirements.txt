@@ -1,0 +1,11 @@
+# LoRA / QLoRA fine-tuning with Hugging Face PEFT.
+# Designed for Google Colab (free T4 GPU) — the notebook installs these itself.
+# For local runs you need an NVIDIA GPU; bitsandbytes (QLoRA/4-bit) requires CUDA.
+
+transformers>=4.44.0
+peft>=0.12.0
+datasets>=2.19.0
+accelerate>=0.33.0
+bitsandbytes>=0.43.0
+torch>=2.2.0
+matplotlib>=3.8.0

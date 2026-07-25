@@ -1,0 +1,180 @@
+AI SOLUTIONS ARCHITECT — CURRICULUM SUMMARY (EXPANDED)
+=======================================================
+19 Modules | 98 Study Days | 4 Parts
+Study Pace: 2 hrs/weekday + 5 hrs/weekend = 20 hrs/week
+Estimated Completion: ~14 weeks (98 calendar days)
+Grand Total: ~280 hours
+
+Current Progress: Day 4 of 98 (Module 1, Topic 1.3)
+
+═══════════════════════════════════════════════════════
+PART 1: AI FUNDAMENTALS (AI-900 Level)
+       27 Days | 6 Modules | ~75 hrs
+═══════════════════════════════════════════════════════
+
+  Module 1: Introduction to AI                 6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    1.1  What is Artificial Intelligence?
+    1.2  Understanding Machine Learning
+    1.3  AI Workloads and Considerations
+    1.4  Responsible AI Principles
+
+  Module 2: Azure AI Services Overview         1 day  |  5 hrs
+  ─────────────────────────────────────────────────────
+    2.1  Azure AI Platform Introduction
+    2.2  Provisioning Azure AI Resources
+    2.3  Security and Compliance
+
+  Module 3: Computer Vision Fundamentals       6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    3.1  Computer Vision Concepts
+    3.2  Azure AI Vision Service
+    3.3  Azure AI Custom Vision
+    3.4  Azure AI Face Service
+    3.5  Reading Text with OCR
+
+  Module 4: Natural Language Processing        5 days | 13 hrs
+  ─────────────────────────────────────────────────────
+    4.1  NLP Concepts
+    4.2  Azure AI Language Service
+    4.3  Question Answering
+    4.4  Conversational Language Understanding (CLU)
+    4.5  Text Translation
+
+  Module 5: Speech Services                    3 days | 12 hrs
+  ─────────────────────────────────────────────────────
+    5.1  Speech Concepts
+    5.2  Azure AI Speech Service
+    5.3  Speech Translation
+    5.4  Speaker Recognition
+
+  Module 6: Azure Machine Learning             6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    6.1  Azure ML Workspace
+    6.2  Automated Machine Learning (AutoML)
+    6.3  Azure ML Designer
+    6.4  Model Deployment
+
+═══════════════════════════════════════════════════════
+PART 2: AI ENGINEERING (AI-102 Level)
+       15 Days | 4 Modules | ~45 hrs
+═══════════════════════════════════════════════════════
+
+  Module 7: Azure AI Services Deep Dive        1 day  |  5 hrs
+  ─────────────────────────────────────────────────────
+    7.1  Advanced AI Services Management
+    7.2  Containers for AI Services
+    7.3  Custom Models and Training
+
+  Module 8: Document Intelligence              6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    8.1  Document Intelligence Overview
+    8.2  Prebuilt Models
+    8.3  Custom Models
+    8.4  Integration Patterns
+
+  Module 9: Azure AI Search                    4 days | 11 hrs
+  ─────────────────────────────────────────────────────
+    9.1  Azure AI Search Fundamentals
+    9.2  Data Ingestion
+    9.3  AI Enrichment (Skillsets)
+    9.4  Querying and Search Experience
+    9.5  Vector Search
+
+  Module 10: Bot Development                   4 days | 14 hrs
+  ─────────────────────────────────────────────────────
+    10.1  Bot Framework Fundamentals
+    10.2  Building Bots with C#
+    10.3  Integrating AI Services
+    10.4  Deploying Bots
+
+═══════════════════════════════════════════════════════
+PART 3: GENERATIVE AI & LLMs
+       32 Days | 5 Modules | ~88 hrs
+═══════════════════════════════════════════════════════
+
+  Module 11: LLMs Deep Dive                    6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    11.1  How LLMs Work
+    11.2  Tokenization and Embeddings
+    11.3  Pre-training and Fine-tuning
+    11.4  RLHF and Alignment
+    11.5  Model Capabilities and Limitations
+
+  Module 12: Azure OpenAI Service              7 days | 20 hrs
+  ─────────────────────────────────────────────────────
+    12.1  Azure OpenAI Fundamentals
+    12.2  Completions and Chat Completions
+    12.3  Prompt Engineering Mastery
+    12.4  Function Calling / Tools
+    12.5  Embeddings API
+    12.6  Image Generation (DALL-E)
+    12.7  Vision Capabilities (GPT-4o)
+    12.8  Content Safety and Responsible AI
+
+  Module 13: RAG (Retrieval-Augmented Gen)     8 days | 25 hrs
+  ─────────────────────────────────────────────────────
+    13.1  RAG Fundamentals
+    13.2  Document Processing
+    13.3  Chunking Strategies
+    13.4  Vector Databases
+    13.5  Retrieval Strategies
+    13.6  Generation with Retrieved Context
+    13.7  Azure 'On Your Data' Feature
+    13.8  Advanced RAG Patterns
+
+  Module 14: AI Orchestration Frameworks       6 days | 15 hrs
+  ─────────────────────────────────────────────────────
+    14.1  Semantic Kernel (Microsoft)
+    14.2  LangChain Fundamentals
+    14.3  Building AI Agents
+    14.4  Prompt Flow (Azure ML)
+
+  Module 15: Fine-tuning LLMs                  5 days | 13 hrs
+  ─────────────────────────────────────────────────────
+    15.1  When to Fine-tune
+    15.2  Azure OpenAI Fine-tuning
+    15.3  Parameter-Efficient Fine-tuning
+
+═══════════════════════════════════════════════════════
+PART 4: ENTERPRISE AI SOLUTIONS
+       24 Days | 4 Modules | ~72 hrs
+═══════════════════════════════════════════════════════
+
+  Module 16: AI Solution Architecture          3 days | 12 hrs
+  ─────────────────────────────────────────────────────
+    16.1  Architecture Patterns
+    16.2  Scalability and Performance
+    16.3  Security for AI Solutions
+    16.4  Cost Management
+
+  Module 17: MLOps and LLMOps                  2 days |  4 hrs
+  ─────────────────────────────────────────────────────
+    17.1  MLOps Fundamentals
+    17.2  LLMOps Practices
+    17.3  Testing AI Applications
+
+  Module 18: Integration Patterns              4 days | 11 hrs
+  ─────────────────────────────────────────────────────
+    18.1  Azure Integration Services
+    18.2  Microsoft 365 Integration
+    18.3  Enterprise Data Integration
+
+  Module 19: Hands-On Projects                15 days | 45 hrs
+  ─────────────────────────────────────────────────────
+    19.1  Project 1: Document Intelligence Solution
+          → Architecture, Azure Function, Doc Intelligence,
+            OpenAI summarization, Blob triggers, SharePoint output
+    19.2  Project 2: Enterprise RAG Application
+          → Azure AI Search, Semantic Kernel, ASP.NET Core chat UI,
+            conversation history, citations, Azure deployment
+    19.3  Project 3: AI-Enhanced Data Pipeline
+          → ADF with AI, entity extraction, classification,
+            monitoring, logging, documentation
+    19.4  Project 4: Intelligent Chatbot
+          → Bot Framework, CLU, Azure OpenAI, RAG knowledge base,
+            Teams deployment, conversation analytics
+
+═══════════════════════════════════════════════════════
+GRAND TOTAL: 98 Days | ~280 Hours | ~14 Weeks
+═══════════════════════════════════════════════════════

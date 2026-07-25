@@ -1,0 +1,7 @@
+# LlamaIndex RAG with a local Ollama backend — no paid API.
+# Requires Ollama running locally: ollama serve && ollama pull llama3
+
+llama-index-core>=0.11.0
+llama-index-llms-ollama>=0.3.0
+llama-index-embeddings-huggingface>=0.3.0
+sentence-transformers>=3.0.0

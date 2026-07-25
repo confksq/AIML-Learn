@@ -1,0 +1,6 @@
+# Amazon Bedrock via boto3.
+# Requires AWS credentials (aws configure) and Bedrock model access enabled in the console.
+# AWS free-tier compatible for small tests.
+
+boto3>=1.35.0
+botocore>=1.35.0

@@ -1,0 +1,62 @@
+ Architected and delivered production RAG (Retrieval-Augmented Generation) and Agentic RAG pipelines on
+Azure using Semantic Kernel (.NET-native) as the orchestration layer — covering the full pipeline from
+document ingestion, semantic chunking, and embedding generation (text-embedding-3) through hybrid
+retrieval (keyword + vector) in Azure AI Search, context augmentation, and grounded response generation
+with Azure OpenAI Service (GPT-4o) — including agentic RAG patterns where the agent dynamically decides
+which index to query, when to retrieve, and how to compose multi-source answers — eliminating
+hallucination and surfacing accurate answers from real enterprise content
+ Designed embedding and vector search systems using Azure AI Search vector fields, HNSW indexing, and
+cosine similarity scoring; applied chunking strategies (fixed-size, semantic, paragraph-level) tuned to token
+budget and retrieval precision requirements; built Azure AI Document Intelligence pipelines for structured
+extraction from unstructured documents to feed clean, high-quality data into AI indexes
+ Built AI agent, multi-agent orchestration, and agentic AI workflow solutions using Semantic Kernel (plugins,
+planners, memory, .NET-native agent loops) with Azure OpenAI Service function calling — enabling
+autonomous multi-step reasoning, dynamic API orchestration, and workflow automation where the model
+decides which tools to invoke, in what order, and how to compose results; designed multi-agent systems
+where an orchestrator agent routes tasks to specialised sub-agents (research, writer, validator) enabling
+parallel processing and complex enterprise task completion
+ Designed and deployed AI agents using Azure AI Foundry — configuring knowledge grounding with Azure AI
+Search, tool integration via OpenAPI actions and Code Interpreter, system prompt engineering, content
+guardrails, and evaluation pipelines measuring groundedness, relevance, and coherence; published agents to
+Microsoft Teams, Microsoft 365 Copilot, and web endpoints — delivering enterprise Copilot experiences for
+internal business workflows; experienced with Azure AI Foundry model catalog (GPT-4o, text-embedding-3,
+open-source models), serverless API deployments, and the full AI Foundry portal including Data, Evaluations,
+Content Understanding, and Monitoring
+ Applied advanced prompt engineering techniques including system prompt design, few-shot and chain-of-
+thought prompting, prompt chaining, output format constraints, and context-window management;
+implemented token optimization strategies (prompt compression, streaming via IAsyncEnumerable, model tier
+selection) to control inference cost and latency in high-volume production workloads
+ Implemented AI security practices to harden production LLM systems—including prompt injection and
+jailbreak defenses, Azure AI Content Safety integration for input/output filtering, PII detection and redaction,
+grounding validation to prevent data leakage from retrieval context, and threat-modelling AI-specific attack
+surfaces (indirect injection, adversarial inputs) in enterprise compliance reviews
+ Applied fine-tuning and model adaptation strategies using Azure AI Foundry — including supervised fine-
+tuning for domain-specific behavior, evaluation dataset design, and selecting between fine-tuning versus RAG
+versus prompt engineering based on latency, cost, data volume, and update-frequency trade-offs
+ Implemented LLMOps practices for AI production systems — prompt versioning, model deployment
+management and rollback through Azure AI Foundry, automated evaluation pipelines measuring
+groundedness, relevance, and coherence, production monitoring of token consumption, cost drift, and
+response quality via Azure Monitor, and AI pipeline integration into Azure DevOps CI/CD for controlled
+environment promotion
+ Grounded in the fundamentals that drive every architectural decision: transformer internals (self-attention,
+multi-head attention, positional encoding), tokenization mechanics (BPE, WordPiece, token budgeting),
+embedding space geometry (cosine similarity, semantic distance, dimensionality trade-offs), and LLM
+adaptation techniques (RLHF, instruction tuning, LoRA/PEFT) — enabling confident model selection, index
+design, and system trade-off decisions from first principles
+ Delivered enterprise web solutions end-to-end using .NET (C#) and ASP.NET Core Web API for scalable
+backend services — applying REST API design, dependency injection, middleware pipelines, and Managed
+Identity authentication — integrated with Angular single-page applications for responsive, component-driven
+frontends; experienced across the full delivery lifecycle from solution architecture and API contract design
+through deployment to Azure App Service and CI/CD pipeline configuration in Azure DevOps
+ Actively expanding into high-demand AI engineering areas through hands-on proof-of-concept work —
+including Python with LangChain for AI agent orchestration and RAG pipelines (bridging existing Azure AI
+and Semantic Kernel expertise to the Python/LangChain ecosystem), GraphRAG for knowledge-graph-
+enhanced retrieval combining vector search with entity relationship graphs for richer context, and Microsoft
+Fabric for unified data and AI engineering pipelines — building cross-platform fluency alongside established
+Azure AI and .NET expertise
+
+
+
+
+
+

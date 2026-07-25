@@ -1,0 +1,215 @@
+593gvFJD8M02P2dhNUwkpEDzcArTa4biAfaaJMS8PEoWYTwJE70FJQQJ99CFACHYHv6XJ3w3AAAAACOGQdND
+https://aiml-learn-resource.openai.azure.com/openai/v1
+
+check this and explain  C:\Users\confksq\Project\AIML-Learn\PartsModules\images\aimlprojecthomepage.png
+
+
+Microsoft Foundry
+
+Agents
+Models
+Fine-tune
+Tools
+Knowledge
+Memory
+Data
+Evaluations
+Guardrails
+-------------------------------------------------------------------------------------------
+1memory,message format input vs output in agent and a2a, audit, log, exception handling, cache, 
+memory management, score >.095, weight, groundness,llmops, mlops, build and deploy , infra files,sk.
+Call it "High Level Explain" or just "HLE" for short.
+You can study randomly for most of them, but there are a few dependency chains to respect:
+
+Study these first (foundational):
+- Module 01 (Azure AI Foundry) — everything else references the platform; do this early
+- Module 02 (RAG vs CAG) — Module 06 builds on it
+
+These are standalone — any order:
+- Module 03 (Hallucination)
+- Module 05 (MCP Hub)
+- Module 08 (A2A Protocol)
+- Module 09 (OCR Pipelines)
+
+These build on each other — keep this sequence:
+- Module 04 → Module 06 → Module 07 → Module 10
+- (Frameworks → Agent Workflow → Meta-Agents → Fault Tolerance)
+- Module 06 is the centerpiece that ties everything together — don't read 07 or 10 before 06
+
+These must be last, in order:
+- Module 11 → Module 12 (Defend Assessment → Mock)
+
+Simple rule: Do 01 and 02 first, keep the 04→06→07→10 chain intact, do 11 and 12 last. Everything else (03, 05, 08, 09) can slot in anywhere.
+
+Where are you right now — which modules have you already completed?
+
+---------------------------------------------------------------------
+  Design and implement Agentic AI solutions using Microsoft Azure AI Foundry for enterprise-scale deployments.
+  Architect Multi-Agent Decision Frameworks to orchestrate autonomous agent collaboration and goal resolution.
+  Engineer fault-tolerant agent systems with end-to-end observability, monitoring, and self-healing capabilities.
+  Evaluate and deploy platforms for agent creation, lifecycle management, and production deployment.
+  Design workflow management systems governing agent and node interactions, sequencing, and state management.
+  Architect Meta-Agent (Agents of Agents) hierarchies for complex, layered autonomous decision-making.
+  Implement A2A (Agent-to-Agent) Protocol standards for secure, structured inter-agent communication.
+  Assess and select agentic frameworks (LangGraph, LangChain, AutoGen, Semantic Kernel) based on use-case fit.
+  Govern MCP Hub architecture, defining policies and standards across a centralized pool of MCP Servers.
+  Define MCP Server boundaries, responsibilities, and segregation strategies within the enterprise hub.
+  Advise decision criteria for MCP vs. Azure APIM based on integration patterns and governance needs.
+  Evaluate and select OCR solutions (Azure Document Intelligence vs. John Snow Labs) aligned to accuracy and scale requirements.
+  Design OCR pre-processing pipelines (de-noise, de-skew, binarization) and post-processing validation workflows.
+  Architect and recommend between RAG (Retrieval-Augmented Generation) and CAG (Cache-Augmented Generation) based on latency, cost, and freshness trade-offs.
+----
+Good news — your 11 modules map directly to every single required skill. Here's the complete mapping:
+
+---
+Required Skills vs Your Modules
+
+┌──────────────────────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────┬────────┐
+│                              Required Skill                              │                        Covered In                        │ Status │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Design & implement Agentic AI on Azure AI Foundry (enterprise-scale)     │ Module 01 — Azure AI Foundry, agent lifecycle            │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Architect Multi-Agent Decision Frameworks (collaboration + goal          │ Module 06 — end-to-end agent workflow + Module 07 —      │ ✅     │
+│ resolution)                                                              │ Meta-Agents                                              │        │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Fault-tolerant agents with observability, monitoring, self-healing       │ Module 10 — Fault Tolerance + self-healing +             │ ✅     │
+│                                                                          │ observability                                            │        │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Evaluate & deploy platforms for agent creation + lifecycle               │ Module 01 — platform eval + Module 06 — production       │ ✅     │
+│                                                                          │ deployment                                               │        │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Workflow management — agent/node interactions, sequencing, state         │ Module 04 — LangGraph/state mgmt + Module 06 — workflow  │ ✅     │
+│                                                                          │ story                                                    │        │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Meta-Agent (Agents of Agents) hierarchies                                │ Module 07 — Meta-Agents + failure propagation            │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ A2A Protocol — secure inter-agent communication                          │ Module 08 — A2A + schema validation + audit logging      │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Assess & select frameworks (LangGraph, LangChain, AutoGen, SK)           │ Module 04 — Framework Comparison                         │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ Govern MCP Hub — policies, standards across centralized pool             │ Module 05 — MCP Hub governance                           │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ MCP Server boundaries, responsibilities, segregation                     │ Module 05 — MCP Server boundaries + hybrid pattern       │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ MCP vs Azure APIM decision criteria                                      │ Module 05 — MCP vs APIM + Hybrid MCP+APIM                │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ OCR — Azure Doc Intelligence vs John Snow Labs                           │ Module 09 — OCR comparison                               │ ✅     │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ OCR pre-processing pipelines (de-noise, de-skew, binarization) +         │ Module 09 — OCR Pipelines                                │ ✅     │
+│ post-processing                                                          │                                                          │        │
+├──────────────────────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┼────────┤
+│ RAG vs CAG — latency, cost, freshness tradeoffs                          │ Module 02 — CAG vs RAG with healthcare tradeoffs         │ ✅     │
+└──────────────────────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────┴────────┘
+
+---
+Bottom Line
+
+14 required skills, 14 covered. Zero gaps. Your prep plan was built precisely around this role's requirements.
+
+What you have on top of the requirements:
+- Module 03 — Hallucination (factual + agentic) — the screener confirmed this as a focus area
+- Module 11 — Defending the VitalCare assessment (interviewer has already read it)
+- Module 12 — Mock interview + the 5 Terror Questions
+
+The centerpiece they will almost certainly ask is the Module 06 question: "Walk me through an end-to-end AI agent workflow." That one answer ties together Modules 01, 02, 04, 05, 07, 08, 09, and 10. 
+Where are you in your study — which modules have you completed vs still to read?
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Job Description:
+Title: AI Architect
+
+Required Experience:
+Design and implement Agentic AI solutions using Microsoft Azure AI Foundry for enterprise-scale deployments.
+
+Architect Multi-Agent Decision Frameworks to orchestrate autonomous agent collaboration and goal resolution.
+
+Engineer fault-tolerant agent systems with end-to-end observability, monitoring, and self-healing capabilities.
+Evaluate and deploy platforms for agent creation, lifecycle management, and production deployment.
+Design workflow management systems governing agent and node interactions, sequencing, and state management.
+
+Architect Meta-Agent (Agents of Agents) hierarchies for complex, layered autonomous decision-making.
+Implement A2A (Agent-to-Agent) Protocol standards for secure, structured inter-agent communication.
+Assess and select agentic frameworks (LangGraph, LangChain, AutoGen, Semantic Kernel) based on use-case fit.
+
+Govern MCP Hub architecture, defining policies and standards across a centralized pool of MCP Servers.
+Define MCP Server boundaries, responsibilities, and segregation strategies within the enterprise hub.
+
+Advise decision criteria for MCP vs. Azure APIM based on integration patterns and governance needs.
+
+Evaluate and select OCR solutions (Azure Document Intelligence vs. John Snow Labs) aligned to accuracy and scale requirements.
+Design OCR pre-processing pipelines (de-noise, de-skew, binarization) and post-processing validation workflows.
+
+Architect and recommend between RAG (Retrieval-Augmented Generation) and CAG (Cache-Augmented Generation) based on latency, cost, and freshness trade-offs.
+
+
+Please note: Ascendion and our client have a zero-tolerance policy on the use of AI tools (e.g., ChatGPT, CoPilot, Gemini) or any external assistance during the interview; the assessment must reflect your own skills only. Failure to adhere to this shall possibly impact your ability to be considered for future opportunities with us.
+
+------------------------------------------------
+----------------********----------
+Architected and delivered production RAG (Retrieval-Augmented Generation) pipelines on Azure using
+Semantic Kernel (.NET-native) as the orchestration layer — covering the full pipeline from document
+ingestion, semantic chunking, and embedding generation (text-embedding-3) through hybrid retrieval
+(keyword + vector) in Azure AI Search, context augmentation, and grounded response generation with Azure
+OpenAI (GPT-4o) — eliminating hallucination and surfacing accurate answers from real enterprise content
+
+ Designed embedding and vector search systems using Azure AI Search vector fields, HNSW indexing, and
+cosine similarity scoring; applied chunking strategies (fixed-size, semantic, paragraph-level) tuned to token
+budget and retrieval precision requirements; built Azure AI Document Intelligence pipelines for structured
+extraction from unstructured documents to feed clean, high-quality data into AI indexes
+
+ Built AI agent and function calling solutions using Semantic Kernel (plugins, planners, memory, .NET-native
+agent loops) with Azure OpenAI function calling — enabling autonomous multi-step reasoning, dynamic API
+orchestration, and workflow automation where the model decides which tools to invoke, in what order, and
+how to compose results to complete complex enterprise tasks
+
+ Applied advanced prompt engineering techniques including system prompt design, few-shot and chain-of-
+thought prompting, prompt chaining, output format constraints, and context-window management;
+implemented token optimization strategies (prompt compression, streaming via IAsyncEnumerable, model tier
+selection) to control inference cost and latency in high-volume production workloads
+
+ Implemented AI security practices to harden production LLM systems—including prompt injection and
+jailbreak defenses, Azure AI Content Safety integration for input/output filtering, PII detection and redaction,
+grounding validation to prevent data leakage from retrieval context, and threat-modelling AI-specific attack
+surfaces (indirect injection, adversarial inputs) in enterprise compliance reviews
+
+ Applied fine-tuning and model adaptation strategies using Azure AI Foundry — including supervised fine-
+tuning for domain-specific behavior, evaluation dataset design, and selecting between fine-tuning versus RAG
+versus prompt engineering based on latency, cost, data volume, and update-frequency trade-offs
+
+ Implemented LLMOps practices for AI production systems — prompt versioning, model deployment
+management and rollback through Azure AI Foundry, automated evaluation pipelines measuring
+groundedness, relevance, and coherence, production monitoring of token consumption, cost drift, and
+response quality via Azure Monitor, and AI pipeline integration into Azure DevOps CI/CD for controlled
+environment promotion
+
+ Grounded in the fundamentals that drive every architectural decision: transformer internals (self-attention,
+multi-head attention, positional encoding), tokenization mechanics (BPE, WordPiece, token budgeting),
+embedding space geometry (cosine similarity, semantic distance, dimensionality trade-offs), and LLM
+adaptation techniques (RLHF, instruction tuning, LoRA/PEFT) — enabling confident model selection, index
+design, and system trade-off decisions from first principles
+----------------********----------
+
+ Azure AI Search — SharePoint Document Indexing: Built a .NET 8 background worker that synchronizes
+SharePoint document library metadata into Azure AI Search using Microsoft Graph list-item queries with
+expanded file identity and business metadata fields—eliminating recursive folder crawls—enabling fast
+enterprise contract-number search for Salesforce and downstream applications.
+
+ Developed a companion ASP.NET Core REST API providing exact-match contract search and streaming
+multi-document ZIP download via Microsoft Graph; secured with Entra ID bearer-token auth, OAuth 2.0 client-
+credentials for Salesforce M2M integration, app-role authorization, and forwarded-header middleware for AKS
+ingress.
+
+ Call Miner — Audio Ingestion Pipeline: Architected an end-to-end audio ingestion pipeline pulling customer
+call recordings from a partner SFTP, routing each file through Deep Instinct DSX malware scanning, staging
+in Azure Blob Storage, and reconciling against a daily enrichment feed to associate recordings with the
+correct customer interaction before delivery to the CallMiner speech analytics platform within a 24-hour SLA.
+
+ Led the design phase producing PRD, architecture diagrams, state/flow diagrams, and failure-path analysis
+for the planned implementation using C# microservices on AKS with KEDA queue-depth autoscaling,
+Python/Bash operational tooling, and Azure DevOps CI/CD.
+
+ Accelerated .NET 8 development using AI-assisted coding tools—GitHub Copilot (VS Code / Visual Studio)
+and Claude (WSL terminal via Claude Code)—for code generation, refactoring, unit test scaffolding, and
+architecture review; integrated GitHub Actions CI/CD with automated test pipelines for controlled deployments
+across DEV / UAT / PROD environments

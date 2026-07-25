@@ -1,0 +1,493 @@
+AI SOLUTIONS ARCHITECT — HANDS-ON WORKOUT LIST
+=================================================
+Practice exercises after each module and key topics
+All exercises use C# / .NET / Azure
+Time: 30-90 min each | Difficulty: ★ Easy ★★ Medium ★★★ Hard
+
+═══════════════════════════════════════════════════════════
+PART 1: AI FUNDAMENTALS — WORKOUTS
+═══════════════════════════════════════════════════════════
+
+MODULE 1: Introduction to AI
+─────────────────────────────────────────────────────────
+
+  After 1.1 (What is AI?)
+  ★ Workout: Write a C# console app that takes user input and
+    classifies it as "AI task" or "traditional programming task"
+    using simple if/else rules. This helps you understand the
+    boundary between AI and regular code.
+    → Time: 20 min | No Azure needed
+
+  After 1.2 (Machine Learning)
+  ★★ Workout: Build a C# console app using ML.NET that classifies
+    iris flowers (setosa/versicolor/virginica) from the classic
+    iris dataset. Your first real ML model.
+    → Time: 45 min | NuGet: Microsoft.ML
+
+  After 1.3 (AI Workloads)
+  ★ Workout: Create a C# program that generates 100 random
+    "sensor readings" and uses ML.NET Spike Detection to find
+    anomalies. Connects directly to the cost forecaster code
+    you studied.
+    → Time: 30 min | NuGet: Microsoft.ML.TimeSeries
+
+  After 1.4 (Responsible AI)
+  ★ Workout: Write a markdown document listing 5 real-world AI
+    failures (biased hiring tools, facial recognition errors, etc.)
+    and map each to which Responsible AI principle was violated.
+    → Time: 30 min | Research + writing exercise
+
+MODULE 2: Azure AI Services Overview
+─────────────────────────────────────────────────────────
+
+  After 2.1 (Azure AI Platform)
+  ★ Workout: Log into Azure Portal and explore the "AI + Machine
+    Learning" section. Screenshot and note every AI service
+    available. Create a simple comparison chart of services.
+    → Time: 20 min | Azure Portal (free)
+
+  After 2.2 (Provisioning Resources)
+  ★★ Workout: Create an Azure AI Services multi-service resource
+    using both Azure Portal AND Azure CLI. Save the keys and
+    endpoint. Write a C# app that calls the endpoint to verify
+    it works (even a simple language detection call).
+    → Time: 40 min | Azure free tier
+
+  After 2.3 (Security)
+  ★★ Workout: Modify your C# app to authenticate using Managed
+    Identity instead of API keys. Deploy to a local Azure Function
+    and test. This mirrors your JM Family production patterns.
+    → Time: 45 min | Azure Functions
+
+MODULE 3: Computer Vision
+─────────────────────────────────────────────────────────
+
+  After 3.1 (Vision Concepts)
+  ★ Workout: Collect 10 images from the internet (animals, cars,
+    buildings, text, faces). Write down what AI tasks apply to
+    each: classification, detection, OCR, face analysis, etc.
+    → Time: 15 min | No code needed
+
+  After 3.2 (Azure AI Vision)
+  ★★ Workout: Build a C# console app that takes an image path,
+    calls Azure AI Vision API, and prints: caption, tags, detected
+    objects, and dominant colors. Test with 5 different images.
+    → Time: 45 min | NuGet: Azure.AI.Vision.ImageAnalysis
+
+  After 3.3 (Custom Vision)
+  ★★ Workout: Go to customvision.ai, create a project to classify
+    3 types of food (pizza, burger, salad). Upload 10 images per
+    category, train, and test. Export the model as ONNX.
+    → Time: 60 min | Custom Vision portal (free tier)
+
+  After 3.4 (Face Service)
+  ★★ Workout: Build a C# app that detects faces in a group photo
+    and prints face count, estimated age, and emotion for each
+    detected face.
+    → Time: 40 min | NuGet: Azure.AI.Vision.Face
+
+  After 3.5 (OCR)
+  ★★ Workout: Build a C# app that reads text from a photo of a
+    receipt or business card using the Read API. Parse and display
+    the extracted text in a structured format. Relevant to your
+    Document Intelligence work later.
+    → Time: 40 min | Azure AI Vision Read API
+
+MODULE 4: Natural Language Processing
+─────────────────────────────────────────────────────────
+
+  After 4.1 (NLP Concepts)
+  ★ Workout: Write a C# program that manually tokenizes a sentence,
+    removes stop words, and counts word frequencies. No AI library
+    — just string manipulation. Helps you understand what NLP
+    services do under the hood.
+    → Time: 30 min | Pure C#
+
+  After 4.2 (Language Service)
+  ★★ Workout: Build a "Customer Feedback Analyzer" C# console app.
+    Input: customer review text. Output: sentiment score, key
+    phrases, detected language, and any PII found (redacted).
+    → Time: 50 min | NuGet: Azure.AI.TextAnalytics
+
+  After 4.3 (Question Answering)
+  ★★ Workout: Create a QA knowledge base in Language Studio using
+    a FAQ page (use Azure FAQ or your own). Deploy it and call it
+    from a C# app that takes user questions and returns answers.
+    → Time: 60 min | Language Studio + C#
+
+  After 4.4 (CLU)
+  ★★★ Workout: Build a "Smart IT Helpdesk" CLU model with 5
+    intents (ResetPassword, CreateTicket, CheckStatus, Escalate,
+    GeneralQuery) and 3 entity types. Train, deploy, and call
+    from C#.
+    → Time: 75 min | Language Studio + C#
+
+  After 4.5 (Translation)
+  ★★ Workout: Build a C# app that translates user input to 3
+    languages simultaneously and detects the source language
+    automatically.
+    → Time: 30 min | NuGet: Azure Translator
+
+MODULE 5: Speech Services
+─────────────────────────────────────────────────────────
+
+  After 5.2 (Speech Service)
+  ★★ Workout: Build a C# console app that converts speech from
+    microphone to text (real-time STT), then reads the text back
+    using a neural voice (TTS). A full speech round-trip.
+    → Time: 45 min | NuGet: Microsoft.CognitiveServices.Speech
+
+  After 5.3 (Speech Translation)
+  ★★★ Workout: Build a "Live Translator" that listens to English
+    speech, translates to Spanish text, and speaks the Spanish
+    translation aloud. Real-time pipeline.
+    → Time: 60 min | Speech SDK
+
+MODULE 6: Azure Machine Learning
+─────────────────────────────────────────────────────────
+
+  After 6.2 (AutoML)
+  ★★ Workout: Go to Azure ML Studio, upload a CSV dataset (use
+    Kaggle's Titanic dataset), create an AutoML classification
+    experiment, let it run, review the best model, and deploy
+    it as a real-time endpoint.
+    → Time: 60 min | Azure ML Studio
+
+  After 6.3 (Designer)
+  ★★ Workout: In Azure ML Designer, build a visual pipeline that
+    loads data → cleans missing values → splits train/test →
+    trains a regression model → evaluates. No code, all drag-drop.
+    → Time: 45 min | Azure ML Designer
+
+  After 6.4 (Model Deployment)
+  ★★★ Workout: Take your AutoML model, register it, deploy to a
+    managed online endpoint, and call it from a C# console app
+    via REST API. Full end-to-end deployment.
+    → Time: 60 min | Azure ML + C#
+
+  ★★★ PART 1 CAPSTONE: Build an "AI Service Sampler" C# app that
+    has a menu: 1) Analyze Image, 2) Analyze Text Sentiment,
+    3) Detect Language, 4) Read Text from Image. Each option calls
+    the appropriate Azure AI service. This proves you can work
+    with multiple AI services in one application.
+    → Time: 90 min | All Part 1 services combined
+
+═══════════════════════════════════════════════════════════
+PART 2: AI ENGINEERING — WORKOUTS
+═══════════════════════════════════════════════════════════
+
+MODULE 7: Azure AI Services Deep Dive
+─────────────────────────────────────────────────────────
+
+  After 7.1 (Advanced Management)
+  ★★ Workout: Set up Azure Monitor alerts for an AI service
+    resource: alert when API calls exceed 100/min, when latency
+    exceeds 2 seconds, and when errors exceed 5%. Write the
+    alert rules using Azure CLI.
+    → Time: 40 min | Azure Monitor
+
+  After 7.2 (Containers)
+  ★★★ Workout: Pull the Azure AI Language container image, run it
+    locally in Docker, and call the sentiment analysis endpoint
+    from a C# app hitting localhost instead of Azure cloud.
+    → Time: 60 min | Docker + C#
+
+MODULE 8: Document Intelligence
+─────────────────────────────────────────────────────────
+
+  After 8.2 (Prebuilt Models)
+  ★★ Workout: Build a C# app that processes a sample invoice PDF
+    using the prebuilt Invoice model. Extract vendor name, total,
+    line items, and dates. Display in a structured format.
+    → Time: 45 min | NuGet: Azure.AI.FormRecognizer
+
+  After 8.3 (Custom Models)
+  ★★★ Workout: Go to Document Intelligence Studio, label 5 sample
+    documents of the same type (receipts or forms), train a custom
+    model, and call it from C#. Directly applicable to your
+    SharePoint document work.
+    → Time: 75 min | DI Studio + C#
+
+  After 8.4 (Integration)
+  ★★★ Workout: Create an Azure Function (C#) that triggers on Blob
+    upload, calls Document Intelligence to extract data, and saves
+    results to Cosmos DB. This mirrors real JM Family patterns.
+    → Time: 90 min | Azure Functions + DI + Cosmos DB
+
+MODULE 9: Azure AI Search
+─────────────────────────────────────────────────────────
+
+  After 9.2 (Data Ingestion)
+  ★★ Workout: Create an Azure AI Search index, upload 20 sample
+    documents (JSON) using the Push API from C#. Query the index
+    with simple and Lucene syntax.
+    → Time: 50 min | NuGet: Azure.Search.Documents
+
+  After 9.3 (Skillsets)
+  ★★★ Workout: Create an indexer connected to Blob Storage with a
+    skillset that extracts key phrases and entities from uploaded
+    PDFs. View enriched results in the index.
+    → Time: 60 min | Azure Portal + C#
+
+  After 9.5 (Vector Search)
+  ★★★ Workout: Generate embeddings for 10 text documents using
+    Azure OpenAI, store them in an AI Search vector index, and
+    perform a semantic search query from C#. This is the foundation
+    for RAG in Module 13.
+    → Time: 75 min | Azure OpenAI + AI Search + C#
+
+MODULE 10: Bot Development
+─────────────────────────────────────────────────────────
+
+  After 10.2 (Building Bots)
+  ★★ Workout: Build an Echo Bot using Bot Framework SDK in C#.
+    Add a Waterfall Dialog with 3 steps: ask name, ask question,
+    respond with "Thanks [name], you asked about [question]."
+    Test in Bot Framework Emulator.
+    → Time: 50 min | Bot Framework SDK + Emulator
+
+  After 10.3 (Integrating AI)
+  ★★★ Workout: Extend your bot to use CLU for intent recognition.
+    Add 3 intents: Greeting, Help, Goodbye. Bot responds differently
+    based on detected intent.
+    → Time: 60 min | Bot Framework + CLU
+
+  ★★★ PART 2 CAPSTONE: Build a "Document Q&A Bot" that accepts a
+    document upload, extracts text using Document Intelligence,
+    indexes it in AI Search, and answers questions about the
+    document. Test in Emulator and deploy to Azure.
+    → Time: 2-3 hrs | Full Part 2 integration
+
+═══════════════════════════════════════════════════════════
+PART 3: GENERATIVE AI & LLMs — WORKOUTS
+═══════════════════════════════════════════════════════════
+
+MODULE 11: LLMs Deep Dive
+─────────────────────────────────────────────────────────
+
+  After 11.1 (How LLMs Work)
+  ★ Workout: Use the OpenAI Tokenizer tool (platform.openai.com/
+    tokenizer) to tokenize 10 different sentences. Observe how
+    words split into tokens, count tokens for a 500-word essay,
+    and estimate API costs.
+    → Time: 20 min | Browser-based
+
+  After 11.2 (Embeddings)
+  ★★ Workout: Write a C# app that generates embeddings for 5
+    sentences using Azure OpenAI, then calculates cosine similarity
+    between each pair. Verify that similar sentences score higher.
+    → Time: 45 min | Azure OpenAI + C#
+
+  After 11.5 (Capabilities & Limitations)
+  ★★ Workout: Create a "Hallucination Detector" experiment. Ask
+    Azure OpenAI 10 factual questions, verify answers manually,
+    and document which ones hallucinated. Try temperature 0 vs 1.
+    → Time: 40 min | Azure OpenAI Playground
+
+MODULE 12: Azure OpenAI Service
+─────────────────────────────────────────────────────────
+
+  After 12.2 (Chat Completions)
+  ★★ Workout: Build a C# console chat app that maintains
+    conversation history (system + user + assistant messages),
+    supports streaming responses, and allows the user to set
+    temperature dynamically.
+    → Time: 50 min | NuGet: Azure.AI.OpenAI
+
+  After 12.3 (Prompt Engineering)
+  ★★ Workout: Create a "Prompt Lab" — write 10 different prompts
+    for the same task (summarize a document) using zero-shot,
+    few-shot, CoT, and role-based techniques. Compare outputs
+    and document which technique gave the best result.
+    → Time: 45 min | Azure OpenAI Playground
+
+  After 12.4 (Function Calling)
+  ★★★ Workout: Build a C# app with 3 functions: GetWeather(city),
+    GetStockPrice(symbol), CalculateMortgage(amount, rate, years).
+    Let Azure OpenAI decide which function to call based on user
+    input. This is the foundation of AI agents.
+    → Time: 60 min | Azure OpenAI + C#
+
+  After 12.5 (Embeddings)
+  ★★ Workout: Build a "Semantic File Search" — embed 20 file
+    descriptions, then let the user type a natural language query
+    to find the most relevant file. Applicable to your SharePoint
+    file management work.
+    → Time: 45 min | Azure OpenAI + C#
+
+  After 12.6 (DALL-E & Vision)
+  ★★ Workout: Build a C# app that takes a text description,
+    generates an image with DALL-E, then feeds the image back to
+    GPT-4o Vision and asks it to describe what it sees. Compare
+    the original prompt with the vision description.
+    → Time: 40 min | Azure OpenAI
+
+MODULE 13: RAG
+─────────────────────────────────────────────────────────
+
+  After 13.3 (Chunking)
+  ★★ Workout: Write a C# program that takes a long document and
+    implements 3 chunking strategies: fixed-size (500 chars),
+    sentence-based, and paragraph-based. Compare the chunks and
+    observe how each strategy splits the content differently.
+    → Time: 45 min | Pure C#
+
+  After 13.4 (Vector Databases)
+  ★★★ Workout: Build a mini vector store in C# using Azure AI
+    Search. Embed 30 text chunks, store them with metadata, and
+    query using vector similarity. This is the backbone of RAG.
+    → Time: 60 min | Azure OpenAI + AI Search + C#
+
+  After 13.5 (Retrieval)
+  ★★★ Workout: Extend your vector store to support hybrid search
+    (keyword + vector). Compare results of pure keyword, pure
+    vector, and hybrid for the same query. Document the quality
+    differences.
+    → Time: 50 min | AI Search + C#
+
+  After 13.8 (Advanced RAG)
+  ★★★ Workout: Build a complete mini RAG pipeline in C#:
+    load a PDF → chunk it → embed chunks → store in AI Search →
+    user asks question → retrieve relevant chunks → send to
+    Azure OpenAI with context → return cited answer.
+    → Time: 90 min | Full RAG stack
+
+MODULE 14: AI Orchestration
+─────────────────────────────────────────────────────────
+
+  After 14.1 (Semantic Kernel)
+  ★★★ Workout: Build a C# app using Semantic Kernel with:
+    1 native function (GetCurrentDate), 1 semantic function
+    (SummarizeText prompt), and a planner that chains them.
+    Ask: "Summarize today's tasks" and watch SK orchestrate.
+    → Time: 60 min | NuGet: Microsoft.SemanticKernel
+
+  After 14.2 (LangChain)
+  ★★ Workout: Build a simple Python LangChain app (yes, Python
+    for this one) with a RetrievalQA chain connected to a vector
+    store. Compare the developer experience with Semantic Kernel.
+    → Time: 50 min | Python + LangChain
+
+  After 14.3 (AI Agents)
+  ★★★ Workout: Build a multi-tool agent using Semantic Kernel that
+    can: search the web, read files, and answer questions. Give it
+    a complex task like "Find the latest Azure pricing for GPT-4
+    and calculate monthly cost for 1M tokens."
+    → Time: 75 min | Semantic Kernel + C#
+
+MODULE 15: Fine-tuning
+─────────────────────────────────────────────────────────
+
+  After 15.2 (Azure OpenAI Fine-tuning)
+  ★★★ Workout: Create a JSONL training file with 50 examples of
+    your preferred writing style or domain terminology. Upload to
+    Azure OpenAI, create a fine-tuning job, and compare the
+    fine-tuned model's output vs the base model.
+    → Time: 90 min | Azure OpenAI
+
+  ★★★ PART 3 CAPSTONE: Build an "AI Knowledge Assistant" that
+    combines: RAG for document retrieval, Semantic Kernel for
+    orchestration, function calling for external data, and prompt
+    engineering for quality responses. Deploy as an ASP.NET Core
+    web API.
+    → Time: 3-4 hrs | Full Part 3 stack
+
+═══════════════════════════════════════════════════════════
+PART 4: ENTERPRISE AI SOLUTIONS — WORKOUTS
+═══════════════════════════════════════════════════════════
+
+MODULE 16: AI Solution Architecture
+─────────────────────────────────────────────────────────
+
+  After 16.1 (Architecture Patterns)
+  ★★ Workout: Design an architecture diagram (using draw.io or
+    Visio) for an AI-powered document processing system at JM
+    Family. Include: ingestion, processing, AI enrichment,
+    storage, and monitoring layers.
+    → Time: 45 min | Design exercise
+
+  After 16.2 (Scalability)
+  ★★★ Workout: Write a C# load testing script that sends 100
+    concurrent requests to an Azure OpenAI endpoint. Measure
+    latency, throttling, and implement retry with exponential
+    backoff. Add a Redis cache layer and compare results.
+    → Time: 60 min | C# + Azure OpenAI + Redis
+
+  After 16.4 (Cost Management)
+  ★★ Workout: Build a C# "Token Cost Calculator" that takes a
+    prompt + expected response size, calculates cost across
+    GPT-4, GPT-4o, and GPT-3.5, and recommends the cheapest
+    model that meets quality requirements.
+    → Time: 40 min | C# (pure calculation)
+
+MODULE 17: MLOps and LLMOps
+─────────────────────────────────────────────────────────
+
+  After 17.1 (MLOps)
+  ★★★ Workout: Create an Azure DevOps pipeline (YAML) that
+    trains an ML.NET model, registers it in Azure ML Model
+    Registry, and deploys to a managed endpoint. CI/CD for ML.
+    → Time: 75 min | Azure DevOps + Azure ML
+
+  After 17.2 (LLMOps)
+  ★★ Workout: Build a "Prompt Version Manager" C# tool that
+    stores prompt templates with version numbers, tracks which
+    version is active, and logs prompt + response + latency +
+    token count for each call. Simple LLMOps observability.
+    → Time: 50 min | C# + JSON storage
+
+  After 17.3 (Testing)
+  ★★★ Workout: Write unit tests for an AI component: mock the
+    Azure OpenAI client, test prompt construction, test response
+    parsing, and create an evaluation dataset of 20 question-
+    answer pairs to test your RAG app's accuracy.
+    → Time: 60 min | xUnit + C#
+
+MODULE 18: Integration Patterns
+─────────────────────────────────────────────────────────
+
+  After 18.1 (Azure Integration)
+  ★★★ Workout: Build an event-driven AI pipeline:
+    Blob upload → Event Grid trigger → Azure Function calls
+    Document Intelligence → Results to Service Bus → Another
+    Function calls Azure OpenAI for summarization → Save to
+    Cosmos DB. Full enterprise pattern.
+    → Time: 90 min | Azure Functions + Event Grid + Service Bus
+
+  After 18.2 (M365 Integration)
+  ★★ Workout: Build a Teams bot using Teams AI Library that
+    answers questions about your team's documents using RAG.
+    Deploy to Teams and test with colleagues.
+    → Time: 75 min | Teams AI Library + C#
+
+  After 18.3 (Enterprise Data)
+  ★★★ Workout: Extend one of your existing ADF pipelines to call
+    an Azure AI service (e.g., entity extraction on document
+    metadata). Add a custom activity that invokes an Azure
+    Function with AI capabilities.
+    → Time: 60 min | ADF + Azure Functions + AI
+
+MODULE 19: Hands-On Projects
+─────────────────────────────────────────────────────────
+
+  These ARE the workouts. Module 19 is 4 full projects.
+  No additional exercises needed — just build them well,
+  document them on GitHub, and you're portfolio-ready.
+
+  ★★★ FINAL CAPSTONE: Record a 5-minute video walking through
+    your best project's architecture, code, and demo. This
+    becomes your interview showcase and LinkedIn content.
+    → Time: 60 min | Screen recording
+
+═══════════════════════════════════════════════════════════
+WORKOUT SUMMARY
+═══════════════════════════════════════════════════════════
+  Total Workouts:  ~45 exercises
+  Total Time:      ~40-50 additional hours
+  Difficulty Mix:  ★ Easy (10) | ★★ Medium (18) | ★★★ Hard (17)
+  Capstones:       4 (one per Part)
+
+  Combined with curriculum: 100-130 hrs + 40-50 hrs = ~150-180 hrs
+  At 22 hrs/week: ~7-8 weeks total
+  Revised Target: ~May 5, 2026
+═══════════════════════════════════════════════════════════

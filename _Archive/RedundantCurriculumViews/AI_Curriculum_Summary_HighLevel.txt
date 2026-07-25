@@ -1,0 +1,59 @@
+AI SOLUTIONS ARCHITECT — CURRICULUM SUMMARY
+=============================================
+19 Modules | 98 Study Days | 4 Parts
+Study Pace: 2 hrs/weekday + 5 hrs/weekend = 20 hrs/week
+Estimated Completion: ~14 weeks (98 calendar days)
+Grand Total: ~280 hours
+
+Current Progress: Day 4 of 98 (Module 1, Topic 1.3)
+
+═══════════════════════════════════════════════
+PART 1: AI FUNDAMENTALS (AI-900 Level)
+       27 Days | 6 Modules | ~75 hrs
+═══════════════════════════════════════════════
+
+  Module 1:  Introduction to AI ..............  6 days |  15 hrs
+  Module 2:  Azure AI Services Overview ......  1 day  |   5 hrs
+  Module 3:  Computer Vision Fundamentals ....  6 days |  15 hrs
+  Module 4:  Natural Language Processing .....  5 days |  13 hrs
+  Module 5:  Speech Services .................  3 days |  12 hrs
+  Module 6:  Azure Machine Learning ..........  6 days |  15 hrs
+
+═══════════════════════════════════════════════
+PART 2: AI ENGINEERING (AI-102 Level)
+       15 Days | 4 Modules | ~45 hrs
+═══════════════════════════════════════════════
+
+  Module 7:  Azure AI Services Deep Dive .....  1 day  |   5 hrs
+  Module 8:  Document Intelligence ...........  6 days |  15 hrs
+  Module 9:  Azure AI Search .................  4 days |  11 hrs
+  Module 10: Bot Development .................  4 days |  14 hrs
+
+═══════════════════════════════════════════════
+PART 3: GENERATIVE AI & LLMs
+       32 Days | 5 Modules | ~88 hrs
+═══════════════════════════════════════════════
+
+  Module 11: LLMs Deep Dive ..................  6 days |  15 hrs
+  Module 12: Azure OpenAI Service ............  7 days |  20 hrs
+  Module 13: RAG (Retrieval-Augmented Gen) ...  8 days |  25 hrs
+  Module 14: AI Orchestration Frameworks .....  6 days |  15 hrs
+  Module 15: Fine-tuning LLMs ...............   5 days |  13 hrs
+
+═══════════════════════════════════════════════
+PART 4: ENTERPRISE AI SOLUTIONS
+       24 Days | 4 Modules | ~72 hrs
+═══════════════════════════════════════════════
+
+  Module 16: AI Solution Architecture ........  3 days |  12 hrs
+  Module 17: MLOps and LLMOps ................  2 days |   4 hrs
+  Module 18: Integration Patterns ............  4 days |  11 hrs
+  Module 19: Hands-On Projects ............... 15 days |  45 hrs
+             → Project 1: Document Intelligence Solution
+             → Project 2: Enterprise RAG Application
+             → Project 3: AI-Enhanced Data Pipeline
+             → Project 4: Intelligent Chatbot
+
+═══════════════════════════════════════════════
+GRAND TOTAL: 98 Days | ~280 Hours | ~14 Weeks
+═══════════════════════════════════════════════

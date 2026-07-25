@@ -1,0 +1,247 @@
+MasterCoverageTable — Coverage Status
+|-────┬───────────┬─────────────────────────────────────────────────────────────┬────────────┐
+│  #  │  Module   │                            Topic                            │   Status   │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 1   │ Module 1  │ Introduction to AI                                          │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 2   │ Module 2  │ Azure AI Services Overview                                  │ 🔴 Pending │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 3   │ Module 3  │ Computer Vision Fundamentals                                │ 🔴 Pending │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 4   │ Module 4  │ Natural Language Processing                                 │ 🔴 Pending │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 5   │ Module 5  │ Speech Services                                             │ 🔴 Pending │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 6   │ Module 6  │ Azure Machine Learning                                      │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 7   │ Module 7  │ Azure AI Services Deep Dive                                 │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 8   │ Module 8  │ Document Intelligence                                       │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 9   │ Module 9  │ Azure AI Search                                             │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 10  │ Module 10 │ Bot Development                                             │ 🔴 Pending │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 11  │ Module 11 │ LLMs Deep Dive (Attention, Tokenization, Pretraining, RLHF) │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 12  │ Module 12 │ Azure OpenAI Service                                        │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 13  │ Module 13 │ RAG Deep Dive                                               │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 14  │ Module 14 │ AI Orchestration (Semantic Kernel, LangChain, Agents)       │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 15  │ Module 15 │ Fine-Tuning LLMs                                            │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 16  │ Module 16 │ Prompt Engineering                                          │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 17  │ Module 17 │ Azure AI Foundry                                            │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 18  │ Module 18 │ AI Solution Architecture                                    │ ✅ Learned │
+├─────┼───────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 19  │ Module 19 │ MLOps / LLMOps                                              │ ✅ Learned │
+└─────┴───────────┴─────────────────────────────────────────────────────────────┴────────────┘
+
+Learning order
+Complete Learning Order — All 20 Modules
+
+┌───────┬───────────┬────────────────────────────────┬────────┬────────────────────────────┐
+│ Order │ Module #  │             Topic              │  Part  │       Key Dependency       │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 1     │ Module 1  │ Introduction to AI             │ Part 1 │ Start here — no dependency │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 2     │ Module 2  │ Azure AI Services Overview     │ Part 1 │ Needs: Module 1            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 3     │ Module 4  │ Natural Language Processing    │ Part 1 │ Needs: Module 2            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 4     │ Module 3  │ Computer Vision                │ Part 1 │ Needs: Module 2            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 5     │ Module 5  │ Speech Services                │ Part 1 │ Needs: Module 2            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 6     │ Module 6  │ Azure Machine Learning         │ Part 1 │ Needs: Module 1            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 7     │ Module 7  │ Azure AI Services Deep Dive    │ Part 2 │ Needs: Modules 2, 3, 4, 5  │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 8     │ Module 8  │ Document Intelligence          │ Part 2 │ Needs: Module 7            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 9     │ Module 9  │ Azure AI Search                │ Part 2 │ Needs: Module 7            │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 10    │ Module 10 │ Bot Development                │ Part 2 │ Needs: Modules 7 + 4       │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 11    │ Module 11 │ LLMs Deep Dive (11.1–11.4)     │ Part 3 │ Needs: Modules 1 + 4       │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 12    │ Module 12 │ Azure OpenAI Service           │ Part 3 │ Needs: Modules 2 + 11      │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 13    │ Module 13 │ RAG Deep Dive                  │ Part 3 │ Needs: Modules 9 + 12      │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 14    │ Module 15 │ Fine-Tuning LLMs               │ Part 3 │ Needs: Modules 11 + 12     │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 15    │ Module 16 │ Prompt Engineering             │ Part 3 │ Needs: Module 12           │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 16    │ Module 14 │ AI Orchestration (SK + Agents) │ Part 3 │ Needs: Modules 12 + 13     │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 17    │ Module 17 │ Azure AI Foundry               │ Part 4 │ Needs: Modules 12–16       │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 18    │ Module 18 │ AI Solution Architecture       │ Part 4 │ Needs: All above           │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 19    │ Module 19 │ MLOps / LLMOps                 │ Part 4 │ Needs: Modules 17 + 18     │
+├───────┼───────────┼────────────────────────────────┼────────┼────────────────────────────┤
+│ 20    │ Module 20 │ Integration Patterns           │ Part 4 │ Needs: Everything above    │
+└───────┴───────────┴────────────────────────────────┴────────┴────────────────────────────┘
+
+---
+Visual Dependency Flow
+
+Module 1 (Intro to AI)
+    │
+    ├──► Module 2 (Azure AI Services Overview)
+    │         │
+    │         ├──► Module 4 (NLP) ──────────────────────────────────┐
+    │         ├──► Module 3 (Computer Vision)                        │
+    │         ├──► Module 5 (Speech Services)                        │
+    │         │         │                                            │
+    │         │         └──► Module 7 (Azure AI Services Deep Dive)  │
+    │         │                   │                                  │
+    │         │                   ├──► Module 8 (Document Intelligence)
+    │         │                   ├──► Module 9 (AI Search) ─────────┐
+    │         │                   └──► Module 10 (Bot Dev)           │
+    │         │                                                       │
+    │         └──► Module 12 (Azure OpenAI) ◄── Module 11 (LLMs) ◄──┘
+    │                   │              ▲
+    └──► Module 6 (Azure ML)           └── from Module 4 (NLP feeds LLM)
+                                  │
+                    ┌─────────────┼────────────────┐
+                    │             │                │
+              Module 13       Module 15        Module 16
+               (RAG)         (Fine-Tuning)    (Prompt Eng)
+                    │             │                │
+                    └──────► Module 14 (Orchestration / SK / Agents)
+                                  │
+                             Module 17 (AI Foundry)
+                                  │
+                             Module 18 (Solution Architecture)
+                                  │
+                             Module 19 (MLOps / LLMOps)
+                                  │
+                             Module 20 (Integration Patterns)
+
+---
+Why 3 Modules Are Out of Numeric Order
+
+┌────────────────────────────┬─────────────────────────────────────────────────────────────────────────────────┐
+│         Reordered          │                                     Reason                                      │
+├────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────┤
+│ Module 4 before Module 3   │ NLP feeds into Module 11 (LLMs) — it's more critical in the dependency chain    │
+├────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────┤
+│ Module 15 before Module 14 │ Fine-Tuning only needs Modules 11+12. Orchestration needs RAG (Module 13) first │
+├────────────────────────────┼─────────────────────────────────────────────────────────────────────────────────┤
+│ Module 16 before Module 14 │ Prompt Engineering only needs Module 12. Same reasoning                         │
+└────────────────────────────┴─────────────────────────────────────────────────────────────────────────────────┘
+
+Every other module follows numeric order exactly.
+
+
+
+┌─────┬──────────────────────────┬─────────────┬───────────────────────────────────────────────┬──────────────────────────────────────────────┐
+│  #  │          Skill           │ Job Demand  │              Our Module Coverage              │                    Status                    │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 1   │ Azure AI Foundry         │ Very High   │ Module 17 + hands-on session (built           │ ✅ Covered                                   │
+│     │                          │             │ JMAVehicleIQA agent)                          │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 2   │ AI Agents                │ Very High   │ Module 14 (theory + SK code) + Module 17      │ ✅ Covered                                   │
+│     │                          │             │ (Foundry Agents)                              │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 3   │ Generative AI / LLMs     │ Very High   │ Modules 11.1–11.4 (deep dive)                 │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 4   │ RAG / Vector Search      │ High        │ Module 13 (deep dive) + Module 9 (AI Search)  │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 5   │ Azure AI Services        │ High        │ Module 2 (overview) + Module 7 (deep dive)    │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 6   │ Fine-tuning / Embeddings │ Medium      │ Module 15 (fine-tuning) + Module 11.2         │ ✅ Covered                                   │
+│     │                          │             │ (embeddings)                                  │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 7   │ Document Intelligence /  │ Medium      │ Module 8 (deep dive) + Module 3 (OCR          │ ✅ Covered                                   │
+│     │ OCR                      │             │ connection)                                   │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 8   │ Evaluation pipelines     │ CV item     │ Module 19 (theory) + Module 17 (AI Foundry    │ ⚠️ Theory only — portal hands-on not done    │
+│     │                          │             │ evaluation)                                   │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 9   │ Content Safety /         │ CV item     │ Module 11.4, 16, 18 (theory)                  │ ⚠️ Theory only — Content Safety Studio       │
+│     │ Guardrails               │             │                                               │ hands-on not done                            │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 10  │ LLMOps / Monitoring      │ CV item     │ Module 19 (full chapter)                      │ ⚠️ Theory only — Foundry Monitoring portal   │
+│     │                          │             │                                               │ not explored                                 │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 11  │ Prompt injection /       │ CV item     │ Module 11.4 + Module 16                       │ ✅ Covered                                   │
+│     │ Jailbreak                │             │                                               │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 12  │ PII detection            │ CV item     │ Module 4 (Language Service) + Module 7        │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 13  │ Chunking / HNSW /        │ CV item     │ Module 9 (AI Search) + Module 13 (RAG         │ ✅ Covered                                   │
+│     │ Indexing                 │             │ chunking)                                     │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 14  │ CI/CD for AI             │ CV item     │ Module 19 (MLOps theory, GitHub Actions       │ ⚠️ Theory only — no actual Azure DevOps      │
+│     │                          │             │ design)                                       │ pipeline built                               │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 15  │ Tokenization mechanics   │ CV item     │ Module 11.2 (deep dive)                       │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 16  │ Semantic Kernel (C#)     │ Medium      │ Module 14 (theory + code samples)             │ ⚠️ Theory + samples — no full working        │
+│     │                          │             │                                               │ project built and run                        │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 17  │ .NET / C# + AI           │ Medium-High │ Code samples throughout Modules               │ ⚠️ Samples written — no end-to-end running   │
+│     │                          │             │ 4,7,8,9,12,13,14                              │ project                                      │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 18  │ SK Plugins / Planners /  │ CV item     │ Module 14 (covered as theory)                 │ ⚠️ Theory only — no working SK plugin built  │
+│     │ Memory                   │             │                                               │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 19  │ Streaming / Token        │ CV item     │ Module 12 (streaming), Module 16 (caching)    │ ⚠️ Theory only — no streaming code run       │
+│     │ optimization             │             │                                               │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 20  │ Grounding validation in  │ CV item     │ Module 11.4, Module 13                        │ ⚠️ Theory only — no working code written     │
+│     │ code                     │             │                                               │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 21  │ LangChain (Python)       │ Medium      │ Module 14 (awareness level only)              │ 🔴 Not done                                  │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 22  │ Python for AI            │ High        │ Not in any module                             │ 🔴 Not done                                  │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 23  │ Amazon Bedrock           │ Medium      │ Not in any module                             │ 🔴 Not done                                  │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 24  │ Microsoft Fabric         │ Growing     │ Not in any module                             │ 🔴 Not done                                  │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 25  │ Vertex AI                │ Growing     │ Not in any module                             │ 🔴 Not done                                  │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 26  │ Graph / Vector           │ Niche       │ AI Search vectors ✅, CosmosDB vector ❌      │ 🟡 Partial                                   │
+│     │ Datastores               │             │                                               │                                              │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 27  │ Transformer theory       │ CV item     │ Module 11.1 (full chapter)                    │ ✅ Covered                                   │
+├─────┼──────────────────────────┼─────────────┼───────────────────────────────────────────────┼──────────────────────────────────────────────┤
+│ 28  │ LoRA / PEFT / RLHF       │ CV item     │ Modules 11.3, 11.4, 15                        │ ✅ Covered                                   │
+└─────┴──────────────────────────┴─────────────┴───────────────────────────────────────────────┴──────────────────────────────────────────────┘
+
+---
+Summary
+
+┌──────────────────────┬───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│        Status        │ Count │                                                    Skills                                                     │
+├──────────────────────┼───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ✅ Fully covered     │ 13    │ Azure AI Foundry, AI Agents, GenAI/LLMs, RAG, Azure AI Services, Fine-tuning, Document Intelligence, Prompt   │
+│                      │       │ injection, PII detection, Transformer theory, LoRA/PEFT/RLHF                     │
+├──────────────────────┼───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ⚠️ Theory done,      │ 8     │ Evaluation pipelines, Connitoring portal, CI/CD DevOps pipeline, SK C# project,  │
+│ hands-on pending     │       │ C# end-to-end project, SK Plugins, Streaming, Grounding validation code                                       │
+├──────────────────────┼───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 🔴 Not done          │ 5     │ LangChain, Python for AI, Amazon Bedrock, Microsoft Fabric, Vertex AI                                         │
+├──────────────────────┼───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 🟡 Partial           │ 1     │ Graph/Vector Datastores                                                                                       │
+└──────────────────────┴───────┴──────────────────────────────────────────────────────────────────────────────────┘
+
+---
+What This Means
+
+The theory foundation is solid — 13 fully covered, 8 more with solid theory. You can discuss all of these in an interview.
+
+The real gap is hands-on execution — the 8 "theory only" items are what separates "I know about it" from "I've built it." The highest-value ones to close:
+
+1. SK Plugins + working C# project — biggest CV differentiator (your language advantage)
+2. Content Safety Studio — 30 min in portal, immediately adds hands-on claim
+3. AI Foundry Evaluation pipeline — 1 hour to build a propset
+4. Python basics — appears in nearly every job posting, currently zero coverage

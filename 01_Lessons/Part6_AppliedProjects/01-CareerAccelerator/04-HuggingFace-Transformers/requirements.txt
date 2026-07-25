@@ -1,0 +1,8 @@
+# Hugging Face Transformers demos — all models run locally, no paid API.
+# First run downloads models from the HF Hub into ~/.cache/huggingface.
+
+transformers>=4.44.0
+torch>=2.2.0
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+numpy>=1.26.0

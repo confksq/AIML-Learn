@@ -1,0 +1,2 @@
+My curriculum for AI/ML learning is here C:\Users\confksq\Project\AIML-Learn\AI_Curriculum_Summary_HoursBased.txt
+go through this and also the chat history in C:\Users\confksq\Project\AIML-Learn\PartsModules\chathistCopilot and C:\Users\confksq\Project\AIML-Learn\PartsModules\chathistClaude will give you what i have learnt so far. based on curriculum i want to learn today the Module 7: Azure AI Services Deep Dive

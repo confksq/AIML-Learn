@@ -1,0 +1,61 @@
+MICROSOFT FOUNDRY (the unified AI platform - ai.azure.com)
+│
+│
+├── FOUNDRY MODELS (1800+ foundation models)
+│   ├── OpenAI (GPT-4, GPT-4o, DALL-E)
+│   ├── Meta (Llama)
+│   ├── Mistral, Cohere, DeepSeek, etc.
+│   └── Microsoft Phi models
+│   │
+│   └── What you DO with Models:
+│       ├── Prompt Engineering (test & refine prompts)
+│       ├── Fine-tuning (customize with your data)
+│       └── Benchmarking (compare model performance)
+│
+├── FOUNDRY TOOLS (formerly Azure AI Services / Cognitive Services)
+│   ├── Vision
+│   ├── Language
+│   ├── Speech
+│   ├── Translator
+│   ├── Document Intelligence
+│   ├── Content Understanding
+│   ├── Content Safety
+│   └── Azure OpenAI
+│   │
+│   └── What you DO with Tools:
+│       ├── Call APIs (send data, get results)
+│       └── Custom model training (your domain data)
+│
+├── FOUNDRY IQ (formerly Azure AI Search)
+│   ├── Vector search & semantic search
+│   ├── Hybrid search (keyword + vector)
+│   │
+│   └── What you DO with IQ:
+│       ├── RAG / Grounding on your data
+│       ├── Index & search your documents
+│       └── Connect data sources (Blob, SQL, Cosmos, SharePoint)
+│
+├── FOUNDRY AGENT SERVICE
+│   │
+│   └── What you DO with Agents:
+│       ├── Agent building (autonomous AI assistants)
+│       ├── Orchestration & multi-step workflows
+│       └── Connect agents to Tools, Models, and IQ
+│
+├── FOUNDRY LOCAL (run models on-device/edge)
+│
+├── FOUNDRY PORTAL — CROSS-CUTTING ACTIVITIES
+│   (applies to everything above)
+│   ├── Evaluation & testing (measure quality, accuracy)
+│   ├── Deployment & monitoring (push to production, track usage)
+│   ├── Project management & collaboration (team workspaces)
+│   └── Responsible AI (content filters, safety guardrails)
+│
+└── FOUNDRY CONTROL PLANE
+    ├── Security & RBAC
+    ├── Networking (VNets, Private Endpoints)
+    └── Cost management & billing
+
+ALSO UNDER AZURE AI (separate from Foundry):
+├── Azure Machine Learning (train your own models - ml.azure.com)
+└── Bot Framework (build chatbots)

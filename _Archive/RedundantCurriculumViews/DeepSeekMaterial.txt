@@ -1,0 +1,437 @@
+# Complete AI/ML Engineer Curriculum – Zero Gap
+
+## Part 0: Programming & Software Engineering for ML
+
+### 0.1 Python (proficiency required)
+- **Core syntax**
+ - Data types, loops, conditionals, functions
+ - List/dict comprehensions, generators
+ - Decorators, context managers
+- **Object-oriented programming**
+ - Classes, inheritance, polymorphism, magic methods (`__init__`, `__call__`, `__repr__`)
+- **Data structures & algorithms**
+ - Lists, tuples, sets, dictionaries, queues, stacks
+ - Time/space complexity (Big-O notation)
+- **Error handling** – try/except/finally, custom exceptions
+- **Working with files** – open, read/write text/JSON/CSV
+
+### 0.2 NumPy
+- Array creation (`zeros`, `ones`, `arange`, `linspace`, random)
+- Indexing, slicing, boolean masking
+- Broadcasting rules
+- Vectorized operations (universal functions)
+- Linear algebra (`dot`, `matmul`, `linalg.eig`, `linalg.svd`)
+- Random module (`randn`, `randint`, `seed`)
+
+### 0.3 Pandas
+- Series and DataFrame – creation from dict, list, NumPy
+- Indexing: `loc`, `iloc`, boolean indexing
+- Data cleaning: `dropna`, `fillna`, `replace`, `drop_duplicates`
+- Merging/joining: `merge`, `concat`, `join`
+- Grouping & aggregation: `groupby`, `agg`, `pivot_table`
+- Apply functions: `apply`, `map`, `applymap`
+- Working with time series: `to_datetime`, `resample`, `shift`
+- Input/output: `read_csv`, `to_csv`, `read_parquet`, `to_parquet`
+
+### 0.4 Matplotlib & Seaborn
+- Basic plots: line, scatter, bar, histogram, boxplot
+- Subplots, figure/axes customization
+- Heatmaps, pairplots (Seaborn)
+- Saving figures (`savefig`)
+
+### 0.5 Scikit-learn API
+- Estimator interface: `fit`, `predict`, `transform`, `fit_transform`
+- Model selection: `train_test_split`, `cross_val_score`, `GridSearchCV`
+- Metrics: accuracy, precision, recall, f1, roc_auc, mean_squared_error
+- Pipelines: `Pipeline`, `ColumnTransformer`
+- Preprocessing: `StandardScaler`, `MinMaxScaler`, `OneHotEncoder`, `LabelEncoder`
+
+### 0.6 PyTorch (deep learning framework – recommended)
+- **Tensors** – creation, operations, device management (CPU/GPU), `requires_grad`
+- **Autograd** – `backward()`, gradient accumulation, `detach()`, `no_grad()`
+- **`torch.nn`** – `Module`, `Linear`, `Conv2d`, `LSTM`, `Embedding`
+- **Loss functions** – `MSELoss`, `CrossEntropyLoss`, `BCEWithLogitsLoss`
+- **Optimizers** – `SGD`, `Adam`, `AdamW`, `lr_scheduler`
+- **Dataset & DataLoader** – custom `Dataset`, transforms (`torchvision.transforms`), collation
+- **Training loop** – forward, backward, step, zero_grad, checkpointing
+- **Transfer learning** – loading pretrained models (ResNet, BERT), freezing layers
+- **Mixed precision** – `torch.cuda.amp`, `GradScaler`
+- **Distributed training** – `DistributedDataParallel` (basic concept)
+
+### 0.7 Version control (Git)
+- `init`, `add`, `commit`, `push`, `pull`, `clone`
+- Branching: `branch`, `checkout`, `merge`, `rebase`
+- Resolving conflicts
+- Pull requests, code review process
+- `.gitignore` best practices
+
+### 0.8 CI/CD for ML (basic)
+- **GitHub Actions** – YAML workflows, triggers (push, pull_request), jobs, steps
+- **Azure DevOps** – pipelines, YAML, classic release pipelines
+- Running tests (`pytest`), linting (`flake8`, `black`), security scans (`bandit`, `trivy`)
+- Automated model deployment (e.g., prompt flow deploy, Azure CLI)
+
+### 0.9 Testing & debugging
+- **Unit testing** – `pytest` (fixtures, parametrize), `unittest`
+- **Logging** – `logging` module (levels, handlers, formatters), Application Insights
+- **Debugging** – `pdb`, `breakpoint()`, IDE debugger (VS Code), `ipdb`
+- **Profiling** – `cProfile`, `line_profiler`, PyTorch profiler
+
+---
+
+## Part 1: Artificial Intelligence (Applied AI / LLMs)
+
+### 1.1 Large Language Models (LLMs) – Architectures
+- GPT family (GPT-3, GPT-4, GPT-4o, GPT-4-Turbo) – causal language modeling
+- Open-source models: Llama 2/3, Mistral, Phi, Gemma
+- Mixture of Experts (MoE) – concept and trade-offs
+- Context window extension: RoPE, ALiBi, sliding window attention
+- Tokenization: BPE, WordPiece, SentencePiece; token budget calculation
+
+### 1.2 Prompt Engineering
+- System prompts, user prompts, few‑shot learning
+- Chain‑of‑Thought (CoT), Tree‑of‑Thoughts (ToT), self‑consistency
+- Prompt chaining, output formatting (JSON mode, regex, logit bias)
+- Zero‑shot vs few‑shot vs many‑shot
+- Meta‑prompting, automatic prompt optimization
+
+### 1.3 Retrieval-Augmented Generation (RAG) – Complete
+- **Indexing pipeline**
+ - Chunking: fixed-size (overlap), semantic, paragraph, recursive
+ - Embedding models: text‑embedding‑3 (small/large), ada‑002, Cohere, Voyage
+ - Vector database internals: HNSW, IVF, PQ, scalar quantization
+ - Metadata filtering, hybrid scoring (BM25 + vector)
+- **Retrieval**
+ - Hybrid search (keyword + vector)
+ - Reranking with cross‑encoders (Cohere rerank, BGE‑reranker)
+ - Multi‑stage retrieval (retrieve → rerank → filter)
+- **Generation**
+ - Context stuffing, prompt compression (LLMLingua)
+ - Groundedness checking, citation generation
+- **Advanced RAG**
+ - Self‑RAG, Corrective RAG (CRAG), Adaptive RAG
+ - Iterative retrieval, multi‑hop retrieval
+- **Evaluation for RAG**
+ - Retrieval: hit rate, MRR, NDCG
+ - Generation: faithfulness, answer relevance, context relevance (RAGAS)
+
+### 1.4 Fine‑Tuning & Parameter‑Efficient Methods
+- Supervised Fine‑Tuning (SFT) – data preparation, instruction formatting
+- LoRA / QLoRA – theory (rank decomposition), practice (peft library)
+- Prefix tuning, adapter layers, IA3
+- RLHF (high‑level): reward model, PPO
+- Direct Preference Optimization (DPO)
+- Decision framework: RAG vs fine‑tuning vs prompt engineering
+
+### 1.5 AI Agents & Function Calling
+- **Agent architectures**
+ - ReAct (Reason + Act) – thought, action, observation loop
+ - Plan‑and‑execute, LLM‑compiler
+ - Multi‑agent: supervisor, handoff, group chat
+- **Tool use & function calling**
+ - OpenAI function calling (tools schema, parallel calls)
+ - Semantic Kernel plugins & planners (.NET / Python)
+ - LangChain / LangGraph basics (optional)
+- **Memory** – short‑term buffer, long‑term vector memory, entity memory, summary memory
+- **Agent evaluation** – success rate, steps to completion, tool selection accuracy
+
+### 1.6 LLM Evaluation & Benchmarks
+- **Offline evaluation**
+ - Perplexity, BLEU, ROUGE, METEOR
+ - LLM‑as‑a‑judge (GPT‑4 eval), G‑Eval, Prometheus
+- **Benchmarks** – MMLU, HumanEval, MBPP, HELM, TruthfulQA, GSM8K
+- **Production metrics** – latency (TTFT, TPOT), token cost, groundedness, coherence, safety violation rate
+
+---
+
+## Part 2: Machine Learning (Traditional & Deep Learning)
+
+### 2.1 Mathematics for Machine Learning
+- **Linear Algebra**
+ - Vectors: dot product, cosine similarity, norms (L1, L2, L∞), linear independence, basis
+ - Matrices: multiplication, transpose, inverse, determinant, rank, trace
+ - Eigenvalues & eigenvectors (PCA, attention)
+ - SVD (Singular Value Decomposition)
+- **Calculus**
+ - Derivatives: partial, gradient, Jacobian
+ - Chain rule
+ - Optimization: convex vs non‑convex, gradient descent (SGD, Adam, RMSprop), learning rate schedules
+ - Backpropagation: computational graphs, vanishing/exploding gradients
+- **Probability & Statistics**
+ - Conditional probability, Bayes' theorem, random variables
+ - Distributions: Gaussian, Bernoulli, Binomial, Poisson, Exponential
+ - Descriptive stats: mean, median, variance, covariance, correlation
+ - Inferential: hypothesis testing, p‑value, confidence interval, MLE, bias‑variance tradeoff
+ - Bayesian basics: prior, posterior, MAP
+
+### 2.2 Traditional Machine Learning
+- **Supervised learning**
+ - Regression: Linear, Ridge, Lasso, ElasticNet; evaluation (MSE, MAE, R²)
+ - Classification: Logistic regression, decision trees (entropy, Gini), random forest, XGBoost/LightGBM/CatBoost, SVM (kernels), KNN, Naive Bayes
+- **Unsupervised learning**
+ - Clustering: K‑means (Elbow, silhouette), hierarchical, DBSCAN
+ - Dimensionality reduction: PCA, t‑SNE, UMAP
+- **Evaluation & validation**
+ - Train/val/test splits, cross‑validation (k‑fold, stratified)
+ - Confusion matrix, precision, recall, F1, ROC‑AUC, log loss
+ - Learning curves, bias‑variance decomposition
+- **Feature engineering**
+ - Scaling (Standard, MinMax, Robust), encoding (one‑hot, label, target)
+ - Missing value imputation, feature selection (filter, wrapper, embedded)
+
+### 2.3 Deep Learning (PyTorch focus)
+- **Neural network basics**
+ - Perceptron, activation functions (ReLU, Sigmoid, Tanh, Swish, GELU)
+ - MLP, loss functions (MSE, cross‑entropy)
+ - Backpropagation (detailed)
+ - Regularization: Dropout, BatchNorm, LayerNorm, weight decay
+- **Training optimization**
+ - Optimizers: SGD with momentum, Adam, AdamW, RMSprop
+ - LR warmup, cosine annealing, gradient clipping
+ - Initialization (Xavier, He)
+- **Convolutional Neural Networks (CNNs)**
+ - Convolution, pooling, stride, padding
+ - Architectures: LeNet, AlexNet, VGG, ResNet, Inception, EfficientNet
+ - Transfer learning, fine‑tuning
+ - Applications: classification, detection (YOLO), segmentation (U‑Net)
+- **Recurrent Neural Networks (RNNs)**
+ - Vanilla RNN (vanishing gradient)
+ - LSTM (gates, cell state), GRU
+ - Bidirectional, stacked RNN
+ - Applications: time series, sentiment, sequence generation
+- **Attention & Transformers**
+ - Self‑attention (Q, K, V), multi‑head attention
+ - Positional encoding (sinusoidal, learned)
+ - Transformer block: attention → add&norm → feed‑forward → add&norm
+ - Encoder‑only (BERT), decoder‑only (GPT), encoder‑decoder (T5)
+
+---
+
+## Part 3: Azure AI Stack
+
+### 3.1 Azure OpenAI Service
+- Model deployment: global vs regional, provisioned vs pay‑as‑you‑go
+- Quotas, rate limits, best practices
+- Content filtering: severity levels, custom blocklists
+- Fine‑tuning on Azure OpenAI
+- “Azure OpenAI on your data” (built‑in RAG with AI Search)
+
+### 3.2 Azure AI Search
+- Index design: fields, analyzers, suggesters
+- Vector search: HNSW, exhaustive KNN
+- Hybrid search + semantic ranking (L30+ tier)
+- Indexers (Blob, SQL, Cosmos DB, SharePoint)
+- Skillsets: built‑in cognitive skills, custom web API skills
+- Synonyms, scoring profiles, filters
+
+### 3.3 Azure AI Document Intelligence
+- Pre‑built models: Layout, General Document, Invoice, Receipt, ID, Tax (W-2, 1099)
+- Custom extraction models (labeling, training)
+- Model composition
+
+### 3.4 Azure AI Language & Speech
+- Text Analytics: NER, PII, sentiment, key phrases, language
+- Conversational Language Understanding (CLU) – intents, entities
+- Speech‑to‑text (real‑time, batch), custom models
+- Text‑to‑speech (neural voices, SSML)
+- Translator (text, document)
+
+### 3.5 Azure AI Content Safety
+- Prompt shields (jailbreak, indirect injection)
+- Groundedness detection
+- Protected material, custom blocklists
+
+### 3.6 Semantic Kernel (.NET / Python)
+- Kernel, plugins (native, prompt functions)
+- Planners (sequential, stepwise, function calling stepwise)
+- Memory (volatile, vector store)
+- Agent loops (function calling, multi‑agent)
+
+### 3.7 Azure Machine Learning (broader ML)
+- Workspaces, compute instances/clusters, serverless Spark
+- AutoML (classification, regression, time series)
+- Model registry, environments
+- Pipelines (Python SDK v2)
+- Managed online endpoints, batch endpoints
+
+### 3.8 LLMOps on Azure (Prompt flow & monitoring)
+- Azure AI Foundry (AI Studio)
+- Prompt flow: flows (LLM, Python), variants, evaluation, deployment
+- Model deployment (managed online, batch)
+- Monitoring: Application Insights, cost dashboards, drift detection
+- CI/CD for AI: version prompts, models, code
+
+---
+
+## Part 4: MLOps & Infrastructure
+
+### 4.1 Containerization
+- Docker: Dockerfile (multi‑stage), building, tagging
+- Azure Container Registry (ACR)
+- Docker Compose
+
+### 4.2 Orchestration (Kubernetes & AKS)
+- Kubernetes primitives: Pods, Deployments, Services, Ingress
+- ConfigMaps, Secrets (with Key Vault CSI)
+- Persistent Volumes (Azure Disk, Files)
+- Helm charts
+- KEDA (event‑driven autoscaling)
+- AKS specifics: Managed Identities, VNet, Azure Policy
+
+### 4.3 Infrastructure as Code (IaC)
+- ARM templates (JSON, nested)
+- Bicep (Azure native)
+- Terraform (azurerm provider, state management)
+
+### 4.4 CI/CD for ML/AI
+- Azure DevOps YAML pipelines (stages, environments)
+- GitHub Actions (workflows, runners)
+- ML steps: linting, testing, security scan, container build/push, model deployment
+
+### 4.5 Monitoring & Observability
+- Azure Monitor: metrics, alerts, action groups
+- Log Analytics: KQL queries
+- Application Insights: traces, requests, dependencies, exceptions
+- Prometheus + Grafana (for AKS)
+
+---
+
+## Part 5: Data Engineering for AI
+
+### 5.1 Data Storage
+- Azure Blob Storage (tiers, lifecycle)
+- Azure Data Lake Gen2 (hierarchical namespace, ACLs)
+- Azure SQL, Cosmos DB (SQL, MongoDB, Table APIs)
+- Delta Lake (ACID, time travel, vacuum)
+
+### 5.2 Data Movement
+- Azure Data Factory (pipelines, activities, triggers)
+- Copy activity, data flows, integration runtime
+- Event Hubs, Service Bus (streaming)
+- Microsoft Graph API (SharePoint, mail)
+
+### 5.3 Data Transformation
+- Azure Synapse Analytics (dedicated/serverless SQL, Spark pools)
+- Delta Lake operations: merge (upsert), optimize (Z-order)
+- ELT vs ETL, incremental load (watermark, CDC)
+
+### 5.4 Feature Store (concept)
+- Offline vs online feature stores
+- Feature definition, materialization, serving (Azure ML Feature Store, Feast)
+
+---
+
+## Part 6: Security & Responsible AI
+
+### 6.1 Security for AI Systems
+- Identity: Managed Identities, RBAC, Entra ID (app registrations, OAuth2)
+- Key Vault: secrets, keys, certificates (access policies, soft‑delete)
+- Network: Private Endpoints, VNet integration, firewalls
+- AI‑specific threats: prompt injection, indirect injection, data extraction, model inversion
+- Defenses: Azure AI Content Safety, input sanitization, adversarial training
+
+### 6.2 Responsible AI
+- Fairness: disparate impact (80% rule), equality of odds; Fairlearn
+- Explainability: SHAP, LIME, AzureML Interpretability
+- Transparency: model cards, datasheets for datasets
+- Privacy: differential basics (ε, δ), DP‑SGD, PII redaction
+- Regulations: EU AI Act, NIST AI RMF
+
+---
+
+## Part 7: System Design for AI
+
+### 7.1 RAG System Design (End‑to‑End)
+- Ingestion: document → chunk → embed → index
+- Query: retrieve → rerank → augment → generate
+- Caching: semantic caching (embedding similarity)
+- Cost optimization: token compression, model tier selection
+- A/B testing: shadow deployments
+
+### 7.2 Multi‑Agent System Design
+- Supervisor pattern, handoff, tool retrieval
+- Memory management (shared vs isolated)
+
+### 7.3 Batch vs Real‑Time Inference
+- Batch endpoints (high volume, async)
+- Real‑time (low latency, online endpoints, AKS)
+- Decision factors: latency, cost, freshness
+
+### 7.4 High Availability & Disaster Recovery
+- Multi‑region deployment (active‑active / active‑passive)
+- Geo‑redundant storage (GRS, GZRS), failover groups
+- Azure Front Door / Traffic Manager
+- RPO and RTO definitions
+
+---
+
+## Part 8: Interview Preparation
+
+### 8.1 Common ML Theory Questions
+- Bias‑variance tradeoff
+- Backpropagation step‑by‑step
+- Why multi‑head attention?
+- RAG vs fine‑tuning: scenario selection
+- Vanishing gradient solution (LSTM, ResNet)
+- Batch norm vs layer norm
+- Cosine similarity vs Euclidean
+- LLM generation: temperature, top‑k, top‑p
+
+### 8.2 Coding Questions (Python + ML)
+- Custom training loop in PyTorch
+- Cosine similarity matrix (NumPy)
+- Simple RAG retrieval with FAISS/NumPy
+- Debugging: NaN loss, overfitting
+- k‑fold cross‑validation from scratch
+- Prompt chain example (extract entities → generate)
+
+### 8.3 Azure‑Specific Scenarios
+- Diagnose irrelevant RAG retrieval (chunk size, embedding, hybrid weights, reranking)
+- Reduce GPT‑4 cost (caching, cheaper model, prompt compression, batch)
+- Secure healthcare Q&A (private endpoints, PII redaction, RBAC, no retention)
+- Semantic Kernel tool failure handling (retry, fallback, validation)
+- Monitor LLM drift (groundedness, topic shift, cost anomalies)
+
+### 8.4 System Design Whiteboarding
+- Real‑time chatbot for bank (RAG + agent + safety)
+- Batch document classification (Document Intelligence → GPT → SQL)
+- Recommendation system with embeddings
+
+---
+
+## Part 9: Study & Practice Guide
+
+### 9.1 Active Learning Techniques
+- **Explain aloud** – record yourself explaining a topic (e.g., “How does LoRA work?”)
+- **Write summaries** – one paragraph per subtopic
+- **Code every example** – don’t just read; run and modify
+- **Teach someone** – or an imaginary audience
+
+### 9.2 Mock Interview Plan
+- **Week 1-2** – Theory flashcards (100 cards)
+- **Week 3-4** – Coding drills (30 min/day on PyTorch, NumPy, scikit‑learn)
+- **Week 5-6** – Azure scenario practice (use real Azure free tier)
+- **Week 7-8** – Full mock interviews (with a peer or using platforms like Pramp)
+
+### 9.3 Weekly Schedule (Example, 15 hrs/week)
+| Day | Focus |
+|-----|-------|
+| Mon | 2 hrs – Math / ML theory |
+| Tue | 2 hrs – Coding (PyTorch or RAG) |
+| Wed | 2 hrs – Azure services hands‑on |
+| Thu | 2 hrs – System design whiteboarding |
+| Fri | 2 hrs – Interview practice (theory + coding) |
+| Sat | 3 hrs – Full project (e.g., build a RAG pipeline) |
+| Sun | 2 hrs – Review weak areas, update flashcards |
+
+### 9.4 Success Metrics
+- You can explain every numbered item in this curriculum without looking.
+- You can build a minimal RAG + agent + deployment on Azure in 4 hours.
+- You can solve 2 out of 3 medium ML coding problems in 30 minutes.
+- Mock interview feedback: “clear, structured, deep knowledge.”
+
+---
+
+**End of Curriculum**
+
+*Now copy this entire markdown, save it as `.md`, and start your journey. Good luck!*

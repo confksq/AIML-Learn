@@ -1,0 +1,55 @@
+AI SOLUTIONS ARCHITECT — CURRICULUM SUMMARY
+=============================================
+19 Modules | 98 Study Days | 4 Parts
+Start: Jan 12, 2026 → End: Apr 19, 2026
+
+═══════════════════════════════════════════════
+PART 1: AI FUNDAMENTALS (AI-900 Level)
+       Days 1–27 | 6 Modules | 27 Days Total
+═══════════════════════════════════════════════
+
+  Module 1:  Introduction to AI .............. Days 1-6     (6 days)
+  Module 2:  Azure AI Services Overview ...... Days 6-7     (2 days)
+  Module 3:  Computer Vision Fundamentals .... Days 7-13    (7 days)
+  Module 4:  Natural Language Processing ..... Days 13-18   (6 days)
+  Module 5:  Speech Services ................. Days 19-21   (3 days)
+  Module 6:  Azure Machine Learning .......... Days 21-27   (7 days)
+
+═══════════════════════════════════════════════
+PART 2: AI ENGINEERING (AI-102 Level)
+       Days 27–42 | 4 Modules | 16 Days Total
+═══════════════════════════════════════════════
+
+  Module 7:  Azure AI Services Deep Dive ..... Days 27-28   (2 days)
+  Module 8:  Document Intelligence ........... Days 29-34   (6 days)
+  Module 9:  Azure AI Search ................. Days 34-38   (5 days)
+  Module 10: Bot Development ................. Days 39-42   (4 days)
+
+═══════════════════════════════════════════════
+PART 3: GENERATIVE AI & LLMs
+       Days 42–74 | 5 Modules | 33 Days Total
+═══════════════════════════════════════════════
+
+  Module 11: LLMs Deep Dive .................. Days 42-48   (7 days)
+  Module 12: Azure OpenAI Service ............ Days 49-55   (7 days)
+  Module 13: RAG (Retrieval-Augmented Gen) ... Days 56-63   (8 days)
+  Module 14: AI Orchestration Frameworks ..... Days 63-69   (7 days)
+  Module 15: Fine-tuning LLMs ................ Days 70-74   (5 days)
+
+═══════════════════════════════════════════════
+PART 4: ENTERPRISE AI SOLUTIONS
+       Days 75–98 | 4 Modules | 24 Days Total
+═══════════════════════════════════════════════
+
+  Module 16: AI Solution Architecture ........ Days 75-77   (3 days)
+  Module 17: MLOps and LLMOps ................ Days 77-79   (3 days)
+  Module 18: Integration Patterns ............ Days 80-83   (4 days)
+  Module 19: Hands-On Projects ............... Days 83-98  (16 days)
+             → Project 1: Document Intelligence Solution
+             → Project 2: Enterprise RAG Application
+             → Project 3: AI-Enhanced Data Pipeline
+             → Project 4: Intelligent Chatbot
+
+═══════════════════════════════════════════════
+TOTAL: 98 Study Days | ~100-130 Hours
+═══════════════════════════════════════════════

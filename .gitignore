@@ -1,0 +1,8 @@
+# Employer-owned / sensitive — deliberately NOT pushed to personal GitHub
+01_Lessons/Part6_AppliedProjects/02-DealerIntelligence-Platform/
+05_Assessments/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.tmp

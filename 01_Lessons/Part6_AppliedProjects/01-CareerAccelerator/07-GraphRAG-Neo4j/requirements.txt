@@ -1,0 +1,9 @@
+# GraphRAG + Neo4j
+# Neo4j runs via docker compose (see docker-compose.yml). No paid API required for 04a/04c.
+# 04b uses an LLM for entity extraction: set OPENAI_API_KEY or point at local Ollama.
+
+neo4j>=5.20.0
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0
+openai>=1.40.0
+numpy>=1.26.0

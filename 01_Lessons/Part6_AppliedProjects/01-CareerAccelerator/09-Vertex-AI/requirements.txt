@@ -1,0 +1,7 @@
+# GCP Vertex AI — Gemini, embeddings, and the Agent Development Kit (ADK).
+# Requires a GCP project with the Vertex AI API enabled and ADC auth
+# (gcloud auth application-default login). GCP free trial credits work for small tests.
+
+google-genai>=1.0.0
+google-cloud-aiplatform>=1.60.0
+google-adk>=0.1.0

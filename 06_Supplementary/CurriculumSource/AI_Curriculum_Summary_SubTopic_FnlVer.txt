@@ -1,0 +1,853 @@
+AI SOLUTIONS ARCHITECT — COMPLETE CURRICULUM HIERARCHY
+=======================================================
+19 Modules | 4 Parts | ~100-130 Hours Total
+Study Pace: 2 hrs/weekday + 6 hrs/weekend = 22 hrs/week
+Estimated Completion: ~5-6 weeks | Target: ~April 21, 2026
+
+Current Progress: Day 4 (Module 1, Topic 1.3 completed) ✅
+Hours Completed: ~4 hrs | Remaining: ~96-126 hrs
+
+═══════════════════════════════════════════════════════════
+PART 1: AI FUNDAMENTALS (AI-900 Level)
+       6 Modules | ~21-26 hrs | ~1 week
+═══════════════════════════════════════════════════════════
+
+  Module 1: Introduction to AI                        3-4 hrs
+  ─────────────────────────────────────────────────────────
+
+    1.1 What is Artificial Intelligence?              ~50 min
+        ├── Definition and history of AI               ~10 min
+        ├── AI vs ML vs Deep Learning vs GenAI         ~15 min
+        ├── Types: Narrow AI vs General vs Super AI    ~10 min
+        ├── Real-world AI applications                 ~10 min
+        └── AI in enterprise for Azure developers      ~5 min
+
+    1.2 Understanding Machine Learning                ~60 min
+        ├── What is ML? Core concepts                  ~10 min
+        ├── Supervised Learning: Classification/Reg    ~10 min
+        ├── Unsupervised Learning: Clustering/Assoc    ~10 min
+        ├── Reinforcement Learning basics              ~5 min
+        ├── Training data, features, labels, models    ~10 min
+        ├── Model training, validation, testing        ~10 min
+        └── Overfitting and underfitting               ~5 min
+
+    1.3 AI Workloads and Considerations               ~40 min ✅ DONE
+        ├── Common AI workload types                   ~5 min
+        ├── Prediction & Forecasting workloads         ~7 min
+        ├── Anomaly Detection workloads                ~7 min
+        ├── Computer Vision workloads                  ~7 min
+        ├── NLP workloads                              ~7 min
+        └── Generative AI workloads                    ~7 min
+
+    1.4 Responsible AI Principles                     ~40 min
+        ├── Fairness in AI systems                     ~7 min
+        ├── Reliability and safety                     ~5 min
+        ├── Privacy and security                       ~5 min
+        ├── Inclusiveness                              ~5 min
+        ├── Transparency and explainability            ~5 min
+        ├── Accountability                             ~5 min
+        └── Microsoft's Responsible AI framework       ~8 min
+
+    R1: RECALL - Module 1 Review & Quiz               ~30 min
+
+  Module 2: Azure AI Services Overview                2-3 hrs
+  ─────────────────────────────────────────────────────────
+
+    2.1 Azure AI Platform Introduction                ~50 min
+        ├── Azure AI services landscape                ~10 min
+        ├── Azure AI Services (Cognitive Services)     ~10 min
+        ├── Azure Machine Learning overview            ~10 min
+        ├── Azure OpenAI Service overview              ~10 min
+        ├── Azure AI Search overview                   ~5 min
+        └── Choosing the right Azure AI service        ~5 min
+
+    2.2 Provisioning Azure AI Resources               ~50 min
+        ├── Creating Azure AI Services resources       ~10 min
+        ├── Multi-service vs single-service            ~8 min
+        ├── Keys and endpoints                         ~7 min
+        ├── Pricing tiers and considerations           ~7 min
+        ├── ARM templates and Bicep for AI             ~10 min
+        └── Managing with Azure CLI/PowerShell         ~8 min
+
+    2.3 Security and Compliance                       ~45 min
+        ├── Authentication (API keys, Azure AD)        ~10 min
+        ├── Network security (VNets, Private EP)       ~10 min
+        ├── Managed Identity for AI services           ~10 min
+        ├── Data privacy and compliance                ~8 min
+        └── Azure AI content safety                    ~7 min
+
+    R2: RECALL - Module 2 Review & Quiz               ~30 min
+
+  Module 3: Computer Vision Fundamentals              4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    3.1 Computer Vision Concepts                      ~40 min
+        ├── What is Computer Vision?                   ~7 min
+        ├── Image classification explained             ~7 min
+        ├── Object detection vs classification         ~7 min
+        ├── Semantic segmentation                      ~7 min
+        ├── Optical Character Recognition (OCR)        ~6 min
+        └── Face detection and analysis                ~6 min
+
+    3.2 Azure AI Vision Service                       ~70 min
+        ├── Image Analysis 4.0 capabilities            ~10 min
+        ├── Generating image captions and tags          ~10 min
+        ├── Detecting objects in images                ~10 min
+        ├── Smart cropping and thumbnails              ~8 min
+        ├── Background removal                         ~7 min
+        ├── Dense captioning                           ~7 min
+        └── Calling Vision API with C# and REST        ~18 min
+
+    3.3 Azure AI Custom Vision                        ~50 min
+        ├── When to use Custom Vision                  ~7 min
+        ├── Creating a Custom Vision project           ~8 min
+        ├── Image classification: train & test         ~10 min
+        ├── Object detection: train & test             ~10 min
+        ├── Exporting models (ONNX, TF, Docker)        ~8 min
+        └── Custom Vision best practices               ~7 min
+
+    3.4 Azure AI Face Service                         ~45 min
+        ├── Face detection capabilities                ~7 min
+        ├── Face attributes (age, emotion, etc.)       ~7 min
+        ├── Face verification (1:1 matching)           ~7 min
+        ├── Face identification (1:many)               ~7 min
+        ├── Face grouping and similarity               ~5 min
+        ├── Responsible use of Face API                ~6 min
+        └── Limited Access policy                      ~6 min
+
+    3.5 Reading Text with OCR                         ~40 min
+        ├── OCR vs Read API differences                ~8 min
+        ├── Reading printed text                       ~7 min
+        ├── Reading handwritten text                   ~7 min
+        ├── Processing multi-page documents            ~7 min
+        ├── Handling different languages               ~5 min
+        └── OCR integration patterns                   ~6 min
+
+    R3: RECALL - Module 3 Review & Hands-on           ~30 min
+
+  Module 4: Natural Language Processing               4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    4.1 NLP Concepts                                  ~40 min
+        ├── What is NLP?                               ~7 min
+        ├── Tokenization and text normalization        ~7 min
+        ├── Stop words and stemming                    ~5 min
+        ├── Part-of-speech tagging                     ~5 min
+        ├── Named Entity Recognition (NER)             ~5 min
+        ├── Sentiment analysis basics                  ~5 min
+        └── Language detection                         ~6 min
+
+    4.2 Azure AI Language Service                     ~60 min
+        ├── Language service capabilities              ~7 min
+        ├── Sentiment analysis & opinion mining        ~8 min
+        ├── Key phrase extraction                      ~5 min
+        ├── Named entity recognition                   ~5 min
+        ├── Entity linking                             ~5 min
+        ├── Language detection                         ~5 min
+        ├── PII detection and redaction                ~8 min
+        ├── Text summarization                         ~7 min
+        └── Calling Language API with C#               ~10 min
+
+    4.3 Question Answering                            ~50 min
+        ├── QA vs QnA Maker (legacy)                   ~5 min
+        ├── Creating a knowledge base                  ~8 min
+        ├── Adding question-answer pairs               ~7 min
+        ├── Multi-turn conversations                   ~8 min
+        ├── Active learning and suggestions            ~7 min
+        ├── Testing and publishing                     ~7 min
+        └── Integrating with bots                      ~8 min
+
+    4.4 Conversational Language (CLU)                  ~50 min
+        ├── Intents and entities explained             ~8 min
+        ├── Creating a CLU project                     ~7 min
+        ├── Defining intents with utterances           ~7 min
+        ├── Entity types: learned, list, prebuilt      ~8 min
+        ├── Training and evaluating models             ~7 min
+        ├── Deploying CLU models                       ~6 min
+        └── Calling CLU from applications              ~7 min
+
+    4.5 Text Translation                              ~40 min
+        ├── Azure AI Translator service                ~8 min
+        ├── Translating text                           ~7 min
+        ├── Detecting source language                  ~5 min
+        ├── Transliteration                            ~5 min
+        ├── Dictionary lookup                          ~5 min
+        └── Custom Translator for domains              ~10 min
+
+    R4: RECALL - Module 4 Review & Hands-on           ~30 min
+
+  Module 5: Speech Services                           3-4 hrs
+  ─────────────────────────────────────────────────────────
+
+    5.1 Speech Concepts                               ~40 min
+        ├── Speech-to-Text (STT) overview              ~8 min
+        ├── Text-to-Speech (TTS) overview              ~8 min
+        ├── Speech translation                         ~8 min
+        ├── Speaker recognition                        ~8 min
+        └── Audio processing basics                    ~8 min
+
+    5.2 Azure AI Speech Service                       ~60 min
+        ├── STT: real-time and batch                   ~10 min
+        ├── Supported languages and locales            ~5 min
+        ├── Custom Speech for domain vocabulary        ~8 min
+        ├── TTS: neural voices                         ~8 min
+        ├── SSML for speech customization              ~8 min
+        ├── Custom Neural Voice                        ~6 min
+        ├── Speech SDK usage in C#                     ~10 min
+        └── Audio input/output handling                ~5 min
+
+    5.3 Speech Translation & Speaker Recognition      ~45 min
+        ├── Real-time speech translation               ~10 min
+        ├── Multi-language translation                 ~8 min
+        ├── Speech-to-text-to-speech pipeline          ~7 min
+        ├── Speaker verification (1:1)                 ~7 min
+        ├── Speaker identification (1:many)            ~7 min
+        └── Voice profiles and enrollment              ~6 min
+
+    R5: RECALL - Module 5 Review & Hands-on           ~30 min
+
+  Module 6: Azure Machine Learning                    4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    6.1 Azure ML Workspace                            ~50 min
+        ├── Creating an Azure ML workspace             ~10 min
+        ├── Azure ML Studio interface                  ~8 min
+        ├── Compute: instances, clusters, serverless   ~10 min
+        ├── Datastores and datasets                    ~8 min
+        ├── Environments and dependencies              ~7 min
+        └── Workspace organization best practices      ~7 min
+
+    6.2 Automated ML (AutoML)                         ~70 min
+        ├── What is AutoML?                            ~10 min
+        ├── Creating AutoML experiments                ~10 min
+        ├── Classification tasks                       ~10 min
+        ├── Regression tasks                           ~10 min
+        ├── Time-series forecasting                    ~10 min
+        ├── Understanding AutoML results               ~10 min
+        └── Deploying AutoML models                    ~10 min
+
+    6.3 Azure ML Designer                             ~50 min
+        ├── Visual ML pipeline creation                ~10 min
+        ├── Built-in components                        ~8 min
+        ├── Data transformation modules                ~8 min
+        ├── Training modules                           ~8 min
+        ├── Evaluation modules                         ~6 min
+        ├── Creating inference pipelines               ~5 min
+        └── Publishing pipelines                       ~5 min
+
+    6.4 Model Deployment                              ~45 min
+        ├── Registering models                         ~8 min
+        ├── Real-time endpoints (managed online)       ~10 min
+        ├── Batch endpoints                            ~8 min
+        ├── Deployment configurations                  ~7 min
+        ├── Testing deployed models                    ~6 min
+        └── Monitoring model performance               ~6 min
+
+    R6: RECALL - Module 6 & Part 1 Comprehensive      ~45 min
+
+═══════════════════════════════════════════════════════════
+PART 2: AI ENGINEERING (AI-102 Level)
+       4 Modules | ~19-22 hrs | ~1 week
+═══════════════════════════════════════════════════════════
+
+  Module 7: Azure AI Services Deep Dive               5-6 hrs
+  ─────────────────────────────────────────────────────────
+
+    7.1 Advanced AI Services Management               ~90 min
+        ├── Multi-region deployments                   ~12 min
+        ├── High availability patterns                 ~12 min
+        ├── Disaster recovery for AI services          ~12 min
+        ├── Cost optimization strategies               ~12 min
+        ├── Quota management                           ~10 min
+        ├── Diagnostic logging and monitoring          ~12 min
+        └── Azure Monitor integration                  ~10 min
+
+    7.2 Containers for AI Services                    ~75 min
+        ├── Running AI services in containers          ~12 min
+        ├── Available container images                 ~10 min
+        ├── Docker deployment                          ~15 min
+        ├── Kubernetes deployment (AKS)                ~15 min
+        ├── Connected vs disconnected containers       ~10 min
+        └── Container security considerations          ~13 min
+
+    7.3 Custom Models and Training                    ~75 min
+        ├── Custom Vision advanced training            ~15 min
+        ├── Custom Speech model training               ~12 min
+        ├── Custom Translator training                 ~12 min
+        ├── Custom NER and text classification         ~12 min
+        ├── Model versioning and management            ~12 min
+        └── A/B testing models                         ~12 min
+
+    R7: RECALL - Module 7 Review & Quiz               ~30 min
+
+  Module 8: Document Intelligence                     4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    8.1 Document Intelligence Overview                ~40 min
+        ├── Document Intelligence capabilities         ~10 min
+        ├── Prebuilt models overview                   ~8 min
+        ├── Custom models overview                     ~8 min
+        ├── Document Intelligence Studio               ~7 min
+        └── Pricing and limits                         ~7 min
+
+    8.2 Prebuilt Models                               ~55 min
+        ├── Invoice model                              ~7 min
+        ├── Receipt model                              ~5 min
+        ├── ID document model                          ~5 min
+        ├── Business card model                        ~5 min
+        ├── W-2 tax form model                         ~5 min
+        ├── Health insurance card model                ~5 min
+        ├── General document model                     ~8 min
+        ├── Read model (OCR)                           ~7 min
+        └── Layout model                               ~8 min
+
+    8.3 Custom Models                                 ~55 min
+        ├── When to build custom models                ~8 min
+        ├── Training data requirements                 ~8 min
+        ├── Labeling documents                         ~10 min
+        ├── Custom template models                     ~8 min
+        ├── Custom neural models                       ~8 min
+        ├── Composed models                            ~7 min
+        └── Model evaluation and testing               ~6 min
+
+    8.4 Integration Patterns                          ~55 min
+        ├── Calling Doc Intelligence from C#           ~12 min
+        ├── Async processing for large docs            ~10 min
+        ├── Batch processing patterns                  ~10 min
+        ├── Integration with Azure Functions           ~8 min
+        ├── Integration with Logic Apps                ~8 min
+        └── Integration with Power Automate            ~7 min
+
+    R8: RECALL - Module 8 Review & Hands-on           ~30 min
+
+  Module 9: Azure AI Search                           5-6 hrs
+  ─────────────────────────────────────────────────────────
+
+    9.1 Azure AI Search Fundamentals                  ~50 min
+        ├── What is Azure AI Search?                   ~8 min
+        ├── Search service tiers and scaling           ~7 min
+        ├── Indexes, documents, and fields             ~8 min
+        ├── Index schema design                        ~10 min
+        ├── Field attributes: searchable, filterable   ~10 min
+        └── Analyzers and tokenization                 ~7 min
+
+    9.2 Data Ingestion                                ~50 min
+        ├── Push vs pull indexing                      ~8 min
+        ├── Indexers and data sources                  ~7 min
+        ├── Azure Blob indexer                         ~7 min
+        ├── Azure SQL indexer                          ~5 min
+        ├── Cosmos DB indexer                          ~7 min
+        ├── SharePoint Online indexer                  ~8 min
+        └── Incremental indexing & change detection    ~8 min
+
+    9.3 AI Enrichment (Skillsets)                     ~60 min
+        ├── Cognitive skills overview                  ~8 min
+        ├── Built-in: OCR, NER, key phrases            ~10 min
+        ├── Image analysis skills                      ~8 min
+        ├── Language detection and translation         ~7 min
+        ├── Custom skills with Azure Functions         ~12 min
+        ├── Knowledge store for enriched data          ~8 min
+        └── Debugging skillsets                        ~7 min
+
+    9.4 Querying and Search Experience                ~55 min
+        ├── Simple query syntax                        ~7 min
+        ├── Full Lucene query syntax                   ~8 min
+        ├── Filters and faceted navigation             ~8 min
+        ├── Scoring profiles                           ~7 min
+        ├── Synonyms                                   ~5 min
+        ├── Autocomplete and suggestions               ~7 min
+        ├── Semantic search (semantic ranking)         ~7 min
+        └── Hybrid search (keyword + vector)           ~6 min
+
+    9.5 Vector Search                                 ~50 min
+        ├── What is vector search?                     ~8 min
+        ├── Embeddings explained                       ~10 min
+        ├── Configuring vector fields                  ~8 min
+        ├── Vector search queries                      ~8 min
+        ├── Hybrid search strategies                   ~8 min
+        └── Integration with Azure OpenAI embeddings   ~8 min
+
+    R9: RECALL - Module 9 Review & Hands-on           ~30 min
+
+  Module 10: Bot Development                          4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    10.1 Bot Framework Fundamentals                   ~50 min
+        ├── Bot Framework SDK overview                 ~8 min
+        ├── Bot architecture and components            ~8 min
+        ├── Activities and turns                       ~8 min
+        ├── Dialogs and conversation flow              ~10 min
+        ├── State management                           ~8 min
+        └── Bot Framework Emulator                     ~8 min
+
+    10.2 Building Bots with C#                        ~60 min
+        ├── Creating a bot project                     ~8 min
+        ├── Echo bot walkthrough                       ~8 min
+        ├── Handling messages                          ~8 min
+        ├── Sending rich cards and attachments         ~8 min
+        ├── Waterfall dialogs                          ~10 min
+        ├── Component dialogs                          ~8 min
+        └── Prompt types and validation                ~10 min
+
+    10.3 Integrating AI Services                      ~55 min
+        ├── Adding CLU for intent recognition          ~12 min
+        ├── Adding Question Answering                  ~10 min
+        ├── Adding language translation                ~8 min
+        ├── Adding speech capabilities                 ~10 min
+        └── Integrating Azure OpenAI                   ~15 min
+
+    10.4 Deploying Bots                               ~50 min
+        ├── Azure Bot Service                          ~8 min
+        ├── Deploying to Azure App Service             ~10 min
+        ├── Channel config (Teams, Web, Slack)         ~10 min
+        ├── Microsoft Teams bot development            ~10 min
+        ├── Bot security and authentication            ~6 min
+        └── Bot monitoring and analytics               ~6 min
+
+    R10: RECALL - Module 10 & Part 2 Comprehensive    ~45 min
+
+═══════════════════════════════════════════════════════════
+PART 3: GENERATIVE AI & LLMs
+       5 Modules | ~31-39 hrs | ~1.5-2 weeks
+═══════════════════════════════════════════════════════════
+
+  Module 11: LLMs Deep Dive                           6-8 hrs
+  ─────────────────────────────────────────────────────────
+
+    11.1 How LLMs Work                                ~90 min
+        ├── Neural network foundations                 ~12 min
+        ├── The Transformer architecture               ~15 min
+        ├── Attention mechanism explained              ~15 min
+        ├── Self-attention & multi-head attention      ~15 min
+        ├── Positional encoding                        ~8 min
+        ├── Encoder-decoder vs decoder-only            ~10 min
+        └── GPT architecture walkthrough               ~15 min
+
+    11.2 Tokenization and Embeddings                  ~80 min
+        ├── What is tokenization?                      ~10 min
+        ├── BPE (Byte Pair Encoding)                   ~10 min
+        ├── SentencePiece and WordPiece                ~8 min
+        ├── Token limits and context windows           ~10 min
+        ├── What are embeddings?                       ~10 min
+        ├── Word vs sentence embeddings                ~10 min
+        ├── Embedding dimensions and similarity        ~10 min
+        └── Using embeddings for semantic search       ~12 min
+
+    11.3 Pre-training and Fine-tuning                 ~60 min
+        ├── Pre-training objectives                    ~8 min
+        ├── Next token prediction                      ~7 min
+        ├── Masked language modeling                   ~7 min
+        ├── Foundation models explained                ~8 min
+        ├── Transfer learning concept                  ~7 min
+        ├── Full fine-tuning vs PEFT                   ~8 min
+        ├── LoRA (Low-Rank Adaptation)                 ~8 min
+        └── QLoRA for efficient fine-tuning            ~7 min
+
+    11.4 RLHF and Alignment                           ~55 min
+        ├── What is RLHF?                              ~8 min
+        ├── Reward models                              ~8 min
+        ├── PPO (Proximal Policy Optimization)         ~8 min
+        ├── Constitutional AI                          ~7 min
+        ├── DPO (Direct Preference Optimization)       ~7 min
+        ├── Why alignment matters                      ~7 min
+        └── Instruction tuning                         ~10 min
+
+    11.5 Model Capabilities and Limitations           ~55 min
+        ├── Emergent abilities in LLMs                 ~8 min
+        ├── Hallucinations: causes and mitigation      ~10 min
+        ├── Knowledge cutoff and freshness             ~7 min
+        ├── Reasoning capabilities                     ~8 min
+        ├── Math and logic limitations                 ~7 min
+        ├── Bias in language models                    ~8 min
+        └── Context window limitations                 ~7 min
+
+    R11: RECALL - Module 11 Review & Quiz             ~30 min
+
+  Module 12: Azure OpenAI Service                     6-8 hrs
+  ─────────────────────────────────────────────────────────
+
+    12.1 Azure OpenAI Fundamentals                    ~50 min
+        ├── Azure OpenAI vs OpenAI API                 ~8 min
+        ├── Available models (GPT-4, GPT-4o, 3.5)     ~8 min
+        ├── Model capabilities comparison              ~7 min
+        ├── Provisioning Azure OpenAI resource         ~7 min
+        ├── Model deployments                          ~7 min
+        ├── Quota and rate limits                      ~6 min
+        └── Pricing (PTU vs pay-as-you-go)             ~7 min
+
+    12.2 Chat Completions API                         ~60 min
+        ├── Completions API (legacy)                   ~5 min
+        ├── Chat Completions API                       ~8 min
+        ├── Message roles: system, user, assistant     ~8 min
+        ├── Parameters: temperature, top_p, tokens     ~10 min
+        ├── Stop sequences                             ~5 min
+        ├── Frequency and presence penalties            ~7 min
+        ├── Streaming responses                        ~7 min
+        └── Calling Azure OpenAI with C#               ~10 min
+
+    12.3 Prompt Engineering Mastery                    ~90 min
+        ├── Prompt engineering principles              ~8 min
+        ├── Zero-shot prompting                        ~8 min
+        ├── Few-shot prompting with examples           ~10 min
+        ├── Chain-of-thought (CoT) prompting           ~10 min
+        ├── Self-consistency prompting                 ~8 min
+        ├── Role-based prompting                       ~8 min
+        ├── Output formatting (JSON, XML, MD)          ~10 min
+        ├── Prompt templates and management            ~10 min
+        ├── Common prompt patterns                     ~8 min
+        └── Prompt injection attacks & prevention      ~10 min
+
+    12.4 Function Calling / Tools                     ~55 min
+        ├── What is function calling?                  ~8 min
+        ├── Defining functions/tools                   ~8 min
+        ├── Function schemas with JSON                 ~10 min
+        ├── Handling function call responses            ~10 min
+        ├── Parallel function calling                  ~7 min
+        ├── Structured outputs with response_format    ~5 min
+        └── Building agents with function calling      ~7 min
+
+    12.5 Embeddings API                               ~45 min
+        ├── Text embeddings models                     ~7 min
+        ├── Generating embeddings                      ~8 min
+        ├── Embedding dimensions                       ~7 min
+        ├── Similarity (cosine, dot product)           ~8 min
+        ├── Batch embedding generation                 ~7 min
+        └── Embedding use cases                        ~8 min
+
+    12.6 Image Generation & Vision                    ~45 min
+        ├── DALL-E 3 capabilities                      ~7 min
+        ├── Image generation API                       ~7 min
+        ├── Image sizes and quality                    ~5 min
+        ├── Content filtering for images               ~5 min
+        ├── GPT-4o vision capabilities                 ~8 min
+        ├── Sending images to the API                  ~7 min
+        └── Multi-modal applications                   ~6 min
+
+    12.7 Content Safety & Responsible AI              ~40 min
+        ├── Azure OpenAI content filtering             ~7 min
+        ├── Content filter categories                  ~5 min
+        ├── Configuring content filters                ~7 min
+        ├── Handling filtered responses                ~5 min
+        ├── Abuse monitoring                           ~5 min
+        ├── Responsible AI guidelines                  ~5 min
+        └── Red teaming and testing                    ~6 min
+
+    R12: RECALL - Module 12 Review & Hands-on         ~45 min
+
+  Module 13: RAG (Retrieval-Augmented Gen)            8-10 hrs
+  ─────────────────────────────────────────────────────────
+
+    13.1 RAG Fundamentals                             ~55 min
+        ├── What is RAG and why use it?                ~10 min
+        ├── RAG vs fine-tuning: when to use each       ~10 min
+        ├── RAG architecture overview                  ~10 min
+        ├── The retrieval-generation pipeline           ~10 min
+        ├── Benefits: accuracy, freshness, attribution ~8 min
+        └── Challenges and limitations                 ~7 min
+
+    13.2 Document Processing                          ~50 min
+        ├── Document loading strategies                ~8 min
+        ├── Supported file formats                     ~5 min
+        ├── PDF extraction challenges                  ~8 min
+        ├── Handling tables and images                 ~10 min
+        ├── Metadata extraction                        ~7 min
+        └── Document cleaning and preprocessing        ~12 min
+
+    13.3 Chunking Strategies                          ~70 min
+        ├── Why chunking matters                       ~7 min
+        ├── Fixed-size chunking                        ~8 min
+        ├── Semantic chunking                          ~8 min
+        ├── Recursive chunking                         ~8 min
+        ├── Sentence-based chunking                    ~7 min
+        ├── Chunk size optimization                    ~8 min
+        ├── Chunk overlap considerations               ~8 min
+        ├── Hierarchical chunking                      ~8 min
+        └── Document structure-aware chunking          ~8 min
+
+    13.4 Vector Databases                             ~55 min
+        ├── What is a vector database?                 ~8 min
+        ├── Azure AI Search as vector store            ~10 min
+        ├── Pinecone, Weaviate, Qdrant, Chroma         ~10 min
+        ├── Cosmos DB vector search                    ~7 min
+        ├── PostgreSQL pgvector                        ~5 min
+        ├── Index types: HNSW, IVF                     ~8 min
+        └── Choosing the right vector database         ~7 min
+
+    13.5 Retrieval Strategies                         ~80 min
+        ├── Semantic search with embeddings            ~10 min
+        ├── Keyword search (BM25)                      ~8 min
+        ├── Hybrid search (keyword + semantic)         ~10 min
+        ├── Re-ranking retrieved results               ~10 min
+        ├── Maximum Marginal Relevance (MMR)           ~8 min
+        ├── Query expansion                            ~7 min
+        ├── Hypothetical Document Embedding (HyDE)     ~10 min
+        ├── Multi-query retrieval                      ~7 min
+        └── Filtering and metadata-based retrieval     ~10 min
+
+    13.6 Generation with Retrieved Context            ~55 min
+        ├── Prompt construction with context           ~10 min
+        ├── Context window management                  ~8 min
+        ├── Handling multiple retrieved documents      ~8 min
+        ├── Citation and attribution                   ~8 min
+        ├── Handling contradictory information          ~7 min
+        ├── Confidence and uncertainty                 ~7 min
+        └── Fallback when no context found             ~7 min
+
+    13.7 Azure 'On Your Data' Feature                 ~45 min
+        ├── Azure OpenAI On Your Data overview         ~8 min
+        ├── Connecting Azure AI Search                 ~8 min
+        ├── Connecting Azure Blob Storage              ~7 min
+        ├── Ingestion pipeline                         ~8 min
+        ├── Chat with your data API                    ~7 min
+        └── Limitations and considerations             ~7 min
+
+    13.8 Advanced RAG Patterns                        ~55 min
+        ├── Corrective RAG (CRAG)                      ~8 min
+        ├── Self-RAG                                   ~8 min
+        ├── Agentic RAG                                ~8 min
+        ├── Graph RAG                                  ~8 min
+        ├── Multi-hop RAG                              ~8 min
+        ├── RAG evaluation metrics                     ~8 min
+        └── RAG pipeline optimization                  ~7 min
+
+    R13: RECALL - Module 13 Review & Hands-on         ~45 min
+
+  Module 14: AI Orchestration Frameworks              6-8 hrs
+  ─────────────────────────────────────────────────────────
+
+    14.1 Semantic Kernel (Microsoft)                  ~150 min
+        ├── What is Semantic Kernel?                   ~10 min
+        ├── Kernel setup and configuration             ~12 min
+        ├── Plugins and functions                      ~12 min
+        ├── Native functions (C# code)                 ~15 min
+        ├── Semantic functions (prompts)               ~12 min
+        ├── Prompt templates with variables            ~12 min
+        ├── Function calling with SK                   ~15 min
+        ├── Memory and embeddings in SK                ~15 min
+        ├── Planners: sequential, stepwise             ~15 min
+        ├── Agents in Semantic Kernel                  ~12 min
+        └── SK vs LangChain comparison                 ~10 min
+
+    14.2 LangChain Fundamentals                       ~90 min
+        ├── LangChain architecture                     ~10 min
+        ├── Models and prompts                         ~8 min
+        ├── Chains: LLMChain, SequentialChain          ~10 min
+        ├── Agents and tools                           ~10 min
+        ├── Memory types in LangChain                  ~8 min
+        ├── Document loaders                           ~7 min
+        ├── Text splitters                             ~7 min
+        ├── Vector stores integration                  ~8 min
+        ├── Retrieval chains                           ~10 min
+        └── LangChain Expression Language (LCEL)       ~12 min
+
+    14.3 Building AI Agents                           ~60 min
+        ├── What are AI agents?                        ~8 min
+        ├── Agent architectures: ReAct, Plan-Execute   ~10 min
+        ├── Tool/function definitions                  ~8 min
+        ├── Agent memory and state                     ~7 min
+        ├── Multi-agent systems                        ~8 min
+        ├── Agent evaluation and testing               ~7 min
+        ├── AutoGen framework overview                 ~6 min
+        └── CrewAI overview                            ~6 min
+
+    14.4 Prompt Flow (Azure ML)                       ~55 min
+        ├── What is Prompt Flow?                       ~8 min
+        ├── Creating flows                             ~10 min
+        ├── Flow components: LLM, Python, tools        ~10 min
+        ├── Flow variants for A/B testing              ~8 min
+        ├── Evaluation flows                           ~7 min
+        ├── Deploying flows as endpoints               ~7 min
+        └── Prompt Flow vs Semantic Kernel             ~5 min
+
+    R14: RECALL - Module 14 Review & Hands-on         ~30 min
+
+  Module 15: Fine-tuning LLMs                         4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    15.1 When to Fine-tune                            ~45 min
+        ├── Fine-tuning vs RAG vs prompt engineering   ~12 min
+        ├── Use cases for fine-tuning                  ~10 min
+        ├── Cost-benefit analysis                      ~12 min
+        └── Data requirements                          ~11 min
+
+    15.2 Azure OpenAI Fine-tuning                     ~90 min
+        ├── Supported models for fine-tuning           ~8 min
+        ├── Training data format (JSONL)               ~10 min
+        ├── Creating training/validation files         ~12 min
+        ├── Uploading training data                    ~8 min
+        ├── Creating fine-tuning jobs                  ~12 min
+        ├── Monitoring training progress               ~10 min
+        ├── Deploying fine-tuned models                ~15 min
+        └── Fine-tuning best practices                 ~15 min
+
+    15.3 Parameter-Efficient Fine-tuning              ~50 min
+        ├── LoRA explained                             ~12 min
+        ├── QLoRA for memory efficiency                ~12 min
+        ├── Adapter methods                            ~10 min
+        ├── Prefix tuning                              ~8 min
+        └── When to use PEFT                           ~8 min
+
+    R15: RECALL - Part 3 Comprehensive                ~60 min
+
+═══════════════════════════════════════════════════════════
+PART 4: ENTERPRISE AI SOLUTIONS
+       4 Modules | ~33-43 hrs | ~1.5-2 weeks
+═══════════════════════════════════════════════════════════
+
+  Module 16: AI Solution Architecture                 4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    16.1 Architecture Patterns                        ~55 min
+        ├── AI solution architecture principles        ~8 min
+        ├── Microservices for AI workloads             ~8 min
+        ├── Event-driven AI architectures              ~8 min
+        ├── Batch vs real-time AI processing           ~8 min
+        ├── AI gateway pattern                         ~8 min
+        ├── Multi-model architectures                  ~8 min
+        └── Fallback and circuit breaker patterns      ~7 min
+
+    16.2 Scalability and Performance                  ~55 min
+        ├── Scaling Azure OpenAI deployments           ~8 min
+        ├── PTU (Provisioned Throughput Units)         ~8 min
+        ├── Load balancing strategies                  ~8 min
+        ├── Caching strategies for AI                  ~8 min
+        ├── Response streaming                         ~7 min
+        ├── Async processing patterns                  ~8 min
+        └── Queue-based load leveling                  ~8 min
+
+    16.3 Security for AI Solutions                    ~55 min
+        ├── API security best practices                ~7 min
+        ├── Data encryption at rest and transit        ~7 min
+        ├── Private endpoints for AI services          ~7 min
+        ├── VNet integration                           ~7 min
+        ├── Key management with Key Vault              ~7 min
+        ├── RBAC for AI resources                      ~7 min
+        ├── Prompt injection prevention                ~7 min
+        └── Data loss prevention                       ~6 min
+
+    16.4 Cost Management                              ~45 min
+        ├── Azure OpenAI pricing deep dive             ~10 min
+        ├── Token counting and estimation              ~8 min
+        ├── Cost optimization strategies               ~10 min
+        ├── Monitoring and alerting on costs           ~7 min
+        ├── Choosing right model for the task          ~5 min
+        └── Caching to reduce API calls                ~5 min
+
+    R16: RECALL - Module 16 Review & Quiz             ~30 min
+
+  Module 17: MLOps and LLMOps                         4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    17.1 MLOps Fundamentals                           ~70 min
+        ├── What is MLOps?                             ~8 min
+        ├── ML lifecycle stages                        ~10 min
+        ├── Version control for ML                     ~8 min
+        ├── Experiment tracking                        ~10 min
+        ├── Model registry                             ~10 min
+        ├── CI/CD for ML pipelines                     ~12 min
+        └── Azure ML pipelines                         ~12 min
+
+    17.2 LLMOps Practices                             ~65 min
+        ├── LLMOps vs MLOps differences                ~10 min
+        ├── Prompt versioning and management           ~10 min
+        ├── Evaluation frameworks                      ~10 min
+        ├── A/B testing for prompts                    ~8 min
+        ├── Monitoring LLM applications                ~10 min
+        ├── Observability: latency, tokens, errors     ~10 min
+        └── Feedback loops and improvement             ~7 min
+
+    17.3 Testing AI Applications                      ~55 min
+        ├── Unit testing AI components                 ~10 min
+        ├── Integration testing                        ~10 min
+        ├── Evaluation datasets                        ~8 min
+        ├── Metrics: accuracy, relevance, grounded     ~10 min
+        ├── Red teaming and adversarial testing        ~10 min
+        └── Regression testing for prompts             ~7 min
+
+    R17: RECALL - Module 17 Review & Quiz             ~30 min
+
+  Module 18: Integration Patterns                     4-5 hrs
+  ─────────────────────────────────────────────────────────
+
+    18.1 Azure Integration Services                   ~70 min
+        ├── Azure Functions with AI services           ~12 min
+        ├── Logic Apps AI connectors                   ~10 min
+        ├── Azure Data Factory with AI                 ~12 min
+        ├── Event Grid for AI events                   ~10 min
+        ├── Service Bus for async AI processing        ~12 min
+        └── API Management for AI APIs                 ~14 min
+
+    18.2 Microsoft 365 Integration                    ~65 min
+        ├── Microsoft Copilot ecosystem                ~10 min
+        ├── Building Copilot plugins                   ~12 min
+        ├── Teams AI Library                           ~10 min
+        ├── SharePoint AI integration                  ~10 min
+        ├── Power Platform AI Builder                  ~12 min
+        └── Copilot Studio overview                    ~11 min
+
+    18.3 Enterprise Data Integration                  ~55 min
+        ├── Connecting enterprise data sources         ~12 min
+        ├── Azure Synapse with AI                      ~12 min
+        ├── Databricks with AI                         ~10 min
+        ├── Real-time data pipelines with AI           ~12 min
+        └── Data governance for AI                     ~9 min
+
+    R18: RECALL - Module 18 Review & Quiz             ~30 min
+
+  Module 19: Hands-On Projects                       20-30 hrs
+  ─────────────────────────────────────────────────────────
+
+    19.1 Project 1: Document Intelligence             ~6-8 hrs
+        ├── Architecture design                        ~60 min
+        ├── Azure Function for doc processing          ~60 min
+        ├── Document Intelligence integration          ~60 min
+        ├── Azure OpenAI for summarization             ~45 min
+        ├── Blob Storage triggers                      ~30 min
+        ├── Output to SharePoint/database              ~30 min
+        └── Error handling and retry logic             ~30 min
+
+    19.2 Project 2: Enterprise RAG Application        ~6-8 hrs
+        ├── Solution architecture                      ~45 min
+        ├── Document ingestion pipeline                ~60 min
+        ├── Azure AI Search index setup                ~45 min
+        ├── Semantic Kernel implementation             ~60 min
+        ├── Chat UI with ASP.NET Core                  ~60 min
+        ├── Conversation history                       ~30 min
+        ├── Citation display                           ~20 min
+        └── Deployment to Azure                        ~30 min
+
+    19.3 Project 3: AI-Enhanced Data Pipeline         ~4-5 hrs
+        ├── Extending ADF with AI                      ~60 min
+        ├── Custom activities for AI                   ~45 min
+        ├── Entity extraction in pipelines             ~45 min
+        ├── Document classification                    ~30 min
+        ├── AI enrichment patterns                     ~30 min
+        └── Monitoring and logging                     ~30 min
+
+    19.4 Project 4: Intelligent Chatbot               ~4-5 hrs
+        ├── Bot Framework setup                        ~30 min
+        ├── CLU integration                            ~30 min
+        ├── Azure OpenAI integration                   ~45 min
+        ├── RAG for knowledge base                     ~60 min
+        ├── Teams deployment                           ~30 min
+        └── Conversation analytics                     ~30 min
+
+    R19: FINAL - Portfolio Review & Completion         ~120 min
+        ├── Review all 4 projects                      ~30 min
+        ├── GitHub portfolio finalization              ~30 min
+        ├── Resume and LinkedIn updates                ~30 min
+        └── COMPREHENSIVE FINAL QUIZ                   ~30 min
+
+═══════════════════════════════════════════════════════════
+SUMMARY
+═══════════════════════════════════════════════════════════
+  Part 1: AI Fundamentals ........  21-26 hrs  | ~1 week
+  Part 2: AI Engineering .........  19-22 hrs  | ~1 week
+  Part 3: Generative AI & LLMs ..  31-39 hrs  | ~1.5-2 weeks
+  Part 4: Enterprise AI ..........  33-43 hrs  | ~1.5-2 weeks
+  ────────────────────────────────────────────
+  TOTAL:  100-130 hrs | ~5-6 weeks
+  Pace:   22 hrs/week (2 hrs weekday + 6 hrs weekend)
+  Start:  March 10, 2026
+  Target: ~April 21, 2026
+═══════════════════════════════════════════════════════════

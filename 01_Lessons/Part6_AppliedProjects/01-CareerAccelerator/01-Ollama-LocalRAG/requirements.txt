@@ -1,0 +1,7 @@
+# Local RAG with Ollama — no paid API required
+# Ollama itself is installed separately (https://ollama.com/install.sh), not via pip.
+
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.0
+requests>=2.31.0
+numpy>=1.26.0

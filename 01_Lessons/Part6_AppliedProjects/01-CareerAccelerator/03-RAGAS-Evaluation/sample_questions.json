@@ -1,0 +1,53 @@
+{
+  "description": "Golden evaluation dataset for RAGAS. 10 question + ground-truth pairs over a small JM Family style knowledge base. Used by 04_hands_on.py.",
+  "documents": [
+    "Dealer invoices must be submitted within 30 days of the vehicle delivery date. Late submissions incur a 2% penalty per month calculated on the invoice total.",
+    "The dealer reserve is a portion of finance income withheld and paid to the dealer over time. It is released once the underlying retail contract meets its performance thresholds.",
+    "Floorplan financing, also called curtailment, requires dealers to make principal reductions on aged inventory. Vehicles unsold after 90 days trigger the first curtailment payment.",
+    "Warranty claims must be submitted through the dealer portal within 60 days of the repair. Claims older than 60 days are automatically rejected.",
+    "The dealer territory code identifies the region a dealer operates in. Southeast dealers use codes beginning with the prefix ATL.",
+    "Payment terms for parts orders are Net 45. Orders over $50,000 qualify for an extended Net 60 term upon credit approval."
+  ],
+  "qa_pairs": [
+    {
+      "question": "How many days does a dealer have to submit an invoice?",
+      "ground_truth": "A dealer must submit an invoice within 30 days of the vehicle delivery date."
+    },
+    {
+      "question": "What is the penalty for a late invoice submission?",
+      "ground_truth": "Late submissions incur a 2% penalty per month calculated on the invoice total."
+    },
+    {
+      "question": "What is a dealer reserve and when is it released?",
+      "ground_truth": "The dealer reserve is a portion of finance income withheld and paid to the dealer over time, released once the underlying retail contract meets its performance thresholds."
+    },
+    {
+      "question": "What triggers the first curtailment payment on floorplan financing?",
+      "ground_truth": "Vehicles unsold after 90 days trigger the first curtailment payment."
+    },
+    {
+      "question": "What is another name for floorplan financing?",
+      "ground_truth": "Floorplan financing is also called curtailment."
+    },
+    {
+      "question": "How long does a dealer have to submit a warranty claim?",
+      "ground_truth": "Warranty claims must be submitted within 60 days of the repair, or they are automatically rejected."
+    },
+    {
+      "question": "What prefix do Southeast dealer territory codes use?",
+      "ground_truth": "Southeast dealers use territory codes beginning with the prefix ATL."
+    },
+    {
+      "question": "What are the standard payment terms for parts orders?",
+      "ground_truth": "Standard payment terms for parts orders are Net 45."
+    },
+    {
+      "question": "When does a parts order qualify for Net 60 terms?",
+      "ground_truth": "Orders over $50,000 qualify for an extended Net 60 term upon credit approval."
+    },
+    {
+      "question": "What is the capital of France?",
+      "ground_truth": "This information is not available in the provided documents."
+    }
+  ]
+}

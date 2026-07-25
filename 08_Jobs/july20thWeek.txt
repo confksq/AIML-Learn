@@ -1,0 +1,167 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Role: AI Architect
+Location: Atlanta, GA (5 Days Onsite)
+Duration: Long Term
+
+ABOUT SYNERGECH
+
+Synergech Technology Solutions Inc. is an AI-native technology company building enterprise-grade AI platforms and intelligent engineering solutions. We are building an AI-native engineering and technology services model focused on transforming how enterprises build, modernize, and operate software systems, delivering intelligent automation, AI-powered workflows, and platform-level AI capabilities to clients in the insurance and financial services sectors.
+
+Our flagship products, IntelliDoc (AI-powered document intelligence) and Infra0 (GenAI-driven cloud infrastructure provisioning), represent our commitment to building category-defining AI solutions. We are actively transforming into a fully AI-enabled workforce, embedding AI across engineering, delivery, and operations.
+
+ROLE OVERVIEW
+
+We are seeking an experienced Lead Agentic AI Engineer to design, build, and scale agentic AI workflows for enterprise platforms, intelligent processes, and AI-driven client solutions. In this hands-on leadership role, you will architect multi-agent systems, integrate enterprise-grade LLM capabilities across Azure AI Foundry, OpenAI, and Anthropic Claude, and deliver production-ready AI solutions that meet the strict compliance and reliability standards of the insurance and financial services industry.
+
+This is a highly hands-on technical leadership role where you will influence architecture, engineering practices, platform direction, and delivery execution.
+
+KEY RESPONSIBILITIES
+
+Agentic Workflow Design & Development
+
+• Architect and implement multi-agent systems using frameworks such as LangGraph, Semantic Kernel, AutoGen, or CrewAI
+• Design agent orchestration patterns including task decomposition, tool use, context management, memory, and human-in-the-loop (HITL) flows
+• Build reliable agentic pipelines handling document extraction, reasoning, routing, and structured output generation
+• Implement emerging agentic protocols including MCP (Model Context Protocol), Agent-to-Agent (A2A), AG-UI, and CodeAct Code Interpreter patterns
+• Design and evaluate agent skills, manage agent harnesses, and maintain agent capability registries
+• Design AI solutions capable of leveraging multiple LLM ecosystems including Azure OpenAI, OpenAI, Anthropic Claude, and open-source models based on workload characteristics, governance requirements, and cost/performance considerations
+
+Full-Stack AI Application Engineering
+
+• Build full-stack AI-native applications using React with streaming agent interactions, AG-UI components, and HITL design patterns
+• Implement real-time agent communication interfaces with streaming output, MCP elicitation flows, and event-driven notifications
+• Design and expose REST APIs and webhook integrations for agent-to-system and system-to-system interactions
+
+Azure AI Platform Engineering
+
+• Deploy and manage AI workloads on Azure AI Foundry, Azure OpenAI Service, Azure Machine Learning, and AKS
+• Design event-driven and serverless architectures leveraging Azure Functions, Event Grid, Service Bus, and Azure API Management
+• Build scalable, resilient, cost-efficient cloud architectures aligned with Azure Solutions Architecture best practices
+• Implement Infrastructure as Code (IaC) using Terraform; establish pipeline-as-code and policy-as-code practices across CI/CD workflows
+• Containerize AI workloads using Docker and Kubernetes for portable, scalable deployment
+
+LLM Integration & Enterprise Reliability
+
+• Lead prompt engineering, evaluation, and optimization strategies for OpenAI GPT models, Anthropic Claude, and Azure-hosted models
+• Implement RAG architectures using vector databases (Azure AI Search, PostgreSQL pgvector, Cosmos DB) and design extensible, evolvable schema and ontology models
+• Focus on making enterprise AI systems reliable, accurate, controllable, and production-ready, especially when working with LLMs like OpenAI GPT models or Anthropic Claude models
+• Design guardrails, output validation layers, and hallucination mitigation patterns for high-stakes enterprise workflows
+
+Data Architecture - Relational, NoSQL & Graph
+
+• Design and work across relational databases (PostgreSQL, SQL Server), NoSQL stores (Cosmos DB, MongoDB), and graph databases for knowledge graph and ontology-driven AI use cases
+• Model extensible, evolvable schemas and domain ontologies that support AI reasoning, entity resolution, and semantic retrieval
+
+Security & Identity
+
+• Implement enterprise-grade security across AI systems: OAuth 2.0, Azure IAM, role-based and fine-grained access control (FGAC), managed identities, and credentials management
+• Apply Azure security policies, RBAC, and least-privilege principles to AI platform components and agentic workflows
+• Ensure secure handling of credentials, API keys, and secrets using Azure Key Vault and secure secrets management practices
+
+AI-Native Engineering Practices
+
+• Drive AI-assisted software engineering practices across the SDLC using copilots, autonomous coding agents, spec-driven development, and reusable engineering skills
+• Leverage coding agents effectively across all SDLC phases, from requirements and design through development, testing, and deployment
+• Help establish AI fluency standards and engineering productivity patterns across teams
+• Contribute to internal AI accelerators, engineering frameworks, and delivery automation capabilities
+• Enable engineering teams to effectively collaborate with AI systems while maintaining quality, governance, and reliability
+
+Enterprise Governance & Responsible AI
+
+• Implement responsible AI controls including observability, auditability, security, prompt protection, PII handling, and human oversight mechanisms
+• Design enterprise-safe AI systems with governance, compliance, and reliability considerations built in from the ground up
+• Establish patterns for AI system transparency, explainability, and accountability in regulated industry contexts
+
+Technical Leadership & Modern Delivery
+
+• Define AI engineering standards, design patterns, and best practices across the engineering organization
+• Lead architecture reviews, code reviews, and technical roadmap planning for AI platform capabilities
+• Mentor mid-level and junior engineers; foster a culture of AI-native engineering excellence
+• Operate effectively in fast-moving, iterative AI delivery environments where experimentation, rapid prototyping, and production hardening coexist
+• Balance innovation speed with engineering rigor, scalability, and maintainability
+• Communicate complex AI concepts clearly to both engineering and business stakeholders
+• Engage confidently with enterprise clients, architecture teams, and delivery leadership to shape AI solution direction
+
+REQUIRED QUALIFICATIONS
+
+Agentic AI & LLM Engineering
+
+• 7+ years of software engineering experience with 3+ years in AI/ML or LLM-based systems
+• Hands-on experience building production-grade agentic or multi-agent AI workflows
+• Proficiency with GenAI agentic frameworks: LangGraph, Semantic Kernel, AutoGen, CrewAI, or LangChain
+• Working knowledge of agentic protocols: MCP (Model Context Protocol), A2A (Agent-to-Agent), AG-UI, and CodeAct/Code Interpreter patterns
+• Strong experience with context management strategies, agent skill design, agent evaluation, and agent harness construction
+• Proficiency with OpenAI APIs (GPT-4o, function calling, Assistants API) and Anthropic Claude APIs
+• RAG pipeline design: vector databases (Azure AI Search, PostgreSQL pgvector, Cosmos DB), chunking, embedding, and retrieval strategies
+• Ability to pivot across agentic framework approaches and managed agent platforms as the ecosystem evolves
+
+Full-Stack & API Engineering
+
+• Full-stack experience with React; ability to build streaming agent interaction UIs, AG-UI components, and HITL design patterns
+• Strong REST API and webhook design and implementation skills
+• Proficiency in Python (intermediate level) and TypeScript for AI application and backend development
+
+Cloud, Infrastructure & Architecture
+
+• Strong Azure platform experience: Azure AI Foundry, Azure OpenAI, Azure ML, AKS, Azure Functions, API Management, Event Grid, Service Bus
+• Infrastructure as Code using Terraform; pipeline-as-code and policy-as-code practices in CI/CD workflows
+• Proficiency with containers (Docker, Kubernetes) for scalable AI workload deployment
+• Ability to design and implement scalable, resilient, cost-efficient architectures on Azure
+• Event-driven architecture and serverless architecture design and implementation
+• Azure Solutions Architecture understanding across compute, networking, storage, security, and AI tiers
+
+Data & Schema Design
+
+• Experience with relational databases (PostgreSQL, SQL Server), NoSQL (Cosmos DB, MongoDB), and graph databases
+• Ability to design extensible, evolvable schemas and domain ontologies that support AI reasoning and semantic retrieval
+
+Security & Identity
+
+• OAuth 2.0 implementation and Azure IAM/RBAC: permissions, policies, managed identities, and fine-grained access control (FGAC)
+• Secure credentials management using Azure Key Vault and secrets management best practices
+• Security-first mindset for AI systems: prompt protection, PII handling, data boundary enforcement
+
+Engineering Practices
+
+• Demonstrated ability to leverage coding agents and spec-driven development across all SDLC phases
+• Strong GitHub Copilot and AI-assisted development tooling proficiency
+• Experience leading technical teams and influencing engineering practices at an organizational level
+
+NICE TO HAVE
+
+• Experience designing and deploying Engineering Agent Skills that work alongside domain SMEs in human-AI collaborative workflows
+• Wholesale insurance domain understanding: submission processing, broker/carrier workflows, market access, and underwriting operations
+• Hands-on experience transitioning from custom agentic frameworks to managed agent platforms (Azure AI Agent Service, OpenAI Assistants, etc.)
+• Experience with Databricks, MLflow, or Azure Databricks for data and model pipelines
+• Prior work on document intelligence platforms (OCR, extraction, classification, IDP pipelines)
+• Azure certifications (AI-102, DP-100, AZ-305) or relevant cloud AI credentials
+• Contributions to open-source AI frameworks or published technical writing
+• Experience working in startup or high-growth engineering environments
+• Passion for AI-native engineering transformation and modern software delivery practices
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Role: Technical Lead Architect - AI
+Location: Miami, FL
+
+This is Dominic Joseph George from Lorven Technology. Our client is looking for a Technical Lead Architect - AI. Below are the detailed requirements.
+
+JOB DESCRIPTION
+
+• Lead architecture across all AI layers: RAG, MCP connectors (action/data), and agent orchestration
+• Define integration strategy leveraging existing client APIs, minimizing custom development
+• Drive MCP connector design for Appian, ERP, DealCloud, Backstop, Snowflake, and Graph DB
+• Own RAG pipeline decisions including chunking strategy, embedding model selection, Pinecone retrieval, and re-ranking
+• Collaborate with client stakeholders (Business and IT) to validate use cases
+• Guide offshore teams including AI/ML engineers and data engineers
+
+TECHNOLOGY STACK / REQUIREMENTS
+
+• Bachelor's degree in Computer Science or equivalent with 20+ years of relevant experience
+• 8-10+ years of software/AI engineering experience with 1-2+ years in enterprise AI or agentic system design
+• Hands-on experience with RAG using LlamaIndex or LangChain, Pinecone, and Azure OpenAI
+• Strong API integration experience with REST and OAuth
+• MCP/tool-layer design for LLM agents; FastMCP experience is a strong plus
+• Financial services platform experience (DealCloud, Backstop, or similar) is advantageous
+• Excellent problem-solving skills with the ability to analyze issues, identify root causes, and quickly recommend solutions
+• Strong analytical and troubleshooting skills with a proven track record of resolving complex issues
+• Excellent communication and presentation skills with the ability to explain complex technical concepts to both technical and non-technical audiences

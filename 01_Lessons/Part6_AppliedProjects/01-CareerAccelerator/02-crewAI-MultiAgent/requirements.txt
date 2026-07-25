@@ -1,0 +1,7 @@
+# crewAI multi-agent pipeline
+# Backend is either OpenAI (set OPENAI_API_KEY) or local Ollama (free).
+
+crewai>=0.70.0
+# crewai pulls in litellm, which provides the OpenAI/Azure/Ollama model routing.
+# Optional extras (web search tools, etc.):
+# crewai-tools>=0.12.0

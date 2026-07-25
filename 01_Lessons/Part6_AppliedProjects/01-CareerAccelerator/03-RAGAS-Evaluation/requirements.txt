@@ -1,0 +1,9 @@
+# RAGAS evaluation + a small RAG pipeline
+# RAGAS uses an LLM-as-judge: set OPENAI_API_KEY (or configure Azure/Ollama in the script).
+
+ragas>=0.2.0
+datasets>=2.19.0
+faiss-cpu>=1.8.0
+sentence-transformers>=3.0.0
+openai>=1.40.0
+pandas>=2.2.0
