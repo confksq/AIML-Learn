@@ -1,12 +1,12 @@
 # AIML-Learn — Detailed Contents
 
-**Generated:** 2026-07-19 · **2,156 topics across 120 files**
+**Generated:** 2026-07-19 · **2,319 topics across 125 files**
 
 > Every heading in every teaching file, to sub-sub-module depth. Numbers are **line numbers** —
 > open the file and jump straight there (`Ctrl+G` in VS Code).
 > For "where is topic X?" use the alphabetical `00_INDEX.md` instead.
 
-**Jump:** [Part 1](#part-1-foundations) · [Part 2](#part-2-azure-ai-services) · [Part 3](#part-3-genai-llms) · [Part 4](#part-4-architecture-operations) · [Part 5](#part-5-agentic-protocols-patterns) · [Part 6](#part-6-applied-projects) · [Questions & Prep](#questions-prep) · [Supplementary](#supplementary) · [Assessments](#assessments)
+**Jump:** [Part 1](#part-1-foundations) · [Part 2](#part-2-azure-ai-services) · [Part 3](#part-3-genai-llms) · [Part 4](#part-4-architecture-operations) · [Part 5](#part-5-agentic-protocols-patterns) · [Part 6](#part-6-applied-projects) · [Part 7](#part-7-platform-engineering--ai-assisted-delivery) · [Questions & Prep](#questions-prep) · [Supplementary](#supplementary) · [Assessments](#assessments)
 
 ---
 
@@ -1018,44 +1018,45 @@
 ```
 
 ### Module 19 — MLOps and LLMOps
-`01_Lessons/Part4_Architecture/L19_MLOps_LLMOps.md` · 675 lines · 36 topics
+`01_Lessons/Part4_Architecture/L19_MLOps_LLMOps.md` · 757 lines · 37 topics
 
 ```
-    9  ▸ What This Module Covers
-   22  ▸ 19.1 What Is MLOps and LLMOps
-   24    · The Problem Without Ops
-   38    · MLOps vs LLMOps — Side by Side
-   58    · One Line Each
-   71  ▸ 19.2 Model Versioning and Lifecycle Management
-   73    · Traditional ML — Model Lifecycle (Azure ML)
-  102    · LLM — Model Lifecycle (Azure AI Foundry)
-  130    · JM Family Model Registry Example
-  145  ▸ 19.3 CI/CD for AI Pipelines
-  147    · Standard Software CI/CD vs AI CI/CD
-  166    · AI CI/CD Pipeline — Azure DevOps
-  203    · Azure DevOps Pipeline YAML (key stages)
-  262  ▸ 19.4 Monitoring and Observability
-  264    · What to Monitor in AI Systems
-  287    · Observability Code in C#
-  333    · App Insights Dashboard — What to Build
-  365  ▸ 19.5 Drift Detection and Retraining
-  367    · Two Types of Drift
-  395    · Drift Response Playbook
-  421    · Automated Retraining (Traditional ML)
-  446  ▸ 19.6 LLMOps — Prompt Versioning, Evaluation, A/B Testing
-  448    · Prompt Versioning
-  471    · Prompt Version in C#
-  492    · Evaluation Pipeline — Golden Dataset
-  513    · A/B Testing Prompts
-  538    · LLMOps Maturity Levels
-  569  ▸ MLOps vs LLMOps — Final Summary
-  590  ▸ Self-Test Questions
-  606  ▸ 2026 Updates
-  618  ▸ Interactive Learning Ideas
-  620    · Exercise 1 — Golden Dataset Creation (20 min)
-  628    · Exercise 2 — CI/CD Pipeline Design (15 min)
-  641    · Exercise 3 — Drift Detection for LLMs (15 min)
-  649    · Exercise 4 — .prompty File Creation
+     9  ▸ What This Module Covers
+    22  ▸ 19.1 What Is MLOps and LLMOps
+    24    · The Problem Without Ops
+    38    · MLOps vs LLMOps — Side by Side
+    58    · One Line Each
+    71  ▸ 19.2 Model Versioning and Lifecycle Management
+    73    · Traditional ML — Model Lifecycle (Azure ML)
+   102    · LLM — Model Lifecycle (Azure AI Foundry)
+   130    · JM Family Model Registry Example
+   145  ▸ 19.3 CI/CD for AI Pipelines
+   147    · Standard Software CI/CD vs AI CI/CD
+   166    · AI CI/CD Pipeline — Azure DevOps
+   203    · Azure DevOps Pipeline YAML (key stages)
+   260    · The Same Pipeline in GitHub Actions
+   344  ▸ 19.4 Monitoring and Observability
+   346    · What to Monitor in AI Systems
+   369    · Observability Code in C#
+   415    · App Insights Dashboard — What to Build
+   447  ▸ 19.5 Drift Detection and Retraining
+   449    · Two Types of Drift
+   477    · Drift Response Playbook
+   503    · Automated Retraining (Traditional ML)
+   528  ▸ 19.6 LLMOps — Prompt Versioning, Evaluation, A/B Testing
+   530    · Prompt Versioning
+   553    · Prompt Version in C#
+   574    · Evaluation Pipeline — Golden Dataset
+   595    · A/B Testing Prompts
+   620    · LLMOps Maturity Levels
+   651  ▸ MLOps vs LLMOps — Final Summary
+   672  ▸ Self-Test Questions
+   688  ▸ 2026 Updates
+   700  ▸ Interactive Learning Ideas
+   702    · Exercise 1 — Golden Dataset Creation (20 min)
+   710    · Exercise 2 — CI/CD Pipeline Design (15 min)
+   723    · Exercise 3 — Drift Detection for LLMs (15 min)
+   731    · Exercise 4 — .prompty File Creation
 ```
 
 ### Module 20 — Integration Patterns
@@ -1881,46 +1882,244 @@
   172  ▸ Project Structure
 ```
 
+
+## Part 7 — Platform Engineering & AI-Assisted Delivery
+
+> Built 2026-07-26 for **FDE-Prep**. Closes the engineering-hands gaps the
+> AI-102 / architect curriculum deliberately scoped out.
+
+### Module 32 — Advanced Python for AI Engineers
+`01_Lessons/Part7_PlatformEngineering/L32_AdvancedPython_for_AI.md` · 762 lines · 42 topics
+
+```
+    16  ▸ Why This Module Exists
+    41  ▸ Section 1 — Type Hints and Data Classes
+    43    · 1.1 Type hints are documentation the tooling can check
+    72    · 1.2 Data classes replace boilerplate classes
+   122    · 1.3 Immutability
+   137    · ⚠️ The mutable-default trap — a classic interview question
+   158    · 1.4 Pydantic — where you will actually meet this in AI code
+   180  ▸ Section 2 — Iterators and Generators
+   182    · 2.1 The idea
+   206    · 2.2 Why it matters — memory
+   220    · 2.3 Generator expressions
+   239    · 2.4 Streaming LLM output — the AI-specific use
+   256    · 2.5 `yield from`, and the `itertools` you should know
+   271    · ⚠️ Generators are single-use
+   284  ▸ Section 3 — Decorators
+   286    · 3.1 What they are
+   309    · 3.2 Always use `functools.wraps`
+   325    · 3.3 A decorator with arguments — three levels deep
+   362    · 3.4 Decorators you will meet in AI code
+   387  ▸ Section 4 — Context Managers
+   389    · 4.1 `with` is C# `using`
+   401    · 4.2 Writing your own — the class form
+   420    · 4.3 The generator form — shorter, and what you will usually write
+   442  ▸ Section 5 — Exceptions, Properly
+   444    · 5.1 Custom exception hierarchies
+   472    · 5.2 Rules worth internalising
+   491  ▸ Section 6 — Data Structures and Big-O
+   493    · 6.1 The complexity table you must be able to recite
+   506    · 6.2 The single most common interview mistake
+   521    · 6.3 `collections` you should know
+   537    · 6.4 Complexity of things you already do
+   551  ▸ Section 7 — Design Patterns in Python
+   556    · 7.1 Strategy → just pass a function
+   572    · 7.2 Factory → a dict of callables
+   584    · 7.3 Singleton → a module
+   595    · 7.4 Dependency injection → default arguments and Protocols
+   611    · 7.5 Repository, Adapter, Decorator
+   619  ▸ Section 8 — Putting It Together
+   691  ▸ JM Family Anchor
+   704  ▸ Self-Test Questions
+   723  ▸ Quick-Reference Interview Answers
+   758  ▸ Related
+```
+
+### Module 33 — Infrastructure as Code: Terraform for a Bicep Developer
+`01_Lessons/Part7_PlatformEngineering/L33_IaC_Terraform_for_Bicep_Devs.md` · 647 lines · 34 topics
+
+```
+    11  ▸ Why This Module Exists
+    32  ▸ Section 1 — The Delta: Who Owns State
+    34    · 1.1 The picture
+    53    · 1.2 What state ownership forces you to handle
+    63    · 1.3 The remote backend — always configure one
+    92    · 1.4 ⚠️ State contains secrets in plaintext
+   112  ▸ Section 2 — HCL for a Bicep Developer
+   155    · 2.1 Syntax translation table
+   170    · 2.2 `count` vs `for_each` — get this right
+   180    · 2.3 Data sources — read something you did not create
+   198  ▸ Section 3 — The Workflow
+   209    · 3.1 Reading a plan
+   235    · 3.2 In a pipeline
+   252  ▸ Section 4 — Modules and Reuse
+   286  ▸ Section 5 — Multi-Cloud in One File
+   309    · 5.1 GCP — Terraform *is* the native approach
+   324  ▸ Section 6 — AWS CDK: Your Unfair Advantage
+   375  ▸ Section 7 — The Rest of the Landscape
+   377    · 7.1 Pulumi
+   391    · 7.2 Ansible and Puppet — a different layer
+   425    · 7.3 VMware — awareness only
+   434  ▸ Section 8 — Cloud Migration
+   439    · 8.1 The 6 Rs
+   450    · 8.2 Where AI reduces migration effort — the JD's actual claim
+   463    · 8.3 `terraform import` — adopting what already exists
+   482  ▸ Section 9 — Cloud Security and Compliance in IaC
+   484    · 9.1 VPC and PrivateLink (JD row 39)
+   509    · 9.2 Compliance for LLM workloads (JD row 38)
+   523    · 9.3 Policy-as-code — the JD's "guardrails"
+   550  ▸ Section 10 — Testing IaC
+   575  ▸ JM Family Anchor
+   590  ▸ Self-Test Questions
+   610  ▸ Quick-Reference Interview Answers
+   643  ▸ Related
+```
+
+### Module 34 — Kubernetes, Helm and GitOps for AI Platforms
+`01_Lessons/Part7_PlatformEngineering/L34_Kubernetes_Helm_GitOps.md` · 501 lines · 25 topics
+
+```
+    13  ▸ Why This Module Exists
+    32  ▸ Section 1 — Where Helm Fits
+    41    · 1.1 The problem Helm solves
+    56  ▸ Section 2 — Chart Anatomy
+   147    · 2.1 Template syntax you must recognise
+   167  ▸ Section 3 — Release Lifecycle
+   181    · 3.1 A **release** is Helm's stateful concept
+   206  ▸ Section 4 — GitOps and ArgoCD
+   208    · 4.1 Push vs pull — the model change
+   225    · 4.2 An ArgoCD Application
+   251    · 4.3 Why this matters for AI workloads specifically
+   264    · 4.4 App-of-apps
+   269    · 4.5 ArgoCD vs Flux
+   282  ▸ Section 5 — AKS vs EKS vs GKE
+   298    · 5.1 The three you should be able to speak to
+   327  ▸ Section 6 — Service Mesh
+   329    · 6.1 What it is
+   342    · 6.2 The options
+   350    · 6.3 When NOT to use one — say this part
+   362  ▸ Section 7 — OpenShift (Awareness)
+   386  ▸ Section 8 — GitHub Actions (tracker row 26)
+   431  ▸ JM Family Anchor
+   451  ▸ Self-Test Questions
+   470  ▸ Quick-Reference Interview Answers
+   497  ▸ Related
+```
+
+### Module 35 — AI-Assisted Engineering
+`01_Lessons/Part7_PlatformEngineering/L35_AI_Assisted_Engineering.md` · 368 lines · 26 topics
+
+```
+    11  ▸ Why This Module Exists
+    28  ▸ Section 1 — The Tool Landscape
+    40    · 1.1 The mental model that matters
+    56  ▸ Section 2 — Cursor
+    58    · 2.1 Setup (do this tonight)
+    73    · 2.2 Codebase context — `@` symbols
+    91    · 2.3 `.cursorrules` — the highest-leverage file in the repo
+   126    · 2.4 Composer — the multi-file unlock
+   140    · 2.5 Agent mode
+   149  ▸ Section 3 — Prompting for Code
+   160    · 3.1 The four ingredients
+   167    · 3.2 What to never delegate unreviewed
+   182  ▸ Section 4 — Measuring the Gain
+   188    · 4.1 What to measure
+   198    · 4.2 How to measure honestly
+   212  ▸ Section 5 — AI-First Plays for an Infrastructure Engineer
+   226    · 5.1 The vulnerability-remediation pipeline
+   245    · 5.2 N8N — awareness
+   261  ▸ Section 6 — Anthropic Computer-Use (tracker row 12)
+   263    · 6.1 What it is
+   276    · 6.2 Why an infrastructure org cares
+   282    · 6.3 Why you would usually *not* use it
+   299  ▸ Section 7 — Making It Real Tonight
+   320  ▸ Self-Test Questions
+   335  ▸ Quick-Reference Interview Answers
+   364  ▸ Related
+```
+
+### Module 36 — LLM Observability, Tracing and FinOps
+`01_Lessons/Part7_PlatformEngineering/L36_LLM_Observability_FinOps.md` · 528 lines · 34 topics
+
+```
+    13  ▸ Why This Module Exists
+    31  ▸ Section 1 — Why LLM Observability Is Different
+    58  ▸ Section 2 — OpenTelemetry for Agents
+    60    · 2.1 The vocabulary
+    74    · 2.2 What an agent trace should look like
+    92    · 2.3 GenAI semantic conventions
+   106    · 2.4 Instrumenting — Python
+   135    · 2.5 Instrumenting — C# / Semantic Kernel
+   149    · 2.6 Context propagation across agents
+   170  ▸ Section 3 — LLM-Native Tracing Platforms
+   183    · 3.1 LangSmith
+   199    · 3.2 Langfuse — the one to pick under compliance
+   207    · 3.3 Arize Phoenix — RAG and drift
+   213    · 3.4 What to log — and the trap
+   229  ▸ Section 4 — LiteLLM: Model Routing
+   231    · 4.1 What it is
+   243    · 4.2 Config
+   273    · 4.3 Why an architect wants it
+   287    · 4.4 The honest trade-off
+   295  ▸ Section 5 — Semantic Caching
+   324  ▸ Section 6 — FinOps for LLM
+   326    · 6.1 The cost model
+   338    · 6.2 The levers, in order of return
+   358    · 6.3 Showback and chargeback
+   371    · 6.4 Guardrails that prevent the 3 a.m. incident
+   395  ▸ Section 7 — Dashboards: Prometheus, Grafana, Dynatrace
+   397    · 7.1 The stack
+   409    · 7.2 Grafana vs Dynatrace
+   423    · 7.3 The dashboard to build
+   439    · 7.4 What to alert on
+   456  ▸ JM Family Anchor
+   468  ▸ Self-Test Questions
+   488  ▸ Quick-Reference Interview Answers
+   522  ▸ Related
+```
+
 ## Questions & Prep
 
 
 ### High-Level Prep — Memory · Tokenization Efficiency · Scaling · Agents
-`02_Questions/HighLevelPrep/HLP01_Memory_Tokens_Scaling_Agents.md` · 291 lines · 34 topics
+`02_Questions/HighLevelPrep/HLP01_Memory_Tokens_Scaling_Agents.md` · 361 lines · 35 topics
 
 ```
-   13  1. Memory
-   17  ▸ The 30-second answer
-   25  ▸ The single most important distinction
-   33  ▸ Four layers
-   46  ▸ Five strategies — with the trade-off that matters
-   59  ▸ What to evict when the window fills
-   67  ▸ Failure modes to name
-   80  ▸ Multi-agent memory
-   91  ▸ Your JMA hook
-  100  2. Tokenization Efficiency
-  102  ▸ The 30-second answer
-  108  ▸ The budget formula
-  116  ▸ The levers, ranked by actual impact
-  131  ▸ Tokenizer facts worth knowing
-  138  ▸ The trap question
-  147  3. Scaling AI
-  149  ▸ The 30-second answer
-  157  ▸ Four dimensions
-  166  ▸ The quota point
-  173  ▸ Caching — three distinct kinds
-  183  ▸ Streaming
-  189  ▸ Degradation ladder
-  196  4. AI Agents
-  198  ▸ The 30-second answer
-  204  ▸ The distinction they're testing
-  215  ▸ ReAct
-  219  ▸ When NOT to use an agent
-  229  ▸ Framework landscape
-  244  ▸ Multi-agent patterns
-  253  ▸ Guardrails — name these
-  261  ▸ Production concerns
-  268  Rapid self-check
-  285  ▸ Cross-references
+    13  1. Memory
+    17  ▸ The 30-second answer
+    25  ▸ The single most important distinction
+    33  ▸ Four layers
+    46  ▸ Five strategies — with the trade-off that matters
+    59  ▸ What to evict when the window fills
+    67  ▸ Failure modes to name
+    80  ▸ Multi-agent memory
+    91  ▸ Your JMA hook
+   100  ▸ Episodic memory — the fourth type they'll ask about
+   170  2. Tokenization Efficiency
+   172  ▸ The 30-second answer
+   178  ▸ The budget formula
+   186  ▸ The levers, ranked by actual impact
+   201  ▸ Tokenizer facts worth knowing
+   208  ▸ The trap question
+   217  3. Scaling AI
+   219  ▸ The 30-second answer
+   227  ▸ Four dimensions
+   236  ▸ The quota point
+   243  ▸ Caching — three distinct kinds
+   253  ▸ Streaming
+   259  ▸ Degradation ladder
+   266  4. AI Agents
+   268  ▸ The 30-second answer
+   274  ▸ The distinction they're testing
+   285  ▸ ReAct
+   289  ▸ When NOT to use an agent
+   299  ▸ Framework landscape
+   314  ▸ Multi-agent patterns
+   323  ▸ Guardrails — name these
+   331  ▸ Production concerns
+   338  Rapid self-check
+   355  ▸ Cross-references
 ```
 
 ### Module 1 — GenAI/LLM Fundamentals
@@ -2785,4 +2984,4 @@
 
 ---
 
-**Total: 2150 topics indexed.**
+**Total: 2313 topics indexed.**

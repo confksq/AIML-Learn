@@ -1,6 +1,6 @@
 # AIML-Learn — Quick Map
 
-**34 lessons · 6 Parts.** One line per module. For detail use `00_CONTENTS.md`; to find a topic use `00_INDEX.md`.
+**39 lessons · 7 Parts.** One line per module. For detail use `00_CONTENTS.md`; to find a topic use `00_INDEX.md`.
 
 ---
 
@@ -89,6 +89,21 @@
 | `02-DealerIntelligence-Platform/` | L16 · L18 · Part 5 | C# 9-layer agentic platform + real JMA production flow doc |
 | `05-VitalCare-AI-Platform/` | L16 · L18 · Part 5 | Same architecture, healthcare prior-auth domain |
 
+
+## Part 7 — Platform Engineering & AI-Assisted Delivery
+
+*Built 2026-07-26 for **FDE-Prep**. Closes the engineering-hands gaps the AI-102 / architect
+curriculum deliberately scoped out. Each module leads from something you already have.*
+
+| # | Module | Lines | Topics |
+|---|---|---:|---:|
+| 32 | **Advanced Python for AI Engineers**<br>`L32_AdvancedPython_for_AI.md` — *supersedes L21 for writing-level Python* | 762 | 39 |
+| 33 | **IaC: Terraform for a Bicep Developer**<br>`L33_IaC_Terraform_for_Bicep_Devs.md` | 647 | 34 |
+| 34 | **Kubernetes, Helm and GitOps**<br>`L34_Kubernetes_Helm_GitOps.md` | 501 | 27 |
+| 35 | **AI-Assisted Engineering** (Cursor · Copilot · computer-use)<br>`L35_AI_Assisted_Engineering.md` | 368 | 27 |
+| 36 | **LLM Observability, Tracing and FinOps**<br>`L36_LLM_Observability_FinOps.md` | 528 | 34 |
+
+
 ---
 
 ## Also worth knowing
@@ -100,3 +115,5 @@
 | `02_Questions/PerChapter/` | Self-test per lesson — **L06–L21 only, none for L01–L05** |
 | `06_Supplementary/PythonTrack/` | Framework-free Python: raw agent loop, FAISS, PEFT |
 | `08_Jobs/AscndIntr/PrepPlan/` | Mock interview + defend-assessment |
+| `08_Jobs/FDE/FDE-Prep_Tracker.md` | **FDE-Prep** — 60 JD rows, coverage status, learning order |
+| `08_Jobs/FDE/IaC_Glossary_Azure_AWS_GCP.md` | IaC terminology across Azure · AWS · GCP · Terraform |

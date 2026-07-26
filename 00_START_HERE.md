@@ -1,8 +1,8 @@
 # AIML-Learn — Start Here
 
-**Last reorganized:** 2026-07-19
-**Status:** Curriculum complete (L01–L31, 6 Parts incl. applied projects) · AI-102 ✅ passed · Career Accelerator ✅ complete
-**Current phase:** Job search + closing agentic-protocol gaps
+**Last reorganized:** 2026-07-19 · **Part 7 added:** 2026-07-26
+**Status:** Curriculum complete (L01–L36, 7 Parts incl. applied projects) · AI-102 ✅ passed · Career Accelerator ✅ complete
+**Current phase:** Job search — **FDE-Prep** (see `08_Jobs/FDE/FDE-Prep_Tracker.md`)
 
 > This file is the single source of truth for what is current. If another file disagrees with this one, this one wins.
 
@@ -25,13 +25,13 @@ in the library — that mistake has been made repeatedly.
 
 | Folder | What's in it | Use it when |
 |---|---|---|
-| `01_Lessons/` | 34 lesson files in 5 Parts, **plus Part 6 applied projects** | Learning, revising, or showing work |
+| `01_Lessons/` | 39 lesson files in 6 Parts, **plus Part 6 applied projects** | Learning, revising, or showing work |
 | `02_Questions/` | 6 interview-bank files + 19 per-chapter Q&A files | Testing yourself / interview prep |
 | `04_Career/` | Roadmaps, PRDs, resume, job-demand analysis, JD tools | Applying / positioning |
 | `05_Assessments/` | VitalCare enterprise architecture assessment (completed) | Reference architecture, portfolio |
 | `06_Supplementary/` | Non-Azure Python track, hands-on workouts, curriculum source | Filling gaps the lessons don't cover |
 | `07_ChatHistory/` | All session transcripts, consolidated from 4 former locations | Recovering past explanations |
-| `08_Jobs/` | Active job postings + Ascendion interview prep | Job search |
+| `08_Jobs/` | Active job postings · Ascendion prep · **`FDE/` — FDE-Prep tracker + IaC glossary** | Job search |
 | `_Archive/` | Superseded material — **kept, not deleted** | Only if something's missing |
 
 ---
@@ -103,6 +103,20 @@ opinionated than Parts 1–4, with healthcare-domain examples throughout (concep
 | 30 | `L30_OCR_Pipelines.md` | L08 | Document Intelligence vs John Snow Labs |
 | 31 | `L31_FaultTolerance_Observability.md` | L27 | Circuit breakers, self-healing, tracing |
 
+### Part 7 — Platform Engineering & AI-Assisted Delivery (`01_Lessons/Part7_PlatformEngineering/`)
+
+Built 2026-07-26 for **FDE-Prep**. Closes the *engineering-hands* gaps this curriculum deliberately
+scoped out — it targeted AI-900/AI-102, C#-first, Azure-managed-services-first. Each module leads
+from something you already have rather than from zero.
+
+| # | File | Depends on | Note |
+|---|---|---|---|
+| 32 | `L32_AdvancedPython_for_AI.md` | L21 | **Supersedes L21 for writing-level Python** — decorators, generators, dataclasses, Big-O, patterns |
+| 33 | `L33_IaC_Terraform_for_Bicep_Devs.md` | Bicep knowledge | Leads with **state ownership**, not HCL syntax. Also Pulumi, CDK-in-C#, Ansible, VPC/PrivateLink, FedRAMP, Checkov |
+| 34 | `L34_Kubernetes_Helm_GitOps.md` | L33 | Helm, ArgoCD, EKS/GKE, service mesh, OpenShift. Assumes your AKS familiarity |
+| 35 | `L35_AI_Assisted_Engineering.md` | L15 | Cursor, Copilot as practice, computer-use, N8N. **Mostly doing, not reading** |
+| 36 | `L36_LLM_Observability_FinOps.md` | L31, L19 | OTel, LangSmith, Langfuse, Arize, LiteLLM, Grafana, FinOps |
+
 ### Part 6 — Applied Projects (`01_Lessons/Part6_AppliedProjects/`)
 
 Moved here 2026-07-19 from the former top-level `03_Portfolio/`. **Not sequenced** — take these
@@ -133,11 +147,14 @@ Verified absent. These matter because current job descriptions ask for them:
 |---|---|
 | **AG-UI · CodeAct** | nowhere — smallest surface, cheapest to close |
 | **React streaming agent UI · TypeScript** | nowhere — largest gap |
-| **Terraform / IaC · Helm / KEDA** | nowhere |
+| ~~Terraform / IaC · Helm~~ | ✅ **closed 2026-07-26 — `L33`, `L34`** |
+| **KEDA** | nowhere — `L34` covers HPA only |
 | **AI Security & Governance** | L18 partially — no dedicated module |
-| **Anthropic Claude API** | Constitutional AI in L11_4; the API itself absent |
-| **PyTorch / ML math / classical ML** | `06_Supplementary/PythonTrack/` |
+| **Anthropic Claude API** | Constitutional AI in L11_4; MCP in L26; Claude-via-Bedrock in P6/06. **The direct API is still absent** |
+| **PyTorch / TensorFlow / ML math / classical ML** | ⚠️ **nowhere.** This row previously pointed at `06_Supplementary/PythonTrack/` — that was wrong. `AIMLcurriculum.md` and `-gaps.md` are **syllabi, not lessons**; PythonTrack's actual teaching files are all GenAI |
+| **XGBoost · LightGBM · scikit-learn · MLflow** | ○ name-drops only — `L06` AutoML leaderboard output, `L21` notebook-reading snippet |
 | **pgvector / Pinecone** | `L09` + `L13` decision tables only |
+| **AWS hands-on** | `P6/06-Bedrock` + `VitalCare` are architecture-level. ⚠️ **An experience gap no lesson closes** |
 
 > ✅ **Corrected 2026-07-19:** this table previously listed LangGraph and AutoGen as absent. They
 > aren't — LangGraph is taught with working code in `L25`, and AutoGen appears in the crewAI
@@ -244,7 +261,7 @@ ever a subtopic inside L16.
 | `PythonTrack/1.5-AIAgents.md` | Agent loop + ReAct from scratch, no framework |
 | `PythonTrack/1.4-FineTuning.md` | GPT-2 + HuggingFace PEFT locally (L14 is Azure JSONL) |
 | `PythonTrack/Part1-AI-LLMs.md` | FAISS + raw Python RAG (L13 is Azure AI Search) |
-| `PythonTrack/AIMLcurriculum.md` + `-gaps.md` | Vendor-neutral ML-engineer track |
+| `PythonTrack/AIMLcurriculum.md` + `-gaps.md` | ⚠️ **Syllabi, not lessons** — 668 lines of topic bullets (decorators, PyTorch, MLflow, ONNX, vLLM). Useful as a **self-audit checklist**; they teach nothing |
 | `AI_Curriculum_Workouts.txt` | ~45 hands-on C#/.NET exercises — the only exercise catalog |
 | `CurriculumSource/…SubTopic_FnlVer.txt` | Deepest subtopic + minute-level decomposition |
 | `CurriculumSource/…v2_Updated.txt` | The 23-module plan; only record of the two modules never built |

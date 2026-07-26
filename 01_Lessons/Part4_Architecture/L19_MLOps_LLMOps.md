@@ -257,6 +257,88 @@ stages:
                 - script: dotnet publish && az functionapp deployment...
 ```
 
+### The Same Pipeline in GitHub Actions
+
+*Added 2026-07-26 · FDE-Prep. Many AI job descriptions name GitHub Actions rather than Azure DevOps.
+The concepts are identical — only the keywords change.*
+
+| Azure DevOps | GitHub Actions |
+|---|---|
+| `trigger:` | `on:` |
+| `pool: vmImage:` | `runs-on:` |
+| `stages:` → `jobs:` → `steps:` | `jobs:` → `steps:` (jobs need `needs:` to order) |
+| `task: AzureCLI@2` | `uses: azure/login@v2` then `run:` |
+| `script:` | `run:` |
+| Variable groups / Library | Secrets and Variables |
+| `environment: production` + approvals | `environment: production` + protection rules |
+| Service connection | **OIDC federated credential** |
+
+```yaml
+# .github/workflows/ai-pipeline.yml — same 3 stages as above
+name: ai-pipeline
+on:
+  push:
+    branches: [main]
+
+permissions:
+  id-token: write        # required for OIDC — no long-lived cloud secret stored
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: dotnet build
+      - run: dotnet test
+
+  evaluate:
+    needs: build                       # ← the equivalent of dependsOn
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          client-id:       ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - name: Run evaluation flow
+        run: |
+          az ml flow run create --file evaluation-flow.yaml \
+            --resource-group jmf-ai-rg --workspace-name jmf-ai-foundry
+      - name: Quality gate
+        run: |
+          score=$(jq -r '.groundedness' evaluation-results.json)
+          awk "BEGIN {exit !($score < 0.85)}" && {
+            echo "::error::QUALITY GATE FAILED: groundedness=$score"; exit 1; }
+          echo "Quality gate passed: $score"
+
+  deploy:
+    needs: evaluate
+    runs-on: ubuntu-latest
+    environment: production            # ← manual approval via protection rules
+    steps:
+      - uses: actions/checkout@v4
+      - uses: azure/login@v2
+        with:
+          client-id:       ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id:       ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+      - run: dotnet publish -c Release -o ./out
+      - run: az functionapp deployment source config-zip -g jmf-ai-rg -n jmf-ai-fn --src out.zip
+```
+
+**Two differences worth knowing:**
+
+1. **`needs:` replaces `dependsOn:`** — GitHub Actions has no `stages` layer, so ordering is
+   expressed job-to-job. A job with no `needs:` runs immediately and in parallel.
+2. **OIDC federated credentials replace service connections.** `permissions: id-token: write` lets
+   the workflow exchange a short-lived GitHub token for a cloud token. No client secret is stored
+   anywhere — the modern pattern, and worth naming in an interview.
+
+The quality gate is the part that matters either way: **a pipeline that deploys an AI system without
+failing on a groundedness threshold is a CI/CD pipeline, not an LLMOps pipeline.**
+
 ---
 
 ## 19.4 Monitoring and Observability

@@ -97,6 +97,76 @@ memory is a *cost*, not a virtue. The upgrade path: session memory for multi-tur
 
 ---
 
+## Episodic memory — the fourth type they'll ask about
+
+*Added 2026-07-26 · FDE-Prep. The JD wording is "Memory systems — short-term, long-term vector, episodic."*
+
+**The 20-second answer:** episodic memory is what the agent remembers about **specific past
+interactions as events** — what happened, when, with whom, and how it turned out — as opposed to
+facts or documents.
+
+### The four kinds, distinguished
+
+| Kind | Stores | Question it answers | Where it lives |
+|---|---|---|---|
+| **Short-term / working** | this conversation's turns | "what did we just say?" | context window |
+| **Semantic** | facts, documents, policy | "what is the cancellation rule?" | vector store (RAG) |
+| **Episodic** | **past episodes as events** | **"what happened last time I handled this dealer?"** | event store + vector index over summaries |
+| **Procedural** | learned how-to / skills | "what's my proven sequence for this task?" | prompts, tools, `L32`-style Skills |
+
+The split people miss: **semantic memory is knowledge, episodic memory is experience.** RAG gives
+you the former. Most "agent memory" products are really doing the latter.
+
+### What an episode record looks like
+
+```json
+{
+  "episode_id": "ep-88213-2026-07-14",
+  "actor":      "CancellationAgent",
+  "subject":    "dealer:4471",
+  "when":       "2026-07-14T09:12:00Z",
+  "task":       "VSC cancellation, trade-in",
+  "steps":      ["lookup_contract", "check_open_claims", "escalate_human"],
+  "outcome":    "held — open claim CLM-4471",
+  "summary":    "Trade-in cancellation blocked by a pending claim; adjuster resolved in 3 days.",
+  "embedding":  [...]
+}
+```
+
+Retrieval is **hybrid**: filter structurally (`subject = dealer:4471`, last 90 days), then rank the
+survivors by embedding similarity to the current task. Pure vector search over episodes retrieves
+things that merely *sound* similar; the structural filter is what makes it useful.
+
+### Why it matters
+
+| Without episodic | With |
+|---|---|
+| Agent re-derives the same conclusion every time | Recalls "this dealer's trade-ins usually have open claims — check first" |
+| No learning from failure | "Last time I escalated too early; the claim auto-resolved" |
+| Cannot answer "have we seen this before?" | Can |
+| Every run costs full reasoning | Precedent shortens the loop |
+
+### The three failure modes to name
+
+1. **Unbounded growth.** Episodes accumulate forever. Summarise old ones, keep raw for N days,
+   then compress. Same eviction discipline as the context window.
+2. **Poisoned precedent.** One wrong episode retrieved repeatedly becomes an entrenched wrong
+   habit — memory poisoning with a longer half-life, because it looks like experience.
+3. **Privacy.** Episodes are, by construction, a behavioural record of real people and accounts.
+   Under HIPAA/GDPR they are personal data with retention and deletion obligations, and cross-tenant
+   leakage here is worse than in semantic memory because it is specific.
+
+### The one-liner for interview
+
+> "Short-term memory is the conversation, semantic memory is knowledge in a vector store, and
+> episodic memory is *experience* — what happened, when, and how it turned out. I'd store episodes
+> as structured events with an embedded summary, and retrieve them with a structural filter first
+> and similarity second, so I get relevant precedent rather than things that merely read similarly.
+> The two things I'd design for up front are compaction, because episodes grow without bound, and
+> retention, because an episode log is a behavioural record of real customers."
+
+---
+
 # 2. Tokenization Efficiency
 
 ## The 30-second answer

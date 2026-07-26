@@ -1,10 +1,15 @@
 # Chat History Index
 
-All session transcripts, consolidated 2026-07-18 from four former locations
+**Last updated:** 2026-07-26 · **40 files, ~3.6 MB**
+
+All session transcripts. Consolidated 2026-07-18 from four former locations
 (`PartsModules/ChatHist/`, `NewLearn/ChatHist/`, `AIFoundry/`, and one misfiled in `PartsModules/` root).
 
-**Total:** 31 files, ~3.0 MB. These are raw transcripts — the distilled content lives in `01_Lessons/`.
+These are raw transcripts — the distilled content lives in `01_Lessons/`.
 Search here only when you need the *reasoning* behind a lesson, not the lesson itself.
+
+> ⚠️ This index was stale from 2026-07-19 to 2026-07-26 — it stopped at the library-reorg session
+> and was missing eight transcripts.
 
 ---
 
@@ -12,7 +17,15 @@ Search here only when you need the *reasoning* behind a lesson, not the lesson i
 
 | Date | File | Topic |
 |---|---|---|
-| 2026-07-19 | `Session_ChatHistory_2026-07-19_LibraryReorg_Index_JD_AI103.md` | Library reorg (6 Parts), Part 5/6 promotion, JD + AI-103 gap analysis, index generation |
+| 2026-07-26 | `Session_ChatHistory_2026-07-26_FDE-Prep_Part7-Build.md` | **FDE-Prep** — AI agent vs agentic AI · two JD coverage analyses · IaC terminology across Azure/AWS/GCP · **built Part 7 (`L32`–`L36`)**, `Part6/03` vuln write-up, `QA_L32`–`QA_L36`, full index regeneration, 3 stale-index fixes. 85 messages |
+| 2026-07-25 | `Session_ChatHistory_2026-07-25_TokenEmbedding-AKS-SKhosting-recall.md` | AI Infrastructure Engineer role · GPU cluster on AKS · node/pod/namespace diagram · token/embedding recall · where to host Semantic Kernel *(superset of `_3`)* |
+| 2026-07-25 | `Session_ChatHistory_2026-07-25_3.md` | Same session, earlier export — GitHub account setup, chat-history recall |
+| 2026-07-25 | `Session_ChatHistory_2026-07-25_2.md` | **CallMiner pipeline** — AKS↔CallMiner connectivity after firewall rule, DSX scan client, language split |
+| 2026-07-25 | `Session_ChatHistory_2026-07-25.md` | Short — ClaimsAutomation chat-history location |
+| 2026-07-23 | `Session_ChatHistory_2026-07-23_Agentic-architecture-fundamentals-part-2.md` | **Part 5 Q&A part 2** — when C# vs one LLM call vs an agent loop · ReAct mechanics · vector DB internals (chunk vs vector vs metadata) · SK vs LangChain · scaling agents · Skills. **Ends on 3 unanswered check questions** |
+| 2026-07-22 | `Session_ChatHistory_2026-07-22.md` | CallMiner — SETF delivery intent, 66-column mapping, Postgres enrichment, vendor reply processing |
+| 2026-07-19 | `Session_ChatHistory_2026-07-19_Agentic-architecture-fundamentals.md` | **Part 5 Q&A part 1** — agent triggers, input/output shape, the JM Family cancellation example, agent-loop model |
+| 2026-07-19 | `Session_ChatHistory_2026-07-19_LibraryReorg_Index_JD_AI103.md` | Library reorg into 6 Parts · index generation · Synergech/Lorven JD coverage · AI-103 gap-to-certification plan |
 | 2026-07-10 | `Session_ChatHistory_2026-07-10.md` | Save-chat tooling *(was misfiled among lesson files)* |
 | 2026-07-08 | `Session_ChatHistory_2026-07-08_CareerAccelerator_Portfolio.md` | CareerAccelerator build, portfolio |
 | 2026-06-30 | `Session_ChatHistory_2026-06-30_3.md` | Lesson library build |
@@ -55,10 +68,35 @@ Search here only when you need the *reasoning* behind a lesson, not the lesson i
 
 ---
 
+## Two tracks run through these files
+
+Not all of these are AI learning. Know which you are opening:
+
+| Track | Sessions | Note |
+|---|---|---|
+| **AI learning** | 06-03 → 07-19 agentic, plus 07-25 token/embedding recall | The curriculum thread |
+| **CallMiner audio pipeline** | 07-22, 07-23, 07-25_2 | ⚠️ Contains **JMFE Internal/Confidential** infrastructure detail — AKS subnets, Key Vault names, service accounts, internal hostnames. Fine to work with locally; never paste anywhere external-facing |
+
+---
+
+## Open threads
+
+**Three unanswered check questions** from `2026-07-23_Agentic-architecture-fundamentals-part-2.md`:
+
+1. Vector search weakness — *"customer wants to cancel"* vs *"customer does NOT want to cancel"*
+   produce near-identical vectors. Why is that a problem?
+2. Scaling — you add 20 replicas in prod and it gets *worse*. What happened?
+3. Skills — is the cancellation agent's refund calculation a good candidate to package as a Skill?
+
+Plus, from 2026-07-26: the supervisor-agent pattern question (answer is in `L28`).
+
+---
+
 ## Saving new sessions
 
 New AIML chat histories go **in this folder**. The `/share` skill's script hardcodes its save
-directory to the old `PartsModules/` path — override `save_dir` to `07_ChatHistory/` before running it,
-or you'll get another loose transcript sitting among the lesson files.
+directory to the old `PartsModules/` path — override `save_dir` to `07_ChatHistory/` before running
+it, or you get another loose transcript sitting among the lesson files.
 
-Naming: `Session_ChatHistory_YYYY-MM-DD_Topic.md`
+**Naming:** `Session_ChatHistory_YYYY-MM-DD_Topic.md`
+FDE-Prep sessions: `Session_ChatHistory_YYYY-MM-DD_FDE-Prep.md`

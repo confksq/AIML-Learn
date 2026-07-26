@@ -1,6 +1,6 @@
 # AIML-Learn — Concept Index
 
-**Generated:** 2026-07-19 · **1021 concepts · 1145 locations**
+**Generated:** 2026-07-19 · **Updated:** 2026-07-26 (Part 7) · **1,145 concepts · 1,272 locations**
 
 Alphabetical. Look up a term, see how deeply it is covered and exactly where.
 
@@ -19,7 +19,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ## A
 
 **A/B testing prompts** — Split traffic between prompt versions  
-● L19:513
+● L19:595
 
 **A2A message bus** — Typed envelope routing between agents  
 ● P6/02-Dealer/WORKFLOW:206
@@ -59,6 +59,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **ActivityHandler** — Base bot class overriding activity handlers  
 ● L10:86
+
+**ActivitySource** — System.Diagnostics is OpenTelemetry in .NET  
+◐ L36:135
 
 **Adaptive Cards** — JSON-defined rich cards for Teams  
 ● L10:237
@@ -162,6 +165,18 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **AI Search replicas** — Scale query throughput and HA  
 ◐ L18:136
 
+**AI-assisted coding practice** — Completion, chat, multi-file edit, agent  
+● L35:28
+
+**AI-assisted migration** — Generate IaC, verify with plan  
+● L33:450
+
+**AI-first infrastructure plays** — Config reading, template translation, triage  
+● L35:212
+
+**AKS vs EKS vs GKE** — Identity, autoscaling, registry differences  
+● L34:282
+
 **Aliases (index)** — Pointer enabling zero-downtime reindex  
 ◐ L09:626
 
@@ -180,6 +195,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Anomaly Detector** — Telemetry anomaly detection service  
 ○ L20:418
 
+**Ansible** — Agentless YAML config management over SSH  
+● L33:391
+
 **Answer Relevance** — Does answer address question  
 ○ L13:1203
 
@@ -188,6 +206,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Answers (semantic)** — Direct answer extracted from top result  
 ◐ L09:437
+
+**Anthropic computer-use** — Agent loop with GUI primitives instead of API tools  
+● L35:261
 
 **AP (Average Precision)** — Combined precision/recall metric per tag  
 ◐ L04:225
@@ -202,10 +223,25 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L20:199
 
 **App Insights AI dashboard** — Panels for tokens, latency, quality  
-● L19:333
+● L19:415
+
+**App-of-apps** — Root Application bootstrapping an environment  
+◐ L34:264
 
 **Approximate nearest neighbor (ANN)** — Fast approximate vector retrieval  
 ◐ L09:391
+
+**ArgoCD Application** — CRD binding a Git path to a cluster namespace  
+● L34:225
+
+**ArgoCD vs Flux** — UI and AppProjects versus CLI-first composability  
+◐ L34:269
+
+**Arize Phoenix** — Embedding drift and RAG retrieval analysis  
+● L36:207
+
+**ARO and ROSA** — Managed OpenShift on Azure and AWS  
+○ L34:362
 
 **AssistantAgent** — AutoGen LLM reasoning agent  
 ◐ L25:190
@@ -293,6 +329,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **AutoTokenizer** — Loads model-matched tokenizer  
 ● P6/04-HuggingFace/01_concepts:63
+
+**AWS CDK** — Infrastructure in real code, synthesizes CloudFormation  
+● L33:324
 
 **Azure AI Agent Service** — Hosted serverless agent runtime  
 ○ L16:2032
@@ -456,6 +495,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Bicep** — Declarative Azure resource IaC  
 ● L02:216
 
+**Bicep to Terraform mapping** — param, var, output, module, loops, conditionals  
+● L33:155
+
+**Big-O complexity table** — list vs dict vs set vs deque operations  
+● L32:493
+
 **Binarization** — Convert scan to pure black-and-white  
 ● L30:64
 
@@ -464,6 +509,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **BitsAndBytesConfig** — Enables 4-bit NF4 base loading  
 ◐ P6/08-LoRA/01_concepts:74
+
+**Blast radius (state splitting)** — Split state by lifecycle and risk  
+● L33:252
 
 **Blob trigger** — Azure Function event on PDF upload  
 ◐ P6/02-Dealer/JMA-Complete-Flow:140
@@ -537,6 +585,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Causal masking** — Hiding future tokens during training  
 ◐ PyTrack/Part1:63
 
+**CDK in C#** — Type-safe infrastructure with xUnit tests  
+● L33:324
+
 **Chain of Thought (CoT)** — Step-by-step reasoning before answer  
 ● L15:182
 
@@ -564,8 +615,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **ChatHistoryTruncationReducer** — SK sliding-window history reducer  
 ◐ L16:1197
 
+**Checkov** — Policy scanner for Terraform, CFN, Bicep, K8s  
+● L33:523
+
 **Checkpointer** — LangGraph state persistence, resume after crash  
 ● L25:82
+
+**checksum/config annotation** — Forces a rollout when a ConfigMap changes  
+● L34:147
 
 **Chroma** — Local open-source vector store  
 ○ L13:534
@@ -627,6 +684,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Cluster analysis** — Grouping similar unlabeled records  
 ◐ L01:211
 
+**Codebase context symbols** — @file, @folder, @codebase, @git, @docs  
+◐ L35:73
+
 **cog-jma-dev-frm-recognizer** — JMA dev Document Intelligence resource  
 ◐ L08:767
 
@@ -638,6 +698,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Cold-start retrieval problem** — Sparse index yields ungrounded confident answers  
 ◐ VitalCare:1281
+
+**collections module** — defaultdict, Counter, deque  
+● L32:521
 
 **Community detection** — Clustering related graph entities  
 ◐ P6/07-GraphRAG/01_concepts:73
@@ -658,7 +721,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ L06:88
 
 **Concept drift** — Correct answer changes, data stale  
-● L19:378
+● L19:460
 
 **Conditional edge** — Graph branch based on state value  
 ◐ L25:99
@@ -674,6 +737,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Confidence score thresholds** — 0.90/0.70 reliability bands  
 ● L08:225
+
+**Config-as-code vs IaC** — Configures the box versus creates the box  
+● L33:391
 
 **Connected Agents** — Agent calls another as sub-agent  
 ◐ L17:803
@@ -705,6 +771,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Content Understanding** — Document Intelligence inside AI Foundry  
 ◐ L08:803 · ○ L17:804
 
+**Context managers** — with statement, C# using, __enter__/__exit__  
+● L32:387
+
 **Context Precision** — Fraction of chunks actually used  
 ○ L13:1204
 
@@ -734,6 +803,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Context window vs memory** — Working set vs retention strategy  
 ● HLP01:27
+
+**contextmanager decorator** — Generator form of a context manager  
+● L32:420
 
 **Contextual embeddings** — Vector varies with surrounding context  
 ◐ L11_2:290
@@ -789,6 +861,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Cost routing / model routing** — Route simple queries to cheap model  
 ● L12:983
 
+**count vs for_each** — for_each gives stable keys — prefer it  
+● L33:170
+
 **crewAI Agent** — Role, goal, backstory LLM worker  
 ● P6/02-crewAI/01_concepts:25
 
@@ -815,6 +890,21 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Cross-session contamination** — Patient A PHI leaking to patient B  
 ◐ L24:355
+
+**Cursor** — VS Code fork built around AI-assisted editing  
+● L35:56
+
+**Cursor agent mode** — Runs commands and iterates — branch only  
+◐ L35:140
+
+**Cursor Composer** — Multi-file AI edit — where the productivity gain is  
+● L35:126
+
+**cursorrules file** — Repo-root conventions prepended to every AI request  
+● L35:91
+
+**Custom exception hierarchy** — Catch at the altitude you care about  
+● L32:444
 
 **Custom Model training (DI)** — Label, train, evaluate, deploy workflow  
 ● L08:278
@@ -852,11 +942,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **DALL-E 3** — Text-to-image generation model  
 ○ L12:61
 
+**Data classes** — @dataclass generates init, repr, eq — C# record  
+● L32:72
+
 **Data classification** — Public/Internal/Confidential/Restricted tiers  
 ◐ L20:465
 
 **Data drift** — Input distribution shifts over time  
-● L06:753 · ● L19:370
+● L06:753 · ● L19:452
 
 **Data governance for AI** — Classify, PII, access, retention, compliance  
 ● L20:457
@@ -906,6 +999,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Decoder-only architecture** — Generative GPT-style transformer  
 ◐ L11_1:152
 
+**Decorator with arguments** — Three nesting levels — retry with backoff  
+● L32:325
+
+**Decorators** — Function taking a function, returning a replacement  
+● L32:284
+
 **Deep learning** — Multi-layer neural network learning  
 ◐ L01:96
 
@@ -916,10 +1015,16 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● VitalCare:841
 
 **Degradation ladder** — Full model to smaller to cache to retrieval-only  
-◐ HLP01:189
+◐ HLP01:259
 
 **Deployment (Azure OpenAI)** — Named model instance with quota  
 ● L12:74
+
+**deque** — Fixed-size sliding window for agent memory  
+● L32:521
+
+**Design patterns in Python** — Which GoF patterns collapse and why  
+● L32:551
 
 **Diagnostic logs** — Per-request audit logs to Log Analytics  
 ◐ L07:163
@@ -979,7 +1084,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● PyTrack/1.4-FineTuning:549 · ○ L14:755
 
 **Drift response playbook** — Actions per drift type detected  
-● L19:395
+● L19:477
 
 **Drift types and detection** — Input, data, model-behavior, quality drift  
 ● IB/06_RAI:136
@@ -988,10 +1093,13 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L16:1487
 
 
+**Dynatrace** — Commercial APM with automatic root-cause  
+◐ L36:409
+
 ## E
 
 **Embedding cache** — Hash-keyed reuse of chunk vectors  
-◐ HLP01:179 · ◐ L18:384
+◐ HLP01:249 · ◐ L18:384
 
 **Embedding dimension consistency** — Index dim must match embedder  
 ◐ P6/01-Ollama/02_architecture:47
@@ -1044,6 +1152,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Environments (Azure ML)** — Pinned reproducible Python dependencies  
 ◐ L06:102
 
+**Episodic memory** — Past interactions as events — experience, not knowledge  
+● HLP01:100
+
 **Error handling pattern** — Status-code-specific catch branches  
 ● L08:490
 
@@ -1086,6 +1197,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Eviction order** — Middle turns, then tool outputs, never system prompt  
 ● HLP01:59
 
+**Exception chaining** — raise NewError from e preserves the cause  
+◐ L32:472
+
 **expected_output** — Task output contract keeping agent on target  
 ● P6/02-crewAI/03_interview_qa:17
 
@@ -1121,6 +1235,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Facets** — Grouped counts for filter panels  
 ◐ L09:457
+
+**Factory pattern (Python)** — A dict of callables  
+◐ L32:572
 
 **Factual hallucination** — Single call states falsehood confidently  
 ● L24:17
@@ -1164,6 +1281,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Feature importance** — Ranked feature contribution scores  
 ● L06:375
 
+**FedRAMP for LLM** — Whole boundary authorised — GovCloud or Azure Government  
+● L33:509
+
 **Feed-Forward Network (FFN)** — Per-token layers storing knowledge  
 ◐ L11_1:184
 
@@ -1206,11 +1326,17 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **FinOps governance** — Unit economics and spend anomaly alerts  
 ◐ VitalCare:911
 
+**FinOps levers** — Caching, tiering, compression, iteration caps  
+● L36:338
+
 **Fixed-size chunking** — Split by token count with overlap  
 ● L13:244
 
 **Fluency metric** — Natural grammatical language score  
 ◐ L17:430
+
+**forces replacement** — The phrase to search for before approving a plan  
+● L33:209
 
 **Format validation** — Extracted value matches expected pattern  
 ◐ L30:165
@@ -1236,6 +1362,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Freshness scoring function** — Recency-based relevance boost  
 ◐ L09:616
 
+**Frozen dataclass** — Immutable value object for agent config  
+◐ L32:122
+
 **Full fine-tuning** — All weights updated, ~28GB for 7B  
 ◐ P6/08-LoRA/01_concepts:23
 
@@ -1249,11 +1378,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L21:410
 
 **Function calling vs agent** — Who decides what vs whether to run  
-◐ HLP01:204
+◐ HLP01:274
 
 **FunctionInvocationFilter** — SK hook before/after tool invocation  
 ● L16:923 · ● L27:365 · ● P6/02-Dealer/README:114
 
+
+**functools.wraps** — Preserves name, docstring, signature — needed by @tool  
+● L32:309
 
 ## G
 
@@ -1269,14 +1401,29 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Gemini long context** — 1-2M token window vs 128k  
 ◐ P6/09-Vertex/03_interview_qa:44
 
+**GenAI semantic conventions** — Standard gen_ai.* span attributes  
+● L36:92
+
 **Generative AI** — Deep learning creating new content  
 ◐ L01:99
+
+**Generator exhaustion** — Single-use — second iteration silently empty  
+● L32:271
+
+**Generator expression** — Parentheses not brackets — nothing materialises  
+● L32:220
 
 **get_peft_model** — Wraps base model with LoRA adapters  
 ● P6/08-LoRA/01_concepts:88
 
 **GGUF** — Quantized model file format for llama.cpp  
 ● P6/01-Ollama/01_concepts:76
+
+**GitOps** — Git is truth; an in-cluster agent reconciles continuously  
+● L34:206
+
+**GKE Autopilot** — No node management, pay per pod  
+◐ L34:298
 
 **Global Standard deployment** — Global-routed Azure OpenAI deployment type  
 ○ L17:1054
@@ -1288,7 +1435,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ○ L11_4:180
 
 **Golden dataset** — Labeled reference set, versioned like code  
-● IB/06_RAI:112 · ● L19:492 · ● P6/03-RAGAS/01_concepts:88
+● IB/06_RAI:112 · ● L19:574 · ● P6/03-RAGAS/01_concepts:88
 
 **google-genai SDK** — Client targeting Gemini API and Vertex  
 ● P6/09-Vertex/01_concepts:44
@@ -1307,6 +1454,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **GPT-4o mini** — Cheap high-volume model, 17x cheaper  
 ◐ L12:55
+
+**Grafana and Prometheus** — Custom LLM and agent dashboards  
+● L36:395
 
 **Graph retrieval (UMLS/SNOMED)** — Clinical concept graph for CDS reasoning  
 ◐ VitalCare:543
@@ -1351,7 +1501,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L27:338
 
 **Guardrails (agent)** — Iteration caps, allow-lists, HITL, audit  
-◐ HLP01:253
+◐ HLP01:323
 
 **Guardrails (input/output)** — Presidio, jailbreak, clinical safety classifier  
 ● VitalCare:676
@@ -1369,7 +1519,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L13:943
 
 **Hallucination rate** — Share of unsupported answers  
-◐ L19:283
+◐ L19:365
 
 **Hallucination root cause** — Probabilistic generation without verification  
 ◐ IB/01_Fund:111
@@ -1379,6 +1529,24 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **HAPI FHIR** — Open-source portable FHIR R4 server  
 ◐ VitalCare:409
+
+**HCL** — HashiCorp Configuration Language  
+● L33:112
+
+**Helm** — Templating and release management for Kubernetes  
+● L34:32
+
+**helm --atomic** — Auto-rollback on failed or timed-out upgrade  
+● L34:167
+
+**Helm chart anatomy** — Chart.yaml, values.yaml, templates, charts  
+● L34:56
+
+**Helm release and revision** — Named versioned install — what rollback targets  
+● L34:181
+
+**Helm template syntax** — Values, Release, nindent, include, range  
+● L34:147
 
 **Hero Card** — Image, title, buttons bot card  
 ◐ L10:207
@@ -1415,6 +1583,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **HNSW** — Graph-based approximate vector index  
 ● L09:507 · ● L13:559
+
+**HNSW complexity** — Why an ANN index beats brute-force vector search  
+◐ L32:537
 
 **HNSW index config** — m, efConstruction, efSearch, cosine  
 ● P6/02-Dealer/FLOW_WITH_LOOPS:67
@@ -1527,6 +1698,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Inference phase** — Applying trained model to new data  
 ◐ L01:138
 
+**Infrastructure Manager (GCP)** — Managed Terraform — GCP's native IaC path  
+◐ L33:309
+
 **Input validation (LLM)** — Block injection patterns before call  
 ● L18:253
 
@@ -1545,9 +1719,18 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Intermediate state checkpointing** — Log input/tools/output per agent step  
 ◐ L24:115
 
+**IRSA** — IAM Roles for Service Accounts — EKS workload identity  
+● L34:298
+
 **Istio service mesh** — mTLS and traffic policy sidecar  
 ◐ VitalCare:390
 
+
+**Iterators and generators** — Lazy sequence, C# yield return  
+● L32:180
+
+**itertools** — islice, chain, groupby, batched  
+◐ L32:256
 
 ## J
 
@@ -1589,6 +1772,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 
 ## K
+
+**Karpenter** — Per-pod instance provisioning — matters for GPU  
+● L34:298
 
 **KEDA autoscaling** — Queue-depth-driven GPU pool scaling  
 ◐ VitalCare:816
@@ -1650,11 +1836,17 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **LangChain-to-SK concept mapping** — Table equating LangChain and SK  
 ◐ L21:594
 
+**Langfuse** — Self-hostable LLM tracing — the compliance choice  
+● L36:199
+
 **LangGraph** — StateGraph nodes, edges, conditional routing  
 ● L25:72 · ● PyTrack/1.5-Agents:1524 · ◐ P6/02-crewAI/01_concepts:74 · ○ L16:2035
 
 **LangGraph vs Semantic Kernel** — Explicit state machine vs implicit loop  
-◐ HLP01:239
+◐ HLP01:309
+
+**LangSmith** — LangChain-native tracing, datasets and evaluators  
+● L36:183
 
 **Language Detection** — Identifies text language with score  
 ◐ L03:156
@@ -1689,8 +1881,11 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **List comprehension** — Inline map/filter over sequence  
 ● L21:119
 
+**List vs set membership** — O(n) versus O(1) — the common quadratic bug  
+● L32:506
+
 **LiteLLM** — Portable OpenAI-compatible model router  
-◐ VitalCare:399
+● L36:229 · ◐ VitalCare:399
 
 **LLaMA 3** — Default general-purpose local model  
 ◐ P6/01-Ollama/01_concepts:58
@@ -1710,6 +1905,18 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **LlamaIndex VectorStoreIndex** — Standard embedding-based searchable index  
 ● P6/05-LlamaIndex/01_concepts:28
 
+**LLM alerting thresholds** — Cost/hour, cache collapse, groundedness drop  
+● L36:439
+
+**LLM cost guardrails** — Budgets, rate limits, iteration caps, alerts  
+● L36:371
+
+**LLM cost model** — Output tokens cost 3-5x input; loops compound  
+● L36:326
+
+**LLM observability** — Why HTTP 200 is not success for an agent  
+● L36:31
+
 **LLM-as-judge** — Rubric scoring calibrated against humans  
 ● IB/06_RAI:124 · ● P6/03-RAGAS/01_concepts:62 · ◐ L13:1202
 
@@ -1726,7 +1933,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ L31:378
 
 **LLMOps maturity levels** — Level 0 manual to 3 advanced  
-● L19:538
+● L19:620
 
 **Logit bias** — Boost/ban specific token IDs  
 ◐ PyTrack/Part1:346
@@ -1764,6 +1971,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Lost in the middle** — Middle context gets less attention  
 ● L11_2:226 · ◐ HLP01:72
 
+
+**lru_cache** — Free memoisation — needs hashable args  
+◐ L32:362
 
 ## M
 
@@ -1820,6 +2030,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **MCP server** — Code implementing tool endpoints  
 ◐ L26:35
+
+**Measuring AI productivity** — Baseline first, cite sample size  
+● L35:182
 
 **Medical NER** — Extracts diagnoses, drugs, dosages  
 ◐ L30:136
@@ -1900,10 +2113,10 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ L17:229
 
 **Model deprecation / retirement** — 12-month advance retirement notice  
-○ L19:614
+○ L19:696
 
 **Model drift** — Provider silently updates hosted model  
-● L06:753 · ● L19:387
+● L06:753 · ● L19:469
 
 **Model Garden** — Vertex catalog with Claude, Llama, Gemma  
 ◐ P6/09-Vertex/01_concepts:115
@@ -1929,6 +2142,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Model routing / tiering** — Cheap triage model, expensive escalation  
 ● IB/05_SolArch:392
 
+**Model routing and fallback** — Automatic failover on 429 or outage  
+● L36:243
+
 **Model selection criteria** — Compliance, cost/quality, task type  
 ● L17:202
 
@@ -1936,10 +2152,10 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L27:721
 
 **Model tiering** — Local triage escalating to cloud model  
-● P6/01-Ollama/03_interview_qa:47
+● L36:338 · ● P6/01-Ollama/03_interview_qa:47
 
 **Model version pinning** — Never use latest for clinical AI  
-◐ VitalCare:1388
+● L36:243 · ◐ VitalCare:1388
 
 **Model versioning (DI)** — Manual model ID swap strategy  
 ◐ L08:378
@@ -1954,10 +2170,13 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● HLP01:80
 
 **Multi-agent patterns** — Supervisor, sequential, peer-to-peer  
-◐ HLP01:246
+◐ HLP01:316
 
 **Multi-agent systems** — Specialist agents with focused prompts  
 ● L16:850 · ● PyTrack/1.5-Agents:1121
+
+**Multi-cloud single apply** — AWS and Azure resources in one configuration  
+● L33:286
 
 **Multi-head attention** — Parallel heads learn different relations  
 ● L11_1:107
@@ -1996,10 +2215,16 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ○ L11_1:319
 
 
+**Mutable default argument** — Defaults evaluated once — shared across calls  
+● L32:137
+
 ## N
 
 **N+M connections (MCP)** — Hub avoids NxM agent-tool wiring  
 ◐ P6/02-Dealer/WORKFLOW:224
+
+**N8N** — Low-code workflow automation with LLM nodes  
+◐ L35:245
 
 **Naive RAG** — Basic retrieve-prompt-generate pipeline  
 ◐ L13:65
@@ -2050,7 +2275,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ L04:47
 
 **Observability layers** — Infra, AI metrics, quality metrics  
-● L19:264
+● L19:346
 
 **Observability three layers** — Infrastructure, AI service, quality  
 ● L31:167
@@ -2073,6 +2298,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **OData filter syntax** — Expression language for $filter  
 ◐ L09:356
 
+**OIDC federated credential** — Short-lived pipeline token, no stored secret  
+● L34:386
+
 **Ollama** — Local model server on port 11434  
 ● P6/01-Ollama/01_concepts:9
 
@@ -2091,6 +2319,15 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **ONNX export** — Offline edge model deployment format  
 ● L04:268
 
+**OPA and Rego** — Open policy engine for any JSON or YAML  
+◐ L33:523
+
+**OpenShift** — Red Hat Kubernetes — hybrid on-prem and cloud  
+● L34:362
+
+**OpenTelemetry** — Vendor-neutral traces, metrics and logs  
+● L36:58
+
 **OpenTelemetry tracing** — OTel exporter for Foundry traces  
 ○ L17:1078
 
@@ -2099,6 +2336,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Opinion Mining** — Extracts sentiment target and assessment  
 ◐ L03:133
+
+**OTel Collector** — Fan-out to backends without touching app code  
+● L36:397
 
 **Output format constraints** — JSON schema enforced in system prompt  
 ● L27:642
@@ -2122,7 +2362,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ## P
 
 **P95 latency** — 95th percentile response time  
-◐ L19:342
+◐ L19:424
 
 **Pandas basics** — read_csv, head, describe, isnull  
 ◐ L21:551
@@ -2265,6 +2505,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Private Endpoints** — Private network access to AI services  
 ◐ L18:467
 
+**PrivateLink** — Private service access without public egress  
+● L33:484
+
 **Proactive messages** — Bot-initiated outbound notification  
 ● L10:501
 
@@ -2301,17 +2544,26 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Prompt injection layered defense** — Input, prompt, privilege, output, monitoring  
 ● IB/06_RAI:61
 
+**Prompt logging risk** — Full-text tracing is a data-classification decision  
+● L36:213
+
 **Prompt Shields** — Direct/indirect injection detector  
 ◐ L11_4:470 · ○ L18:505
 
 **Prompt versioning** — Prompts as reviewed, pinned artifacts  
-● IB/06_RAI:162 · ● L19:448 · ● P6/02-Dealer/FLOW_WITH_LOOPS:435
+● IB/06_RAI:162 · ● L19:530 · ● P6/02-Dealer/FLOW_WITH_LOOPS:435
 
 **Prompt versioning in Git** — Prompts as reviewed versioned artifacts  
 ● L31:241
 
 **.prompty file format** — Prompt plus model config in one file  
-◐ L19:649
+◐ L19:731
+
+**Prompting for code** — Point at a pattern, state constraints, define done  
+● L35:149
+
+**Protocol (structural typing)** — Interface without inheritance — test doubles  
+● L32:595
 
 **Provisioned Throughput (PTU)** — Reserved capacity deployment type  
 ○ L17:1054
@@ -2328,6 +2580,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Pull indexer** — Scheduled Azure-managed ingestion  
 ◐ L09:140
 
+**Pulumi** — Multi-cloud IaC in general-purpose languages  
+◐ L33:377
+
+**Puppet** — Agent-based pull-model config management  
+◐ L33:391
+
 **Push API** — Code-driven document upload to index  
 ● L09:139
 
@@ -2336,6 +2594,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Push vs Pull comparison** — Capability tradeoffs of ingestion modes  
 ● L09:988
+
+**Push vs pull deployment** — CI holds credentials versus cluster pulls from Git  
+● L34:208
+
+**Pydantic** — Validating LLM output and tool arguments  
+● L32:158
 
 **Pydantic structured output** — Typed schema-constrained model response  
 ● L21:469
@@ -2580,6 +2844,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **SAS URL** — Time-limited blob access token URL  
 ◐ L08:449
 
+**Saved plan file** — Apply what a human approved, not a fresh plan  
+● L33:235
+
 **Scalar quantization** — 4x vector compression, ~1% loss  
 ◐ L09:733
 
@@ -2598,6 +2865,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Section-aware chunking** — Use headings as chunk boundaries  
 ◐ L13:424
 
+**Security Context Constraints** — Why many public images fail on OpenShift  
+◐ L34:362
+
 **Self-attention** — Tokens attend within same sequence  
 ● L11_1:87 · ● L23:327
 
@@ -2610,11 +2880,17 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Self-querying retrieval** — LLM generates structured filter query  
 ● L13:768
 
+**selfHeal and prune** — Revert manual edits, delete what Git removed  
+● L34:225
+
+**Semantic cache threshold** — 0.90 serves the wrong answer on negation  
+● L36:295
+
 **Semantic caching** — Embedding-similarity keyed response cache  
 ● IB/05_SolArch:318 · ● L18:376 · ○ L13:1324
 
 **Semantic caching risk** — Wrong-but-similar answer served  
-◐ HLP01:176
+◐ HLP01:246
 
 **Semantic chunking** — Split where sentence similarity drops  
 ● L13:362
@@ -2646,6 +2922,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Semantic Segmentation** — Per-pixel category labeling  
 ◐ L04:48
 
+**Semantic vs episodic memory** — Knowledge versus experience  
+● HLP01:100
+
 **Sender whitelist** — Specialist accepts known SenderIds only  
 ◐ L29:99
 
@@ -2667,14 +2946,23 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Service Endpoint vs Private Endpoint** — Public IP routing versus private IP  
 ◐ L02:347
 
+**Service mesh** — Sidecar proxy: mTLS, retries, traffic splitting  
+● L34:327
+
 **Severity levels (Content Safety)** — 0-6 harm scoring thresholds  
 ◐ L11_4:320
 
 **Shared state object** — Typed fields with write ownership  
 ◐ HLP01:85
 
+**Shift-left policy** — Block before deploy versus detect at runtime  
+● L33:523
+
 **Short-term vs long-term memory** — Session truncation vs persisted retrieval  
 ● IB/04_Agents:158
+
+**Showback vs chargeback** — Reporting spend versus billing it  
+● L36:358
 
 **Silent failure prohibition** — Every outcome must be actionable  
 ◐ L28:145
@@ -2684,6 +2972,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **SimpleDirectoryReader** — Loads a folder into Documents  
 ● P6/05-LlamaIndex/01_concepts:26
+
+**Singleton as module** — Imports are cached — no locking needed  
+◐ L32:584
+
+**Six Rs of migration** — Rehost, replatform, refactor, repurchase, retire, retain  
+● L33:439
 
 **Skillset** — AI enrichment pipeline during indexing  
 ● L09:227
@@ -2742,8 +3036,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **State (TypedDict)** — Typed object flowing through graph  
 ◐ L25:80
 
+**State locking** — DynamoDB table or blob lease prevents corruption  
+● L33:63
+
 **State management (bots)** — User, conversation, private state scopes  
 ● L10:124
+
+**State ownership (IaC)** — The one real delta between Bicep and Terraform  
+● L33:32
 
 **StateGraph** — LangGraph node-and-edge definition object  
 ◐ L25:79
@@ -2760,14 +3060,20 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Stop words** — Low-meaning words removed before features  
 ◐ L03:93
 
+**Strategy pattern (Python)** — Just pass a function — no interface needed  
+● L32:556
+
 **Streaming (perceived latency)** — Reduces time-to-first-token, not total  
-◐ HLP01:183
+◐ HLP01:253
 
 **Streaming (Python)** — stream=True chunk delta iteration  
 ● L21:376
 
 **Streaming in Semantic Kernel** — IAsyncEnumerable token streaming  
 ● L16:1766
+
+**Streaming LLM output** — Yield each token chunk as it arrives  
+● L32:239
 
 **Streaming responses** — Tokens sent as generated  
 ◐ L12:210 · ◐ L18:174
@@ -2842,7 +3148,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ L10:475
 
 **Telemetry custom metrics** — TrackMetric for tokens and latency  
-● L19:287
+● L19:369
 
 **Temperature** — Randomness control 0 to 2  
 ● L12:166
@@ -2852,6 +3158,30 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Temperature by use case** — 0 extraction, 0.7 drafting  
 ● L15:626
+
+**Terraform backend** — Remote state in S3, Blob or GCS  
+● L33:63
+
+**Terraform data source** — Read a resource you do not manage  
+● L33:180
+
+**terraform import** — Adopt an existing resource into state  
+● L33:463
+
+**Terraform module** — Reusable parameterised bundle  
+● L33:252
+
+**Terraform plan symbols** — Plus, minus, tilde, and destroy-then-recreate  
+● L33:209
+
+**Terraform provider** — Plug-in adapting Terraform to one cloud API  
+● L33:286
+
+**Terraform Registry** — Largest public IaC module library  
+◐ L33:252
+
+**Terratest** — Go integration tests that really deploy  
+◐ L33:550
 
 **Test set** — Held-out final evaluation data  
 ◐ L01:283
@@ -2871,8 +3201,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Text-to-Speech (TTS)** — Text converted to synthesized audio  
 ● L05:254
 
+**tfstate plaintext secrets** — Resource attributes stored unencrypted in state  
+● L33:92
+
 **Threat model for AI** — Five AI-specific attack classes  
 ● L18:217
+
+**Three-layer AI dashboard** — Infrastructure, AI service, quality  
+● L36:423
 
 **Three-layer intent routing** — CLU then QA then LLM fallback  
 ● L10:407
@@ -2896,10 +3232,10 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ◐ P6/06-Bedrock/01_concepts:31
 
 **Token budget formula** — system + memory + context + query + output  
-◐ HLP01:108
+◐ HLP01:178
 
 **Token cost levers (ranked)** — Model choice ~17x beats prompt trimming  
-● HLP01:116
+● HLP01:186
 
 **Token counting / tiktoken** — Estimate tokens before request  
 ◐ L16:1241
@@ -2920,7 +3256,7 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● PyTrack/Part1:116
 
 **Tokenizer facts** — ~4 chars/token; IDs are model-specific  
-◐ HLP01:131
+◐ HLP01:201
 
 **Tokenizer-model pairing** — Mismatch produces garbage output  
 ● P6/04-HuggingFace/01_concepts:71
@@ -2974,10 +3310,16 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 ● L18:142
 
 **TPM quota as bottleneck** — Provider quota, not compute, limits scale  
-● HLP01:166
+● HLP01:236
 
 **TPS (transactions per second)** — AI service call rate limit  
 ◐ L07:184
+
+**Trace context propagation** — Carry trace IDs across agent messages  
+● L36:149
+
+**Trace, span, attribute** — OTel vocabulary for one agent request  
+● L36:60
 
 **Tracing (Foundry)** — Visual trace of calls and retrievals  
 ◐ L17:806
@@ -3009,6 +3351,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Type hints** — Optional annotations on Python variables  
 ◐ L21:62
 
+**Type hints (Python)** — Annotations for tooling, ignored at runtime  
+● L32:43
+
 **Typed message contracts** — Structured request/response between agents  
 ◐ L28:163
 
@@ -3029,6 +3374,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 
 ## V
+
+**values.yaml** — Parameter defaults, overridden per environment  
+● L34:56
 
 **Vector database** — Stores and searches embeddings  
 ◐ L13:498
@@ -3072,8 +3420,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Virtual environment (venv)** — Project-scoped Python dependency folder  
 ◐ L21:32
 
+**Virtual keys and budgets** — Per-team spend caps and attribution  
+◐ L36:273
+
 **vLLM** — Self-hosted GPU inference server  
 ◐ VitalCare:400
+
+**VMware vSphere provider** — On-prem virtualisation as code  
+○ L33:425
 
 **VNet integration** — Service endpoints plus IP firewall rules  
 ◐ L07:115
@@ -3087,9 +3441,15 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **VotingEnsemble** — Combined multi-model prediction average  
 ◐ L06:245
 
+**VPC** — AWS private network — Azure VNet equivalent  
+● L33:484
+
 **VS Code Foundry Toolkit** — Extension to browse and deploy models  
 ○ L17:1098
 
+
+**Vulnerability remediation pipeline** — Scan, triage agent, auto-PR or human gate  
+● L35:226
 
 ## W
 
@@ -3098,6 +3458,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Weaviate** — Multi-modal open-source vector DB  
 ○ L13:533
+
+**What not to delegate to AI** — Auth, IAM, money, deletion, regex on prod data  
+● L35:167
+
+**When not to use a service mesh** — Under ~10 services the operational cost wins  
+● L34:350
 
 **Whisper** — Speech-to-text transcription model  
 ○ L12:62
@@ -3116,6 +3482,15 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **X12 EDI (837/835/278)** — Claims and prior-auth transaction formats  
 ◐ VitalCare:332
+
+
+## Y
+
+**yield** — Turns a function into a generator, pausing execution  
+● L32:182
+
+**yield from** — Delegate iteration to another generator  
+◐ L32:256
 
 
 ## Z
