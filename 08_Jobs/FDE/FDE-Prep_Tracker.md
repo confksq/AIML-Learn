@@ -144,7 +144,7 @@ Stages group work that should be done together. Order inside a stage respects de
 | 5 | S0 | 34 | Infra modernization / platform engineering | 🔵 day job | Azure | Platform | 0 |
 | 6 | S0 | 58 | Azure AI Foundry / agent platform | 🔵🟢 `L17`, `L22` — already prepared | Azure | Resource | 0 |
 | 7 | S0 | 60 | Mentoring / transformation catalyst | 🔵 day job | — | Soft | 0 |
-| 8 | S0 | 59 | Problem solving · self-starter · communication | 🟢 InterviewBank + `VitalCare` (101 KB solo) | — | Soft | 0 |
+| 8 | S0 | 59 | Problem solving · self-starter · communication | 🟢 `02_Questions/InterviewBank/` + `VitalCare` (101 KB solo) | — | Soft | 0 |
 | 9 | **S1 · Tonight** | 53 | **Cursor AI** | 🟠 `L35` §2, **§7 = do it** — install, `.cursorrules`, ship 1 change | Agnostic | Tooling | 1.0 |
 | 10 | S1 | 54 | GitHub Copilot **as coding practice** | 🟠 `L35` §1, §3 — library's 14 hits are all Copilot Studio/M365 | Both | Tooling | 0.25 |
 | 11 | S1 | 56 | AI-first mindset / AI-assisted engineering | 🟠🔵 `L35` §4, §5 | Agnostic | Tooling | 0.1 |
@@ -198,6 +198,71 @@ Stages group work that should be done together. Order inside a stage respects de
 | 58 | S7 | 37 | SOC 2 | 🟡 `L12` + `VitalCare` — **no module planned** | Both | Security | 0.25 |
 | 59 | S7 | 40 | Security automation / vulnerability management | 🔵→🟠 `Part6_AppliedProjects/03-SecurityAutomation-VulnScan/` — **written, sanitised** | Azure | Security | 0.5 |
 | 60 | **S8 · Open** | 57 | **AWS platform (JD says preferred)** | 🟡 **experience gap — no lesson fixes this** | AWS | Resource | ∞ |
+
+---
+
+## Complete FDE-Prep reading set — **extract from here, not from the 60 rows**
+
+> ⚠️ **Why this section exists.** The 60-row table names a source only when a *row's status* points
+> at one. Five items FDE-Prep genuinely needs never appear in a status cell — a prerequisite, a
+> self-test set, an AWS module for a row no lesson can close, a practice file, and one citation that
+> was not in backticks. Anyone extracting a module list from the rows alone silently loses them.
+> **This table is the authoritative set.** 25 items.
+
+### Lesson modules — 20
+
+| # | Module | Status | Stage |
+|---|---|---|---|
+| L12 | Azure OpenAI Services | 🟢 revise | S4, S7 |
+| L13 | RAG Deep Dive | 🟢 revise | S5 |
+| L15 | Prompt Engineering | 🟢 revise | S4 |
+| L16 | AI Orchestration — SK & Agents | 🟢 revise | S4 |
+| L17 | Azure AI Foundry | 🟢 revise | S0 |
+| L18 | AI Solution Architecture | 🟢 revise | S5 |
+| L19 | MLOps & LLMOps | 🟢 revise | S4, S5, S6 |
+| L20 | Integration Patterns | 🟢 revise | S0, S5 |
+| L22 | Foundry Agent Lifecycle | 🟢 revise | S0 |
+| L25 | Agent Framework Comparison | 🟢 revise | S4 |
+| L26 | MCP | 🟢 revise | S4 |
+| L27 | Agent Workflow End-to-End | 🟢 revise | S4 |
+| L28 | Meta-Agent Hierarchies | 🟢 revise | S4 |
+| L29 | A2A Protocol | 🟢 revise | S4 |
+| L31 | Fault Tolerance & Observability | 🟢 revise | S4, S5 |
+| **L32** | Advanced Python for AI | 🟠 new | **S2** |
+| **L33** | IaC / Terraform for Bicep Devs | 🟠 new | **S3** |
+| **L34** | Kubernetes, Helm & GitOps | 🟠 new | **S6** |
+| **L35** | AI-Assisted Engineering | 🟠 new | **S1** |
+| **L36** | LLM Observability & FinOps | 🟠 new | **S5** |
+
+> `L21_Python_for_AI.md` is **deliberately absent** — `L32` supersedes it for writing-level Python.
+> Keep it only as the C#→Python translation reference.
+
+### Non-`L##` sources — 5
+
+| Item | Path | Status | Stage |
+|---|---|---|---|
+| HLP01 — Memory, Tokens, Scaling, Agents | `02_Questions/HighLevelPrep/HLP01_Memory_Tokens_Scaling_Agents.md` | 🟢 revise · 🟠 `:100` episodic | S4 |
+| VitalCare — assessment response | `05_Assessments/VitalCare_AI_Assessment_Response.md` | 🟢 revise | S0, S5, S6, S7 |
+| crewAI multi-agent | `01_Lessons/Part6_AppliedProjects/01-CareerAccelerator/02-crewAI-MultiAgent/` | 🟢 revise | S4 |
+| RAGAS evaluation | `01_Lessons/Part6_AppliedProjects/01-CareerAccelerator/03-RAGAS-Evaluation/` | 🟢 revise | S4 |
+| Security automation / vuln scan | `01_Lessons/Part6_AppliedProjects/03-SecurityAutomation-VulnScan/` | 🟠 new | S7 |
+
+> ⚠️ **Path-depth collision.** Two items above are both numbered `03-` but sit at **different
+> levels** — RAGAS is inside `01-CareerAccelerator/`, the vuln write-up is directly under
+> `Part6_AppliedProjects/`. Same for `02-crewAI-MultiAgent/` (inside) versus
+> `02-DealerIntelligence-Platform/` (top level). Always carry the full path.
+
+### The five the 60-row table misses — **added 2026-07-26**
+
+| Item | Path | Why it is needed | Stage |
+|---|---|---|---|
+| **Interview bank** | `02_Questions/InterviewBank/` — 6 files | Cited in **row 59**, but the citation was not in backticks so extractions dropped it. Architect-judgment questions in WHY/HOW/WHEN/SCALE/DEPLOY format | **S0** |
+| **Amazon Bedrock module** | `01_Lessons/Part6_AppliedProjects/01-CareerAccelerator/06-Amazon-Bedrock/` (incl. `azure_vs_bedrock_comparison.md`) | **Your only real AWS material**, and the JD says *"AWS preferred."* Row 57 cites no source because no lesson closes an experience gap — so it vanished from the row extraction | **S8** |
+| **IaC glossary** | `08_Jobs/FDE/IaC_Glossary_Azure_AWS_GCP.md` | **Prerequisite to `L33`** — DSL, cross-cloud, CFN, `tfstate`, Stack, and the full Azure/AWS/GCP/Terraform translation. Read it *before* rows 16–23 | **S3** |
+| **Self-tests** | `02_Questions/PerChapter/QA_L32`…`QA_L36.md` | **The only mechanism that moves 🟠 → 🟢.** Without them the five new modules stay amber regardless of how much you read | S1–S6 |
+| **Framework-free Python practice** | `06_Supplementary/PythonTrack/1.5-AIAgents.md` — 1,981 lines | Best real Python in the library — agent loop, ReAct, function-calling dispatcher, memory classes, multi-agent supervisor. The practice half of `L32` | **S2** |
+
+**Total: 20 modules + 5 non-`L##` sources + 5 supporting items = 25 things to work through.**
 
 ---
 
@@ -343,4 +408,5 @@ Use `grep -w` for short or substring-prone terms before concluding anything is c
 | 2026-07-26 | ✅ **Build complete.** `Part6/03-SecurityAutomation-VulnScan/` (334 lines, sanitised) · `HLP01` episodic-memory section (+70) · `QA_L32`–`QA_L36` (691 lines) · `L19` §3 GitHub Actions append (+82). Indexes regenerated: `00_INDEX` +124 concepts (1,145 total) with all shifted `L19:`/`HLP01:` citations corrected · `00_CONTENTS` +161 topics · `00_MAP` Part 7 · `00_START_HERE` Part 7 + gap-table fix. **All 3 stale indexes fixed** (`00_LearningIndex` 20→36 modules, `07_ChatHistory/INDEX` +8 transcripts, PythonTrack syllabus warning). |
 | 2026-07-26 | **28 rows moved 🔴 → 🟠** (module built, study pending). Row 26 moved 🟡 → 🟢 (GitHub Actions appended to `L19` §3). Remaining: row 53 needs Cursor **installed and a change pushed**; row 57 (AWS hands-on) needs an account. Neither is closable by authoring. |
 | 2026-07-26 | Tracker refreshed to match reality: **🟠 state introduced** (a built module is not a studied one), all 60 rows re-marked with section anchors, stale line counts corrected (`L19` 675→757, `HLP01` 291→361, `00_INDEX` 3,157→3,532, `00_LearningIndex` STALE→refreshed), "to be built" → "built". |
+| 2026-07-26 | Added **Complete FDE-Prep reading set** (25 items) after a module list extracted from the 60 rows came back missing five: `InterviewBank/` (citation was not in backticks), `06-Amazon-Bedrock/` (row 57 cites no source — no lesson closes an experience gap), the **IaC glossary** (prerequisite to `L33`), `QA_L32`–`QA_L36` (the only 🟠→🟢 mechanism), and `PythonTrack/1.5-AIAgents.md`. Row 59 re-cited with a backticked path. **Extract module lists from that section, not from the 60 rows.** |
 | 2026-07-26 | Created `04_Career/JDCoverage_AIEngineer_ML_GenAI_2026-07-26.md` for the second live JD (ML + GenAI + Agentic). No separate FDE coverage doc — **this tracker is it**; a duplicate would drift. Flagged there: the biggest library gap *not* closed by Part 7 is a real sklearn + XGBoost + MLflow pipeline (~8 hrs). |
