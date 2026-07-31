@@ -1,6 +1,6 @@
 # Chat History Index
 
-**Last updated:** 2026-07-26 · **40 files, ~3.6 MB**
+**Last updated:** 2026-07-31 · **41 files, ~3.6 MB**
 
 All session transcripts. Consolidated 2026-07-18 from four former locations
 (`PartsModules/ChatHist/`, `NewLearn/ChatHist/`, `AIFoundry/`, and one misfiled in `PartsModules/` root).
@@ -17,6 +17,7 @@ Search here only when you need the *reasoning* behind a lesson, not the lesson i
 
 | Date | File | Topic |
 |---|---|---|
+| 2026-07-31 | `Session_ChatHistory_2026-07-31_FDE-Prep.md` | **FDE-Prep** — Forward Deployed Engineer role (Juno Beach, FL) resume tailoring · confirmed tool scope (Copilot + Claude Code only; no Devin/Windsurf) · **2 chronology defects found & fixed** (Bedrock/Claude 3 on a 2019–21 role; GraphRAG pre-dating its July 2024 release at KPMG) · version corrections (Ollama 0.6→0.32, crewAI 1.15→1.14) · MCP spec 2026-07-28 · interview probes |
 | 2026-07-26 | `Session_ChatHistory_2026-07-26_FDE-Prep_Part7-Build.md` | **FDE-Prep** — AI agent vs agentic AI · two JD coverage analyses · IaC terminology across Azure/AWS/GCP · **built Part 7 (`L32`–`L36`)**, `Part6/03` vuln write-up, `QA_L32`–`QA_L36`, full index regeneration, 3 stale-index fixes. 85 messages |
 | 2026-07-25 | `Session_ChatHistory_2026-07-25_TokenEmbedding-AKS-SKhosting-recall.md` | AI Infrastructure Engineer role · GPU cluster on AKS · node/pod/namespace diagram · token/embedding recall · where to host Semantic Kernel *(superset of `_3`)* |
 | 2026-07-25 | `Session_ChatHistory_2026-07-25_3.md` | Same session, earlier export — GitHub account setup, chat-history recall |
