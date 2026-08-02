@@ -410,3 +410,128 @@ Use `grep -w` for short or substring-prone terms before concluding anything is c
 | 2026-07-26 | Tracker refreshed to match reality: **🟠 state introduced** (a built module is not a studied one), all 60 rows re-marked with section anchors, stale line counts corrected (`L19` 675→757, `HLP01` 291→361, `00_INDEX` 3,157→3,532, `00_LearningIndex` STALE→refreshed), "to be built" → "built". |
 | 2026-07-26 | Added **Complete FDE-Prep reading set** (25 items) after a module list extracted from the 60 rows came back missing five: `InterviewBank/` (citation was not in backticks), `06-Amazon-Bedrock/` (row 57 cites no source — no lesson closes an experience gap), the **IaC glossary** (prerequisite to `L33`), `QA_L32`–`QA_L36` (the only 🟠→🟢 mechanism), and `PythonTrack/1.5-AIAgents.md`. Row 59 re-cited with a backticked path. **Extract module lists from that section, not from the 60 rows.** |
 | 2026-07-26 | Created `04_Career/JDCoverage_AIEngineer_ML_GenAI_2026-07-26.md` for the second live JD (ML + GenAI + Agentic). No separate FDE coverage doc — **this tracker is it**; a duplicate would drift. Flagged there: the biggest library gap *not* closed by Part 7 is a real sklearn + XGBoost + MLflow pipeline (~8 hrs). |
+| 2026-07-28 | Added **Quick Reference** table at the bottom — module, status, full path, one row each, for anyone who forgot where things live and doesn't want to parse the 60-row table. |
+| 2026-07-30 | Added **JD Requirement → Tracker Row Map** at the very end — every bullet from the pasted JD text checked against the 60-row table by section (Responsibilities, Required Skills, Preferred Skills, Platform & Infrastructure FDE, Agentic Systems FDE). Confirms the pasted JD is the same one the 60 rows were built from — zero uncovered requirements; two role-behavior/outcome bullets flagged as proof-by-doing, not gaps. |
+
+---
+
+## Quick Reference — Module, Status, Full Path
+
+**Base:** `C:\Users\confksq\Project\AIML-Learn\`
+**Legend:** 🟢 revise · 🟠 written, study pending (🟠→🟢 needs the module read **and** its `QA_L##` passed)
+
+| # | Module | Status | Full path |
+|---|---|:--:|---|
+| L12 | Azure OpenAI Services | 🟢 | `01_Lessons\Part3_GenAI_LLMs\L12_AzureOpenAI_Services.md` |
+| L13 | RAG Deep Dive | 🟢 | `01_Lessons\Part3_GenAI_LLMs\L13_RAG_DeepDive.md` |
+| L15 | Prompt Engineering | 🟢 | `01_Lessons\Part3_GenAI_LLMs\L15_PromptEngineering.md` |
+| L16 | AI Orchestration — SK & Agents | 🟢 | `01_Lessons\Part3_GenAI_LLMs\L16_AIOrchestration_SK_Agents.md` |
+| L17 | Azure AI Foundry | 🟢 | `01_Lessons\Part4_Architecture\L17_AzureAIFoundry.md` |
+| L18 | AI Solution Architecture | 🟢 | `01_Lessons\Part4_Architecture\L18_AISolutionArchitecture.md` |
+| L19 | MLOps & LLMOps | 🟢 | `01_Lessons\Part4_Architecture\L19_MLOps_LLMOps.md` |
+| L20 | Integration Patterns | 🟢 | `01_Lessons\Part4_Architecture\L20_IntegrationPatterns.md` |
+| L22 | Foundry Agent Lifecycle | 🟢 | `01_Lessons\Part5_AgenticProtocols\L22_Foundry_AgentLifecycle.md` |
+| L25 | Agent Framework Comparison | 🟢 | `01_Lessons\Part5_AgenticProtocols\L25_AgentFramework_Comparison.md` |
+| L26 | MCP | 🟢 | `01_Lessons\Part5_AgenticProtocols\L26_MCP_ModelContextProtocol.md` |
+| L27 | Agent Workflow End-to-End | 🟢 | `01_Lessons\Part5_AgenticProtocols\L27_Agent_Workflow_EndToEnd.md` |
+| L28 | Meta-Agent Hierarchies | 🟢 | `01_Lessons\Part5_AgenticProtocols\L28_MetaAgent_Hierarchies.md` |
+| L29 | A2A Protocol | 🟢 | `01_Lessons\Part5_AgenticProtocols\L29_A2A_Protocol.md` |
+| L31 | Fault Tolerance & Observability | 🟢 | `01_Lessons\Part5_AgenticProtocols\L31_FaultTolerance_Observability.md` |
+| **L32** | Advanced Python for AI | 🟠 | `01_Lessons\Part7_PlatformEngineering\L32_AdvancedPython_for_AI.md` |
+| **L33** | IaC / Terraform for Bicep Devs | 🟠 | `01_Lessons\Part7_PlatformEngineering\L33_IaC_Terraform_for_Bicep_Devs.md` |
+| **L34** | Kubernetes, Helm & GitOps | 🟠 | `01_Lessons\Part7_PlatformEngineering\L34_Kubernetes_Helm_GitOps.md` |
+| **L35** | AI-Assisted Engineering | 🟠 | `01_Lessons\Part7_PlatformEngineering\L35_AI_Assisted_Engineering.md` |
+| **L36** | LLM Observability & FinOps | 🟠 | `01_Lessons\Part7_PlatformEngineering\L36_LLM_Observability_FinOps.md` |
+| — | HLP01 — Memory/Tokens/Scaling/Agents | 🟢 | `02_Questions\HighLevelPrep\HLP01_Memory_Tokens_Scaling_Agents.md` |
+| — | VitalCare assessment | 🟢 | `05_Assessments\VitalCare_AI_Assessment_Response.md` |
+| — | crewAI multi-agent | 🟢 | `01_Lessons\Part6_AppliedProjects\01-CareerAccelerator\02-crewAI-MultiAgent\` |
+| — | RAGAS evaluation | 🟢 | `01_Lessons\Part6_AppliedProjects\01-CareerAccelerator\03-RAGAS-Evaluation\` |
+| — | Security automation / vuln scan | 🟠 | `01_Lessons\Part6_AppliedProjects\03-SecurityAutomation-VulnScan\` |
+| — | Interview bank | 🟢 | `02_Questions\InterviewBank\` |
+| — | Amazon Bedrock (only real AWS) | 🟢 | `01_Lessons\Part6_AppliedProjects\01-CareerAccelerator\06-Amazon-Bedrock\` |
+| — | IaC glossary *(read before L33)* | 🟢 | `08_Jobs\FDE\IaC_Glossary_Azure_AWS_GCP.md` |
+| — | Self-tests | 🟠 | `02_Questions\PerChapter\QA_L32.md` … `QA_L36.md` |
+| — | Python practice | 🟢 | `06_Supplementary\PythonTrack\1.5-AIAgents.md` |
+
+> `L21_Python_for_AI.md` is deliberately absent — `L32` supersedes it for writing-level Python.
+> Study order is not numeric: `L35 → L32 → L33` first (fits one block, ~10.7 hrs), rest after.
+
+---
+
+## JD Requirement → Tracker Row Map — verify full coverage (added 2026-07-30)
+
+> **Purpose.** The JD text pasted in on 2026-07-30 was checked bullet-by-bullet against the 60-row
+> table. Every line maps onto a `#` this tracker already scores — this is the same JD (or one
+> functionally identical to it) the 60 rows were built from. Use this section to confirm nothing
+> was missed; cross-check `#` against the 60-row table or the Quick Reference above for exact
+> status/module. Two rows have **no** `#` — flagged explicitly so they aren't mistaken for gaps.
+
+### Responsibilities
+
+| JD requirement | Tracker # | Status | Module / note |
+|---|---|:--:|---|
+| Embed within infrastructure teams; work with business/infra leaders | — | — | **Role behavior, not a study row.** No lesson closes this — demonstrated on the job, not read |
+| Identify automation opportunities independently, without waiting for instructions | #59 | 🟢 | Problem solving / self-starter / communication — `InterviewBank/` + `VitalCare` |
+| Build AI-assisted solutions using Cursor and GitHub Copilot | #53, #54 | 🟠 | `L35` §2, §7 (Cursor — install + ship 1 change) · `L35` §1, §3 (Copilot as coding practice) |
+| Develop infrastructure automation and build AI workflows/agents | #17, #25, #23, #10 | 🔵🔵🔵🟢 | IaC concept · DevOps & CI/CD · Infra engineering (all Bicep/day-job) · `L22`–`L31` agentic workflows |
+| Modernize infrastructure platforms, improve cloud migration efficiency | #34, #24 | 🔵🟠 | day job (platform eng) · `L33` §8 — 6 Rs, AI-assisted migration, `terraform import` |
+| Build vulnerability remediation automation | #40 | 🔵→🟠 | `Part6_AppliedProjects/03-SecurityAutomation-VulnScan/` — written, sanitised |
+| Demonstrate PoCs rapidly; deliver measurable productivity improvements | #53, #56 | 🟠 | `L35` §7 (ship 1 change), §4–5 — **outcome bullet, no dedicated lesson**; provable only by doing S1 |
+| Mentor engineering teams; promote AI adoption | #60 | 🔵 | day job — write the bullet (Stage 0, zero study) |
+
+### Required Skills & Experience
+
+| JD requirement | Tracker # | Status | Module / note |
+|---|---|:--:|---|
+| Strong Python development, scripting, and APIs | #15, #16 | 🟠 | `L32` §1–§8 (decorators, generators, DS&A, design patterns) · `L32` §1,§4,§8 (scripting/APIs) |
+| Infra & cloud: infra engineering, cloud (AWS preferred), IaC, DevOps, automation | #23, #57, #17, #18, #25 | 🔵🟡🔵🟠🔵 | Infra engineering (day job) · **AWS platform — experience gap, no lesson fixes it** · IaC concept · `L33` Terraform · DevOps & CI/CD |
+| AI-assisted engineering: Copilot, Cursor, prompt engineering, LLM-based dev, AI-assisted coding | #54, #53, #13, #14, #56 | 🟠🟠🟢🟢🟠 | `L35` (Copilot, Cursor) · `L15` prompt engineering · `L12`/`L16`/Part 5 (LLM-based dev) · `L35` §4-5 |
+| Strong problem solving, self-starter mindset, excellent communication | #59 | 🟢 | `InterviewBank/` + `VitalCare` (101 KB solo) |
+
+### Preferred Skills
+
+| JD requirement | Tracker # | Status | Module / note |
+|---|---|:--:|---|
+| Agentic AI workflows and AI orchestration | #10 | 🟢 | All of Part 5 (`L22`–`L31`) |
+| Infrastructure modernization and platform engineering | #34 | 🔵 | day job |
+| Security automation and vulnerability management | #40 | 🔵→🟠 | Vuln-scan write-up |
+| FinOps and observability | #48, #45 | 🟠🟢 | `L36` §6 (FinOps) · `L31` §4–6 (observability) |
+| Cloud migration | #24 | 🟠 | `L33` §8 |
+
+### Platform & Infrastructure FDE
+
+| JD requirement | Tracker # | Status | Module / note |
+|---|---|:--:|---|
+| IaC — Terraform, Pulumi, AWS CDK, VMware, OpenShift | #17, #18, #19, #20, #22, #33 | 🔵🟠🟠🟠🟠🟠 | `L33` §1–§4 (Terraform) · §7.1 (Pulumi) · §6 (CDK in C#) · §7.3 (VMware awareness) · §7 (OpenShift awareness) |
+| Configuration-as-Code — Ansible, Puppet | #21 | 🟠 | `L33` §7.2 |
+| CI/CD — GitHub Actions, ArgoCD | #26, #29 | 🟢🟠 | `L19` §3 (appended 2026-07-26) · `L34` §4 |
+| Kubernetes — EKS/GKE/AKS, Helm, service mesh | #27, #30, #31, #28, #32 | 🟢🔵🟠🟠🟠 | `L20` + live AKS cluster · `L34` §5 (EKS: IRSA, Karpenter) · §5 (GKE awareness) · §2–3 (Helm) · §6 (service mesh) |
+| Observability — OpenTelemetry, Dynatrace, Grafana, LLM metrics | #46, #51, #52, #41 | 🟠🟠🟠🟢 | `L36` §2 · §7.2 · §7.1/7.3 · `L31` §4–5 |
+| Cloud security — VPC, PrivateLink, encryption, data residency | #39, #36 | 🟠🟢 | `L33` §9.1 · `VitalCare` |
+| Compliance — SOC 2, HIPAA, FedRAMP for LLM | #37, #35, #38 | 🟡🟢🟠 | `L12`+`VitalCare` (no module planned) · 24 files incl. `HIPAAGateway.cs` · `L33` §9.2 |
+| Agentic frameworks — LangGraph, CrewAI, N8N | #1, #2, #55 | 🟢🟢🟠 | `L25` StateGraph/Checkpointer · `02-crewAI-MultiAgent/` · `L35` §5.2 |
+| LLMOps — LiteLLM routing, semantic caching, prompt versioning, A/B testing | #47, #42, #43, #44 | 🟠🟢🟢🟢 | `L36` §4 · `L13`/`L18`/`L20`/`HLP01` · `L19:448`,`L31:241` · `L19:513` |
+| Cost / FinOps for LLM | #48 | 🟠 | `L36` §6 |
+
+### Agentic Systems FDE
+
+| JD requirement | Tracker # | Status | Module / note |
+|---|---|:--:|---|
+| Agentic frameworks — LangGraph, CrewAI, AutoGen, Anthropic computer-use | #1, #2, #3, #12 | 🟢🟢🟢🟠 | `L25` · `02-crewAI-MultiAgent/` · `L25` §5 · `L35` §6 |
+| Tool / function calling | #4 | 🟢 | `L16`, `L26`, `L27` — self-test only |
+| Orchestration & state — retry, checkpointing, failure modes | #5 | 🟢 | `L31` §2–3 — Polly, circuit breaker, jitter, dead-letter replay |
+| Multi-agent patterns | #6 | 🟢 | `L27`, `L28`, `L29` + Part 6 platforms |
+| Memory — short-term, long-term vector, episodic | #7, #11 | 🟢🟠 | `HLP01` canonical treatment · `HLP01`:100 episodic section |
+| Human-in-the-loop approval workflows | #8 | 🟢 | `L25` + `VitalCare`:1441 autonomy ladder |
+| Non-deterministic output evaluation | #9 | 🟢 | `03-RAGAS-Evaluation/` + `L19` golden dataset |
+| Tracing — LangSmith, Arize, OpenTelemetry | #49, #50, #46 | 🟠🟠🟠 | `L36` §3.1 · §3.2–3.3 · §2 |
+
+### Net read on this pass
+
+- **Zero rows uncovered.** Every bullet either has an existing 🟢/🔵/🟠 row, or is one of the two
+  flagged non-rows above (role behavior; outcome bullet) which were never meant to be lessons.
+- The two flagged items (embedding with teams; measurable productivity gains) are **proof-by-doing**,
+  not proof-by-reading — the same S0/S1 logic already in this tracker (write the bullet, ship the
+  change), not a new gap.
+- This re-confirms the tracker's own verdict: **Required Skills ~50%**, blocked by the same three
+  items as before — **Python depth, AWS hands-on, Cursor** — nothing in this pass surfaces a fourth.

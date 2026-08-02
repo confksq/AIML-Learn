@@ -1,6 +1,10 @@
 # Chat History Index
 
-**Last updated:** 2026-07-31 · **41 files, ~3.6 MB**
+**Last updated:** 2026-08-02 · **47 files, ~4.4 MB**
+
+> ⚠️ Rows below are current through the 2026-07-31 session. The 2026-07-29 (x4) and 2026-08-02
+> sessions were added to the folder in the same push that resolved this index's merge conflict, but
+> haven't been read yet to write accurate topic summaries — don't assume they're indexed below.
 
 All session transcripts. Consolidated 2026-07-18 from four former locations
 (`PartsModules/ChatHist/`, `NewLearn/ChatHist/`, `AIFoundry/`, and one misfiled in `PartsModules/` root).
@@ -18,6 +22,7 @@ Search here only when you need the *reasoning* behind a lesson, not the lesson i
 | Date | File | Topic |
 |---|---|---|
 | 2026-07-31 | `Session_ChatHistory_2026-07-31_FDE-Prep.md` | **FDE-Prep** — Forward Deployed Engineer role (Juno Beach, FL) resume tailoring · confirmed tool scope (Copilot + Claude Code only; no Devin/Windsurf) · **2 chronology defects found & fixed** (Bedrock/Claude 3 on a 2019–21 role; GraphRAG pre-dating its July 2024 release at KPMG) · version corrections (Ollama 0.6→0.32, crewAI 1.15→1.14) · MCP spec 2026-07-28 · interview probes |
+| 2026-07-27 | `Session_ChatHistory_2026-07-27_L28-vs-L29-A2A-MetaAgent.md` | **FDE-Prep continued** — pushed Part 7 + FDE-Prep reading set + `09_ML/MLEngineer_Coverage` to GitHub · **L28 (Meta-Agent) vs L29 (A2A) distinction**: pattern vs protocol, WHO vs HOW, `L28`'s PENDED-on-failure vs `L29`'s dead-letter-on-failure. **Ends on an open check question** — same mechanism or two? 100 messages |
 | 2026-07-26 | `Session_ChatHistory_2026-07-26_FDE-Prep_Part7-Build.md` | **FDE-Prep** — AI agent vs agentic AI · two JD coverage analyses · IaC terminology across Azure/AWS/GCP · **built Part 7 (`L32`–`L36`)**, `Part6/03` vuln write-up, `QA_L32`–`QA_L36`, full index regeneration, 3 stale-index fixes. 85 messages |
 | 2026-07-25 | `Session_ChatHistory_2026-07-25_TokenEmbedding-AKS-SKhosting-recall.md` | AI Infrastructure Engineer role · GPU cluster on AKS · node/pod/namespace diagram · token/embedding recall · where to host Semantic Kernel *(superset of `_3`)* |
 | 2026-07-25 | `Session_ChatHistory_2026-07-25_3.md` | Same session, earlier export — GitHub account setup, chat-history recall |
@@ -75,7 +80,7 @@ Not all of these are AI learning. Know which you are opening:
 
 | Track | Sessions | Note |
 |---|---|---|
-| **AI learning** | 06-03 → 07-19 agentic, plus 07-25 token/embedding recall | The curriculum thread |
+| **AI learning** | 06-03 → 07-19 agentic, 07-25 token/embedding recall, 07-27 L28/L29 | The curriculum thread |
 | **CallMiner audio pipeline** | 07-22, 07-23, 07-25_2 | ⚠️ Contains **JMFE Internal/Confidential** infrastructure detail — AKS subnets, Key Vault names, service accounts, internal hostnames. Fine to work with locally; never paste anywhere external-facing |
 
 ---
@@ -89,7 +94,11 @@ Not all of these are AI learning. Know which you are opening:
 2. Scaling — you add 20 replicas in prod and it gets *worse*. What happened?
 3. Skills — is the cancellation agent's refund calculation a good candidate to package as a Skill?
 
-Plus, from 2026-07-26: the supervisor-agent pattern question (answer is in `L28`).
+✅ The supervisor-agent pattern question (2026-07-26) was answered 2026-07-27 — see `L28`.
+
+**New, from 2026-07-27:** `L28`'s Supervisor returns `PENDED` when a specialist times out; `L29`'s
+AgentBus dead-letters an undeliverable message. Same mechanism wearing two names, or two genuinely
+different failure paths — and if different, which lesson owns which?
 
 ---
 

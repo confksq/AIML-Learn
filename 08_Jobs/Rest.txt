@@ -1,0 +1,99 @@
+PROFESSIONAL PROFILE
+Seasoned AI Cloud Architect and Generative AI Engineer (AI-102 & AI-103 certified) with 17+ years of experience,
+specializing in Python-first agentic AI engineering across Azure, AWS, and GCP. Proven track record designing and
+deploying production-grade AI solutions—RAG pipelines, autonomous AI agents, GraphRAG, and LLMOps
+frameworks—spanning Azure AI Foundry, Amazon Bedrock, GCP Vertex AI, and open-source stacks (Ollama,
+Hugging Face, LlamaIndex, crewAI). Delivering measurable outcomes: 60% faster document processing, 40%
+infrastructure cost reduction, and 95% RAG retrieval accuracy, with deep focus on Responsible AI, RAGAS-based
+evaluation, and LoRA/QLoRA fine-tuning.
+KEY ACHIEVEMENTS
+• Achieved 95% retrieval accuracy across 500K+ enterprise documents by designing a hybrid RAG system
+on Azure AI Foundry—eliminating hallucinations and reducing manual search time by 60% for 300+
+business users.
+• Saved ~$150K+ annually in cloud inference costs through intelligent token management, model tier
+optimization, and Azure Monitor dashboards tracking cost-drift and quality.
+• Automated 80% of document metadata tagging workflows by deploying autonomous AI agents to
+Microsoft Teams—eliminating 12+ hours of manual effort per week across finance and operations teams.
+• Cut infrastructure costs by 40% (~$300K+ annually) by modernizing 20+ legacy .NET monoliths into AKS
+microservices with autoscaling and zero-downtime deployments at KPMG.
+CORE CERTIFICATIONS
+• Microsoft Certified: Azure AI Engineer Associate (AI-102)
+• Microsoft Certified: Developing AI Apps and Agents on Azure (AI-103)
+• Microsoft Certified: Developing Solutions for Microsoft Azure (AZ-204)
+CORE ROLE EXPERTISE
+• AI Cloud Architect: Designing enterprise-grade AI solutions across Azure AI Foundry, Amazon Bedrock, and GCP
+Vertex AI—defining AI platform strategy, governance, and multi-cloud RAG architectures for regulated financial
+environments.
+
+• Generative AI / Agentic AI Engineer: Building production-grade RAG pipelines, autonomous AI agents, and multi-
+agent orchestration systems using Azure AI Foundry, Semantic Kernel, crewAI 1.15, and LlamaIndex 0.14—
+
+deployed to Microsoft Teams and enterprise web endpoints.
+• Open-Source AI Engineer: Architecting local LLM deployments using Ollama 0.6 (LLaMA 3 / Mistral), Hugging
+
+Face Transformers 5.x, LoRA/QLoRA fine-tuning via PEFT, and GraphRAG + Neo4j 5.x for knowledge graph-
+enhanced retrieval.
+
+TECHNICAL COMPETENCIES
+Generative AI & LLMOps: Azure AI Foundry, Azure OpenAI (GPT-4o / 4-Turbo), Semantic Kernel (.NET), RAG
+
+Architecture, GraphRAG + Neo4j 5.x, Agentic Architectures & Autonomous Agents, Vector Embeddings (text-
+embedding-3), Azure AI Search (Hybrid + Semantic), Azure AI Document Intelligence, Prompt Engineering, Azure AI
+
+Content Safety, RAGAS 0.4 / LLM Evaluation & Monitoring, Responsible AI & AI Governance, Model Context Protocol
+(MCP), LoRA / QLoRA Fine-Tuning (PEFT).
+AI Frameworks & Tools: LangChain, LangGraph, LlamaIndex 0.14, crewAI 1.15, Microsoft Agent Framework (MAF),
+AutoGen, Hugging Face Transformers 5.x, Amazon Bedrock (boto3 1.43), GCP Vertex AI (Gemini / ADK), Ollama 0.6
+(Local LLMs), OpenAI API, Prompt Flow, Azure ML, FastAPI, Vector Databases (Pinecone / Qdrant / FAISS).
+Cloud & Infrastructure: Azure (AKS, Functions, Event Grid, Service Bus, SQL, Cosmos DB, ADF, Synapse, Blob,
+Entra ID, Key Vault) | AWS (Bedrock, S3, Lambda, IAM) | GCP (Vertex AI, Cloud Run, BigQuery) | ARM / Bicep /
+Terraform, Docker, Helm, KEDA.
+Development & DevOps: Python, C#, .NET 10 / .NET Core, ASP.NET Core, Azure DevOps, GitHub Actions, CI/CD
+Pipelines, Git.
+PROFESSIONAL EXPERIENCE
+AI Cloud Architect June 2024 – Present
+Client: JM Family Enterprise | Tampa, FL
+• Built a production RAG system in Python using Azure AI Foundry SDK, LangChain, and Azure OpenAI (GPT-4o),
+serving 500K+ enterprise finance and insurance documents—achieved 95% retrieval accuracy via hybrid
+
+vector/keyword search with HNSW-indexed embeddings, eliminating hallucinations and reducing manual search
+time by 60% for 300+ business users.
+
+• Engineered autonomous AI agents in Python using Azure AI Foundry and crewAI 1.15 with dynamic function-
+calling, OpenAPI tool integrations, and multi-agent orchestration; deployed to Microsoft Teams to automate
+
+document Q&A and metadata workflows, eliminating 12+ hours of weekly manual effort across 50+ users.
+• Implemented LLMOps practices in Python—prompt versioning, model rollback, A/B testing, and RAGAS 0.4
+evaluation (faithfulness, answer relevance, context recall) via Azure AI Foundry—ensuring safe, measurable AI
+delivery across enterprise financial workflows.
+• Reduced cloud inference costs by 30% (~$150K+ annually) by engineering Python-based token budget
+management, model tier selection logic, and Azure Monitor dashboards to track cost-drift and response quality in
+real time.
+• Applied Responsible AI guardrails via Azure AI Content Safety, prompt injection defenses, and grounding
+validation in Python to enforce PII redaction, compliance, and Model Context Protocol (MCP) standards across all
+AI workflows.
+• Modernized supporting microservices on AKS with KEDA autoscaling and architected local LLM fallback pipeline
+using Ollama 0.6 (LLaMA 3) and LlamaIndex 0.14 for air-gapped document processing—reducing ingestion
+latency by 40% and ensuring compliance continuity.
+AI Cloud Architect Sep 2021 – June 2024
+Client: KPMG | Miami / Tampa, FL
+• Automated extraction and classification of 500K+ contracts and invoices annually using Python, Azure OpenAI
+(GPT-4), Hugging Face Transformers 5.x, and Azure AI Document Intelligence—benchmarking open-source vs
+cloud models via LlamaIndex 0.14 RAG pipelines, reducing processing cycle times by 60% and saving 8+ FTE
+hours per week.
+• Designed Python-based Azure AI Search and GraphRAG + Neo4j 5.x solutions with vector embeddings, semantic
+ranking, and knowledge graph-enhanced retrieval—enabling intelligent document search across Salesforce and
+financial applications for 200+ concurrent users.
+• Modernized 20+ legacy .NET monoliths into scalable AKS microservices, cutting infrastructure costs by 40%
+(~$300K+ annually) with zero-downtime deployments across all production environments.
+• Architected Python and Azure-based event-driven data ingestion platforms (ADF + Synapse) and evaluated
+LoRA/QLoRA fine-tuning (HuggingFace PEFT) for domain-specific contract classification—reducing model errors
+by 35%; enforced OAuth2/JWT, Managed Identities, and Key Vault security across all AI workflows.
+Cloud Architect & AI Integration Lead June 2019 – Aug 2021
+Clients: ADP & ASSURANT | Miami, FL (Mar 2021 – Aug 2021) & (June 2019 – Mar 2021)
+• Designed multi-cloud AI architecture integrating Amazon Bedrock (boto3 1.43, Claude 3, Titan Embeddings)
+alongside Azure AI for 100K+ annual tax filings—reducing manual classification effort by 70% and improving audit
+accuracy across enterprise financial clients.
+• Architected multi-cloud AI strategy evaluating GCP Vertex AI (Gemini / ADK) alongside Azure AI Foundry and
+Amazon Bedrock; built reusable IaC (Terraform + Bicep) with gated CI/CD across 20+ applications enforcing SOC
+2 compliance for systems processing $1B+ in transactions.

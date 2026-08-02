@@ -1,0 +1,46 @@
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ AI strategy, design, and implementation of artificial intelligence solutions within our organization. 
+experience in artificial intelligence, machine learning, and data science. 
+define AI architecture, and collaborate across teams to develop scalable, compliant, and high-performing AI systems that align with business goals.
+ 
+Key Responsibilities:
+ 
+AI Strategy & Leadership
+
+Develop and execute an enterprise AI strategy aligned with business objectives.
+Drive AI adoption and innovation across departments, ensuring measurable impact.
+
+ 
+AI Architecture & Technical Design
+
+Define scalable AI architectures for machine learning (ML), natural language processing (NLP), Large Language Models (LLM), and other AI-driven solutions.
+Establish AI model lifecycle processes, including development, deployment, monitoring, and continuous improvement.
+Ensure AI systems are explainable, ethical, and compliant with industry regulations.
+ 
+
+Partner with Data and AI Council to ensure robust AI governance and data privacy compliance.
+ 
+AI Governance & Risk Management
+
+Define AI governance frameworks, ensuring responsible AI usage.
+Implement MLOps and AI model monitoring processes to track performance and mitigate risks.
+Guide teams in ethical AI design, fairness, bias mitigation, and regulatory adherence.
+Data Management: Oversee the collection, preprocessing, and analysis of data, ensuring high data quality and integrity.
+Documentation: Create comprehensive documentation for AI tools, processes, and systems to ensure transparency and reproducibility.
+ 
+Required Qualifications:
+ 
+Technical Skills & Experience
+
+Education: Bachelor’s or Master’s degree in Computer Science, Data Science, Artificial Intelligence, or a related field. PhD is a plus.
+Strong proficiency in AI/ML frameworks, with a proven track record of delivering successful AI projects.
+Experience in cloud-based AI architectures (Azure AI)
+Expertise in MLOps, model deployment, and AI lifecycle management.
+Knowledge of AI governance, compliance, and ethical AI principles.
+Experience with AI ethics and ensuring compliance with relevant regulations and standards (GDPR, HIPAA, Act, etc.).
+
+ 
+ 

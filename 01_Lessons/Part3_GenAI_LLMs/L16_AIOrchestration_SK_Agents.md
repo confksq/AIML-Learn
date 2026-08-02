@@ -2082,3 +2082,65 @@ For each JMA team, decide: build with SK in C# or use Copilot Studio?
 *Previous: Module 13 — RAG Deep Dive*
 *Next: Module 15 — Fine-Tuning*
 *Updated: 2026-06-30*
+
+---
+---
+
+## Securing Function/Tool Calls to Internal & External APIs (added 2026-08-01)
+
+The `RAGPlugin` example in §2 (Agentic RAG Pattern — JM Family) has `[KernelFunction]`s hitting real
+backends (Azure AI Search indexes). In production, the same idea extends to any internal or external
+API your tools call — and that means authenticating those calls. Two patterns, same starting point
+(an Entra ID token), different endings.
+
+**OIDC = OpenID Connect** — an identity layer built on top of OAuth 2.0. OAuth2 handles
+authorization/access; OIDC adds the identity/authentication layer on top of it, which is what lets
+Entra ID issue tokens that *other systems* (like AWS) can trust as proof of identity.
+
+### Pattern 1 — OAuth2 (external caller → our API), e.g. Salesforce calling an Azure Function
+
+```
+SETUP (once): Salesforce gets a Client ID + Client Secret via an Entra ID App Registration
+
+1. Salesforce → Entra ID token endpoint: "here's my Client ID + Secret, give me a token"
+2. Entra ID validates, issues an access token (JWT, ~60–90 min validity)
+3. Salesforce calls the Azure Function: Authorization: Bearer <token>
+4. Function validates the token's signature LOCALLY using Entra ID's public keys
+   (JWKS — fetched once, cached in memory, refreshed on rotation, not a live call per request)
+5. Valid → Function runs, returns the response
+6. Salesforce caches the token, reuses it until near-expiry, then repeats step 1
+```
+
+Salesforce isn't an Azure resource, so it can't get a "free" Managed Identity — it proves itself with
+a stored Client ID + Secret instead. **The token IS the credential used directly against the API.**
+
+### Pattern 2 — OIDC Federation (our Azure resource → an external API), e.g. an SK agent's tool calling an AWS-hosted API
+
+```
+SETUP (once): AWS IAM trusts Entra ID as an OIDC provider; an IAM Role's trust policy
+              names which Azure Managed Identity may assume it — no secret stored anywhere
+
+1. SK function (Managed Identity) asks Entra ID for a token, audience set to match
+   what AWS's trust policy expects
+2. Entra ID issues the token (same signing/validity mechanics as Pattern 1)
+3. Function calls AWS STS: AssumeRoleWithWebIdentity, presenting that Entra ID token
+4. AWS STS validates the token's signature (via Entra ID's public keys) and checks
+   the trust policy — is this Managed Identity allowed to assume this role?
+5. Valid → AWS STS issues TEMPORARY AWS credentials (Access Key + Secret + Session
+   Token) — short-lived, e.g. 1 hour
+6. Function uses THOSE temporary credentials (not the Entra ID token) to sign
+   the real request (SigV4) to the AWS API
+7. Credentials expire → repeat steps 1–5 for fresh ones
+```
+
+**The key difference from Pattern 1:** the Entra ID token is never used directly against the target
+API — it's *traded in* at AWS STS for a completely different, AWS-native temporary credential. OAuth2
+= get a token, use it directly. OIDC federation = get a token, then exchange it for a different
+credential, and that's what actually calls the real API. Two hops instead of one, and no long-lived
+secret stored on either side.
+
+### Why the public key matters (common confusion)
+
+The public key is **not** for reading a JWT's contents — anyone can Base64-decode the Header and
+Payload of a JWT with no key at all. The public key exists purely to verify the **Signature** —
+proving Entra ID (via its private key) really issued this token and nobody tampered with it.

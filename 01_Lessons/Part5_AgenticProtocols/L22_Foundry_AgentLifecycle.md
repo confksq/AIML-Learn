@@ -321,3 +321,42 @@ Process:
 
 **Q: How do you prevent hallucination in a Foundry-deployed agent?**
 "Two platform-level guardrails: Content Safety for PII and prompt injection, and groundedness detection for factual accuracy — both run in Foundry before output reaches the user. In the system prompt I explicitly instruct the agent to only use retrieved context and flag uncertainty rather than guess. In production SK I add a FunctionInvocationFilter that logs every tool call and an output validator. In the evaluation pipeline, groundedness is my primary quality gate — if it drops below threshold, the deployment is blocked."
+
+---
+
+## Terminology Primer — Agent vs Agentic AI vs Agentic (added 2026-08-01)
+
+Before going further into Part 5, pin down three terms that get used interchangeably but aren't
+grammatically the same thing. Same analogy as **robot / robotics / robotic**:
+
+| Robot analogy | AI term | What it is |
+|---|---|---|
+| **Robot** (a specific machine) | **AI Agent** | One actual system you built — *"our invoice-collection agent"* |
+| **Robotics** (the field of building robots) | **Agentic AI** | The category/approach — *"we're doing agentic AI"* |
+| **Robotic** (describes automated behavior) | **Agentic** | The adjective — describes a quality — *"this system behaves agentically"* (decides its own steps) |
+
+**One sentence:** *"We used an **agentic AI** approach (the field) to build an **AI agent** (the thing) that behaves **agentically** (the adjective) — it decides on its own whether to check the database or re-search, instead of following one fixed script."*
+
+### Agent vs No Agent
+
+| | No agent (fixed) | Agent |
+|---|---|---|
+| Example | "Summarize this document" | "Handle all overdue invoices" |
+| How it runs | One LLM call, done | Decides steps as it goes |
+| Steps known in advance? | Yes | No |
+
+**Use an agent when:** 3+ interdependent steps, path can't be predetermined, multiple tools, needs to
+adapt to unexpected results, goal is open-ended. **Don't use an agent when:** simple Q&A (use RAG),
+one live lookup (use function calling), a fixed pipeline (use direct orchestration), or latency/cost
+is critical (agents make multiple LLM calls — slower and pricier than a single call).
+
+### RAG vs Agentic RAG
+
+| | RAG | Agentic RAG |
+|---|---|---|
+| Example | "What's our return policy?" | "Why was this specific return rejected?" |
+| Flow | Fixed: retrieve top-K → stuff into prompt → answer | Agent decides: check DB record → retrieve targeted policy → re-query if unclear → answer |
+| Retrieval passes | Always exactly 1 | Variable — agent's choice |
+
+**Simple rule:** RAG = always retrieve, same way, every time. Agentic RAG = the agent decides *if*,
+*when*, and *how many times* to retrieve, and can change strategy mid-task.

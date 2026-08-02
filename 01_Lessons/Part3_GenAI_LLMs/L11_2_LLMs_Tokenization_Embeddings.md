@@ -576,3 +576,68 @@ Take the JMA EnterpriseSearch RAG pipeline prompt. Run it through the tokenizer:
 
 *File: Part3_Module11_2_Tokenization_Embeddings.md | AI Solutions Architect Curriculum*
 *Updated: 2026-06-30*
+
+---
+---
+
+## 15. Setting `max_tokens` & Token-Saving Techniques — Cost Control (added 2026-08-01)
+
+This module teaches what tokens *are* and how the context window is *budgeted*. It stops short of
+the operational question: once you know your budget, how do you actually control spend? That's
+covered elsewhere in the library — this section is the cross-reference, not a duplicate.
+
+### Setting `max_tokens`
+
+An API request parameter that caps the **response length only** — it does not cap input, and it is
+not itself a savings technique, just a safety ceiling.
+
+```python
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=messages,
+    max_tokens=800   # response is cut off here, whatever it costs to that point
+)
+```
+
+- Recommended range for typical use: **500–1000**
+- `finish_reason == "length"` in the response means you hit the cap mid-answer — raise `max_tokens`
+  or shrink the input side of the budget (§5 above) to leave more room
+- **o1/o3 reasoning models use a different parameter name** — `max_completion_tokens`, not
+  `max_tokens` — and drop `temperature` entirely
+- Full detail: `L12_AzureOpenAI_Services.md` (~lines 148, 165, 205, 601, 695, 699)
+
+### Token-saving techniques (ranked by return, not alphabetically)
+
+| Technique | Typical savings | Where taught |
+|---|---|---|
+| **Model tiering/routing** — cheap model handles easy cases, escalate to GPT-4o only when needed | Biggest single lever | `L36_LLM_Observability_FinOps.md` §229–260, §351–355 · `HLP01` §2 |
+| **Semantic caching** — skip the LLM call for near-duplicate queries | 20–60% | `L13_RAG_DeepDive.md`:1324 · `L36`:295–320 |
+| **Prompt caching** — Azure OpenAI caches repeated system-prompt prefixes | ~50–90% off the cached portion | `L15_PromptEngineering.md`:742 |
+| **Context/RAG trimming** — reduce top-K, truncate chunks, summarize history | 20–40% | `L13`:868–897 (the context-budget formula in §5 above, applied) |
+| **Prompt compression** — trim a bloated system prompt | 10–30% | `L15`:596–619 (worked example: 65→30 tokens, 54% cut) |
+| **Batch API** — async batch completions for non-realtime jobs | Flat 50% | `L12`:699 |
+| **Cap `max_tokens` / agent iteration limits** | 1.5–2× | `L36`:384 |
+
+### The decision framework — which lever first
+
+Two ranked tables in the library answer "which technique do I reach for first," and both agree:
+**don't start with prompt wordsmithing — it's the weakest lever for the effort.**
+
+- `L36` §342–348 ("levers in order of return"): semantic caching → model tiering → prompt
+  compression → cap iterations → trim RAG context → batch/provisioned throughput → self-host
+- `HLP01_Memory_Tokens_Scaling_Agents.md` §2 (ranked by magnitude): model choice (~17×) > top-K
+  reduction (2–5×) > caching (2–10×) > prompt caching (~90% off cached prefix) > memory strategy
+  (2–3×) > output constraints incl. `max_tokens` cap (1.5–2×) > prompt wordsmithing (~5–10%, **last**)
+
+**Rule of thumb both converge on:** route by task complexity before touching the prompt — ask
+"does this need GPT-4o at all?" (tiering), then "have we seen this before?" (caching), then "are we
+sending more context than needed?" (trimming), and only then micro-optimize wording.
+
+This connects §5's context-budget formula (line 205 above) to the FinOps decision layer — the
+budget formula tells you *how much room you have*; this section tells you *what to cut first* when
+you're over.
+
+> ⚠️ **Do not insert further content between here and line 578 above.** `00_INDEX.md` carries ~18
+> line-number citations into this file (e.g. `L11_2:401`, `L11_2:157`), all at or below line 538.
+> Any edit inside the original body shifts those citations silently. Append new material after this
+> point only, or regenerate the index.
