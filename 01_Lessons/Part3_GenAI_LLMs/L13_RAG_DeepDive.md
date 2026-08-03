@@ -1525,3 +1525,57 @@ embeddings = model.encode([full_doc], late_chunking=True)
 | **Parent-Child** | **Hierarchical docs, specs, legal** | **⭐⭐⭐⭐⭐** | **Medium** |
 | **Late Chunking** | **Long narrative docs, cross-referencing** | **⭐⭐⭐⭐⭐** | **High** |
 | Semantic (topic-based) | Mixed-topic documents | ⭐⭐⭐⭐ | High |
+
+---
+---
+
+## Re-ranking and Top-K — Why Fewer Chunks Needs a Second Pass (added 2026-08-02)
+
+**Top-K = simply "how many results you keep."** Top-3 = keep the best 3 chunks. Top-10 = keep the
+best 10. K is just a number you choose — nothing more complex than that.
+
+**Re-ranking = a second, more precise scoring pass that re-orders retrieved chunks, so a smaller
+top-K still contains the truly best matches** — instead of trusting the first search's rough order.
+
+### Worked example
+
+**Question:** "What is the penalty for late invoices?"
+
+**Step 1 — first-pass search returns 10 chunks, roughly ranked (fast, approximate):**
+```
+1. Chunk about dealer territory codes         ← wrong, ranked high by mistake
+2. Chunk about parts payment terms
+3. Chunk about the ACTUAL late invoice penalty  ← this is the one we need!
+4. Chunk about warranty claims
+... (6 more, irrelevant)
+```
+Fast vector/keyword search isn't perfect — the real answer landed at position 3, not 1.
+
+**Step 2 — without re-ranking, top-K = 3:** you'd get chunks #1, #2, #3 — the real answer barely made
+it in by luck. If it had ranked #4 instead, top-3 would have **missed it entirely**.
+
+**Step 3 — re-ranking fixes the order first**, re-scoring all 10 candidates more carefully (looking at
+the query and each chunk *together*, not just comparing separate embeddings):
+```
+1. Chunk about the ACTUAL late invoice penalty   ← now correctly #1
+2. Chunk about warranty claims
+3. Chunk about parts payment terms
+```
+
+**Step 4 — now take top-K = 3:** the real answer is guaranteed to be included — not luck, because the
+order was fixed before cutting down to K.
+
+### Why two passes, not one
+
+- **First pass** (vector/keyword search) — fast, scans the *entire* index, but only approximately
+  ranked
+- **Second pass** (re-ranker) — slower per item, but only runs on the small first-pass candidate set
+  (e.g. 20), producing a far more accurate order
+
+This is the same **"Semantic reranking — ✅ Built-in semantic ranker"** row from the Azure AI Search
+vector-DB comparison table (§ "Why would you choose Azure AI Search...") — Azure AI Search has this
+re-ranking step natively built in, no separate cross-encoder to stand up yourself.
+
+**One-sentence summary:** reducing top-K alone risks accidentally leaving out the real answer if the
+first-pass search ranked it too low; re-ranking first means a smaller top-K is safe, because the order
+is trustworthy before you cut it down.

@@ -792,4 +792,131 @@ Design a JMA distillation pipeline:
 
 *Previous: Module 14 — AI Orchestration*
 *Next: Module 16 — Prompt Engineering*
+
+---
+---
+
+## Where a Fine-Tuned Model Deploys — Separate, Not Merged (added 2026-08-02)
+
+Common confusion worth heading off explicitly: if you already have a live deployment (say,
+`customerservicejma`, bound to base `gpt-4o`), and you fine-tune a model, **the fine-tuned model does
+NOT get added into that existing deployment.** It needs its own, separate deployment.
+
+```
+"customerservicejma" deployment
+  └── bound to: base gpt-4o model
+      (fixed, 1:1 binding — deployment name ↔ specific model)
+
+"jmf-invoice-v1-deployment" (NEW, separate)
+  └── bound to: your FINE-TUNED model
+      (a genuinely different model artifact — not gpt-4o anymore,
+       it's gpt-4o + your trained adapter/weights, with its own
+       model ID)
+```
+
+**Why it can't merge:** a deployment is a **1:1 binding** to one specific model version (see the
+Deployment concept — a named, capacity-controlled wrapper around a pinned model version). A
+fine-tuned model gets its **own distinct model ID** once training succeeds — it isn't "gpt-4o with a
+flag set." Since `customerservicejma` is already bound to base `gpt-4o`, there's no slot to insert the
+fine-tuned model into — it needs a fresh deployment.
+
+**This is exactly what `Suffix = "jmf-invoice-v1"` does in the C# fine-tuning workflow above (§5,
+Step 3)** — it's naming the *new, separate* deployment you'll create once the job succeeds. It was
+never going into an existing deployment.
+
+### The practical rollout pattern
+
+```
+1. customerservicejma           → still running base gpt-4o, serving real users
+2. jmf-invoice-v1-deployment    → NEW deployment, fine-tuned model, deployed
+                                   alongside, not yet used by production traffic
+3. Test jmf-invoice-v1-deployment thoroughly (same idea as RAGAS/evaluation —
+   validate before promoting)
+4. Update YOUR APPLICATION CODE to call "jmf-invoice-v1-deployment" instead of
+   "customerservicejma" for that specific use case
+5. Decommission customerservicejma once nothing calls it anymore — or keep both
+   running side by side if only some traffic should use the fine-tuned model
+   (a blue-green / gradual cutover)
+```
+
+**One-line summary:** two independent deployments in the same Azure OpenAI resource, each pointing at
+a different model — your app decides which one to call by name.
+
+---
+---
+
+## End-to-End Flow — Where Each Technology Runs (added 2026-08-02)
+
+There are **two different paths** through fine-tuning, and mixing them up is the usual source of
+confusion about "where does training actually happen." Both are covered separately below.
+
+### Path A — Azure OpenAI's own managed fine-tuning (gpt-4o-mini, etc.)
+
+```
+1. YOU: prepare JSONL training file (your own laptop/machine)
+                    ↓
+2. UPLOAD to Azure OpenAI (via SDK/API call)
+                    ↓
+3. TRAINING happens on MICROSOFT'S OWN INFRASTRUCTURE
+   — you never see or manage this compute at all
+   — you don't configure LoRA yourself here — Microsoft handles
+     the efficient-training internals, fully abstracted away
+                    ↓
+4. Fine-tuned model artifact is produced, stored by Microsoft
+                    ↓
+5. DEPLOY — you create a NEW Azure OpenAI deployment
+   (e.g. "jmf-invoice-v1-deployment") pointing at this model
+                    ↓
+6. Your app calls that deployment name, same as any other
+```
+**Technology used:** just the Azure OpenAI SDK + a JSONL file. No Azure ML, no HuggingFace, no LoRA
+code — it's fully managed.
+
+### Path B — DIY fine-tuning with HuggingFace + PEFT (LoRA/QLoRA) — open-weight models
+
+```
+1. YOU: write Python training script (uses HuggingFace
+   transformers + peft libraries)
+                    ↓
+2. WHERE IT RUNS: Azure ML (a GPU compute cluster you provision
+   in Azure) — the "different ML machine." You spin up a GPU
+   compute instance in Azure ML, and your Python script runs there.
+                    ↓
+3. Inside that Azure ML compute, THIS is where LoRA/QLoRA
+   actually take effect:
+     - Load base model (e.g. Phi-3 mini) from HuggingFace Hub
+     - Freeze all its weights
+     - (QLoRA only) quantize the frozen weights to 4-bit first
+     - Attach LoRA adapters (small extra matrices)
+     - Train ONLY the adapters using HuggingFace's Trainer
+                    ↓
+4. VALIDATE — check the fine-tuned model's accuracy on held-out
+   data (still running in the same Azure ML environment)
+                    ↓
+5. SAVE the adapter (or merge adapter + base into one model)
+   — still inside Azure ML, saved to storage (e.g. Azure Blob)
+                    ↓
+6. DEPLOY — a SEPARATE step: publish this model to an
+   Azure ML Endpoint (or another hosting service) so it's
+   callable over the network
+                    ↓
+7. Your app calls that endpoint, same idea as calling a deployment
+```
+**Technology used:** Python, HuggingFace `transformers` + `peft` libraries, running on **Azure ML
+compute** (GPU cluster), deployed via an **Azure ML Endpoint**.
+
+### Side by side
+
+| | Path A (Azure OpenAI managed) | Path B (DIY with PEFT) |
+|---|---|---|
+| **Where trained** | Microsoft's own infrastructure — invisible to you | **Azure ML** — a GPU compute you provision yourself |
+| **Where LoRA/QLoRA happen** | Nowhere visible — abstracted away by Microsoft | Inside your Azure ML compute, in your Python training script |
+| **What model types** | Azure OpenAI's own models (gpt-4o-mini, etc.) | Open-weight models (Phi-3, Llama, Mistral) |
+| **Where deployed** | Azure OpenAI deployment (the "instance" concept) | Azure ML Endpoint (a different, separate hosting service) |
+
+**One-line summary:** if you're fine-tuning an **Azure OpenAI model**, Microsoft trains it for you —
+you never touch LoRA/PEFT directly. If you're fine-tuning an **open-weight model yourself**, that's
+when **Azure ML becomes the training machine**, and that's exactly where LoRA/QLoRA/PEFT code
+actually runs — before eventually landing on a separate deployment/endpoint.
+
 *Updated: 2026-06-30*

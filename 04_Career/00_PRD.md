@@ -120,6 +120,33 @@ Questions are produced via a **mixed approach**, three layers:
 
 ---
 
+## 11.5. Flagged Topic — AI App / Agent / Workflow Scaling (added 2026-08-02)
+
+A full-lesson-worthy gap surfaced in a chat session on 2026-08-02, sitting squarely in **Tier 4
+(Agent Orchestration)** and **Tier 5's SCALE lens**. Not yet written as a lesson — flagged here so it
+isn't lost before Tier 4/5 generation. Core content to carry forward:
+
+- **The central point:** AI apps have independent scaling layers — app/compute, LLM quota (TPM/RPM,
+  PTU), retrieval (Azure AI Search Search Units), and demand itself (semantic caching, model
+  tiering) — and scaling the wrong layer doesn't help, and can actively make things worse.
+- **The worked failure case (directly answers the open check question already in `08_Jobs/FDE/`):**
+  scaling app replicas 5→20 while all replicas share one Azure OpenAI deployment's TPM quota
+  increases 429 contention rather than fixing it — the bottleneck was the LLM quota, not compute.
+  Fix: raise TPM, add a second load-balanced deployment, or move to PTU.
+  This is the same "20 replicas made it worse" question already sitting unanswered in
+  `08_Jobs/FDE/FDE-Prep_Tracker.md`'s "Open check questions" section — resolving it here should also
+  close that entry.
+- **Agent-specific wrinkle:** agents make multiple LLM calls per user request (ReAct loop), so agent
+  traffic hits TPM/RPM ceilings faster than simple chat at equal user volume — cap iterations, queue
+  long-running agent work instead of holding the request open.
+- **State-at-scale wrinkle:** in-memory ChatHistory/session state breaks under horizontal scaling
+  unless externalized (Redis/Cosmos DB) — a replica change mid-session must not lose context.
+
+**Action when Tier 4/5 files are generated:** fold this in as one or more WHY-HOW-WHEN-SCALE-DEPLOY
+questions rather than treating it as a standalone add-on.
+
+---
+
 ## 11. Maximum Question Ceiling Per Module
 
 Beyond the **target counts** (§4), each module has a practical **maximum** before additional questions become redundant/overlapping rather than adding new coverage. This is a ceiling for later expansion if you want more depth — not the default generation count.

@@ -2144,3 +2144,40 @@ secret stored on either side.
 The public key is **not** for reading a JWT's contents — anyone can Base64-decode the Header and
 Payload of a JWT with no key at all. The public key exists purely to verify the **Signature** —
 proving Entra ID (via its private key) really issued this token and nobody tampered with it.
+
+---
+---
+
+## Model Tiering — GPT-4o mini Is a Production Model, Not Just a Dev/Test Stand-In (added 2026-08-02)
+
+Easy misconception worth correcting explicitly: **`gpt-4o-mini` is not a "cheap model for testing
+only" — it's a real production-grade model**, and it runs in production constantly, on its own
+merit. The dev-vs-prod model question and the tiering question are two different things.
+
+### The decision table (from §"Interview Gap 3: Model Selection & Cost Routing")
+
+```
+Task Type                        Model           Notes
+─────────────────────────────────────────────────────────
+Simple Q&A, classification       GPT-4o mini     17x cheaper than GPT-4o
+Structured extraction            GPT-4o mini     JSON mode works fine
+Complex reasoning                GPT-4o          Best general quality
+```
+
+This is a **production cost-routing table** — not a "use mini only until you ship" recommendation.
+The `CostOptimizedKernel` example (with `_cheapKernel` = mini, `_premiumKernel` = 4o) is explicitly a
+**production pattern**.
+
+### The real distinction: model tiering *within* production, not dev vs. prod
+
+| | GPT-4o mini in production | GPT-4o in production |
+|---|---|---|
+| Used for | Simple/high-volume tasks — classification, structured extraction, routing decisions | Complex reasoning, nuanced multi-step answers |
+| Same environment? | ✅ Both commonly run in the **same** production system, side by side | ✅ |
+
+**Correct framing:** route the ~80% of easy requests to `gpt-4o-mini`, escalate only the hard ~20% to
+`gpt-4o`. Mini isn't a lesser/testing-only model that gets swapped out before shipping — it's a
+first-class production tool that also happens to be great for cheap dev iteration. This is the same
+"model tiering" lever ranked #1 by return in `L36_LLM_Observability_FinOps.md` §342–348 (40–70%
+savings, medium effort) — it's a cost-optimization technique for *production traffic*, not a dev
+convenience.

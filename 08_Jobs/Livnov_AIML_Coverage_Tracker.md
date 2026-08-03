@@ -186,3 +186,37 @@ don't count time "reading" it as covering these topics.
   `L31`, `L11_4`, `L11_3`, `L23`, `L24`, `L29`, and the MCP HIPAA subsection).
 - Either way, the three "not fixed by reading" items above don't cost study time — they cost writing
   time, and arguably matter more for this JD than any additional module would.
+
+---
+---
+
+## Consolidated Requirement Table — Full Livnov JD Text (added 2026-08-02)
+
+A longer, fuller version of the Livnov JD text was reviewed separately and de-duplicated — the
+original had ~25 overlapping bullets across Responsibilities and Qualifications (e.g., "AI
+governance" appeared 5 separate times, "stakeholder communication" appeared 4 times). Consolidated
+down to **11 distinct requirements**, each mapped to where it fits in this library.
+
+| # | Category | Consolidated Requirement | AIML Lesson / Where It Fits | Status |
+|---|---|---|---|:--:|
+| 1 | **AI Strategy & Project Leadership** | Develop/execute enterprise AI strategy; lead large-scale AI projects end-to-end; drive adoption | — no dedicated lesson. Closest: `CareerAccelerator/06-Amazon-Bedrock/03_interview_qa.md` (multi-cloud strategy Q&A, tangential) | 🔴 |
+| 2 | **Staying Current** | Track AI trends, emerging tech, regulatory changes; independent research | `InterviewBank/06_Responsible_AI_LLMOps.md` (EU AI Act timeline), `L11_4_LLMs_RLHF_Alignment.md`:468 | 🟡 |
+| 3 | **AI Architecture & Technical Design** | Scalable architectures for ML, NLP, LLM | `L18_AISolutionArchitecture.md`, `L17_AzureAIFoundry.md` (dedicated modules) | ✅ |
+| 4 | **MLOps & Model Lifecycle** | Full lifecycle — dev, deploy, monitor, improve — via MLOps | `L19_MLOps_LLMOps.md` (dedicated module), `L06_AzureML.md`, `L31_FaultTolerance_Observability.md` (drift) | ✅ |
+| 5 | **AI Governance, Ethics & Compliance** | Governance frameworks, explainability, fairness, bias, regulatory adherence | `L01_Introduction_to_AI.md` (Responsible AI, §1.4), `InterviewBank/06_Responsible_AI_LLMOps.md`, `L11_4_RLHF_Alignment.md` | 🟡 |
+| 6 | **Data Management** | Collection, preprocessing, quality/integrity | `L06_AzureML.md`, `L11_3_Pretraining_Finetuning.md`, `L14_FineTuning.md` — recurring mentions only, flagged gap in the FDE tracker (no dedicated sklearn/data-pipeline module) | 🟡 |
+| 7 | **Documentation & Transparency** | Comprehensive docs for reproducibility | `L06_AzureML.md` (reproducibility/environment pinning) — model-card-style docs only in `05_Assessments/VitalCare_AI_Assessment_Response.md`, not core lessons | 🟡 |
+| 8 | **Stakeholder Management & Communication** | Cross-team collaboration, non-technical communication, AI literacy advocacy | `InterviewBank/05_Solution_Architecture.md` (architect-judgment Q&A woven throughout, not a standalone topic) | 🟡 |
+| 9 | **Experience, Education & Cloud Platform** | 8+ yrs AI/ML/data science; degree; Azure AI experience | Virtually the entire library (Parts 1–7) is Azure AI-focused; AI-102 already certified | ✅ |
+| 10 | **Preferred — Domain (Medical Device)** | AI in Medical Device environment | No direct match — `05-VitalCare-AI-Platform/` is healthcare/clinical (prior-auth), adjacent but not Medical Device-specific (e.g. FDA SaMD) regulatory framework | 🔴 |
+| 11 | **Preferred — Certifications** | AI/ML or cloud (Azure) certifications | AI-102 ✅ done; AI-103 in progress per `04_Career/AI103-Material/` | 🟡 |
+
+### The honest read
+
+**Only 2 of 11 (points 3, 4, 9) are solidly ✅ covered.** The rest are either thin/scattered (🟡 —
+points 2, 5, 6, 7, 8, 11) or genuinely absent (🔴 — points 1, 10). This matches the earlier audit's
+conclusion in this same tracker: **the library was built for a hands-on AI engineering curriculum, not
+an AI strategy/leadership one** — technical depth (architecture, MLOps) is strong, but the
+*leadership* layer (enterprise strategy, stakeholder communication, project management) isn't
+something a lesson file teaches — it's built from experience, the same way the FDE tracker treats its
+🔵 rows.
