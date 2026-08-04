@@ -1,7 +1,37 @@
 # PRD — AI Architect / GenAI Architect Interview Question Bank
-**Status:** Draft — pending your review/edits
+**Status:** ✅ **DELIVERED** — all 7 tiers built · 144 questions
 **Owner:** confksq
 **Created:** 2026-07-03
+**Updated:** 2026-08-03 — Tier 7 (Behavioral & Leadership) added, resolving open question #3
+
+---
+
+## 0. Delivery Status (2026-08-03)
+
+Built and living in `02_Questions/InterviewBank/`:
+
+| Tier | File | Target # | Actual # |
+|---|---|---:|---:|
+| 1 | `01_Fundamentals.md` | 10 | 16 |
+| 2 | `02_Azure_AI_Platform.md` | 12 | 19 |
+| 3 | `03_RAG_Architecture.md` | 12 | 19 |
+| 4 | `04_Agent_Orchestration.md` | 13 | 19 |
+| 5 | `05_Solution_Architecture.md` | 25 | 36 |
+| 6 | `06_Responsible_AI_LLMOps.md` | 15 | 23 |
+| **7** | **`07_Behavioral_Leadership.md`** — *added 2026-08-03* | — | **12 STAR stories** |
+| | **Total** | ~87 | **144** |
+
+**Why Tier 7 exists.** `Roadmap_Coverage_Check_2026-08-03.md` scored Behavioral & Leadership at
+**~15%** — all 132 questions in Tiers 1–6 were technical, while behavioral is typically 25–40% of a
+Lead loop and often the deciding round. This resolves **open question #3** below: the answer was
+*add the tier*.
+
+Tier 7 deviates from the WHY/HOW/WHEN/SCALE/DEPLOY lens by design — behavioral answers use
+**STAR** (Situation/Task/Action/Result) instead, plus a follow-up probe per story, which is the
+format those rounds actually reward. See §5 note.
+
+Tier 7 stories are drawn from real material: JM Family production AI, the VitalCare prior-auth
+platform, and the Ascendion healthcare engagement.
 
 ---
 
@@ -46,7 +76,8 @@ Build a reusable, structured interview question bank for **AI Architect / Genera
 | 4 | Agent Orchestration (SK, MCP, multi-agent, **memory**) | 13 | WHY-HOW-WHEN-SCALE-DEPLOY |
 | 5 | Solution & Deployment Architecture (incl. **caching**, **pricing/cost optimization**) | 25 | WHY-HOW-WHEN-SCALE-DEPLOY (deployment topology + caching + pricing are the centerpiece of this tier) |
 | 6 | Responsible AI, LLMOps & **Governance** | 15 | WHY-HOW-WHEN-SCALE-DEPLOY |
-| **Total** | | **~87** | |
+| **7** | **Behavioral & Leadership** *(added 2026-08-03)* | 10–12 | **STAR** + follow-up probe |
+| **Total** | | **~99** | |
 
 **Newly added coverage (this revision):** agent memory (short/long-term, vector-backed, summarization), caching strategy (prompt caching, semantic/CAG caching, cache invalidation across regions), pricing & cost-optimization best practices (PTU vs pay-as-you-go, token economics, model tiering/routing, reserved capacity, chargeback), and AI governance (model approval workflows, audit trails, policy-as-code, regulatory mapping, vendor/model risk management).
 
@@ -66,6 +97,11 @@ This is the core change from the original draft: every scenario-style question (
 
 Tier 1 (Fundamentals) stays as lighter concept checks — DEPLOY/SCALE don't meaningfully apply to "what is attention."
 
+**Tier 7 (added 2026-08-03) uses STAR, not this lens.** Situation → Task → Action → Result, with a
+follow-up probe per story. Forcing WHY/HOW/WHEN/SCALE/DEPLOY onto "tell me about a time you
+disagreed with a stakeholder" produces a technical essay, which is exactly the failure mode those
+rounds screen for. Different question type, different framework.
+
 Tier 5 is where DEPLOY is the primary axis, not a side note — it explicitly walks the deployment scale ladder (see updated structure below) rather than treating "how do you scale this" as one question among many.
 
 ---
@@ -80,17 +116,34 @@ Tier 5 is where DEPLOY is the primary axis, not a side note — it explicitly wa
 
 ## 7. Open Questions / Decisions Needed From You
 
-1. Question counts per tier — keep as proposed, or reweight further?
-2. Should JMA production experience be woven into answers as a running example, or kept generic/role-neutral?
-3. Any tier to exclude or add (e.g. behavioral/leadership questions for Architect-level scope)?
-4. Confirm the WHY-HOW-WHEN-SCALE-DEPLOY framework is the right lens, or adjust its 5 dimensions.
-5. Memory, caching, pricing, and governance are now folded into Tiers 4–6 rather than standalone tiers — confirm that's right, or split any of them out as their own module.
+*Resolved by delivery — kept for the record.*
+
+1. ~~Question counts per tier — keep as proposed, or reweight further?~~ → **Resolved.** Every tier
+   over-delivered against target (144 vs ~87). Tier 5 stayed the largest, as intended.
+2. ~~Should JMA production experience be woven into answers as a running example, or kept
+   generic/role-neutral?~~ → **Resolved: woven in.** JM Family and VitalCare anchor answers
+   throughout, which is also what makes Tier 7 possible.
+3. ~~Any tier to exclude or add (e.g. behavioral/leadership questions for Architect-level scope)?~~
+   → **Resolved 2026-08-03: added as Tier 7.** The coverage check scored this area ~15% and it is
+   typically 25–40% of a Lead loop.
+4. ~~Confirm the WHY-HOW-WHEN-SCALE-DEPLOY framework is the right lens~~ → **Resolved: kept for
+   Tiers 2–6.** Tier 1 stays concept-check, Tier 7 uses STAR (§5).
+5. ~~Memory, caching, pricing, governance as standalone tiers?~~ → **Resolved: folded into Tiers
+   4–6**, as proposed. Depth was sufficient without splitting.
 
 ---
 
 ## 8. Next Steps
 
-Once this PRD is confirmed/edited → execution plan is finalized (see `01_EXECUTION_PLAN.md`) → generate tier files starting with Tier 1.
+~~Once this PRD is confirmed/edited → execution plan is finalized → generate tier files starting with
+Tier 1.~~ **Done — all 7 tiers built.**
+
+**Now:** the question bank is complete; remaining work is on the *lesson* side, tracked in
+`Consolidation_and_Update_Plan_2026-08-03.md` — Phases 3 (ML eval metrics), 4 (ANN index internals)
+and 5 (context engineering), ~5–6 hrs. Each of those adds a `QA_L##` file, not a new Tier.
+
+Optional later: drill Tier 7 out loud (STAR answers degrade badly when only read), and add a Fabric
+question block to Tier 2 now that `L37` exists — `QA_L37` covers it for now.
 
 ---
 

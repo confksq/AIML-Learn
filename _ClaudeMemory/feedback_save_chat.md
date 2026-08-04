@@ -17,8 +17,11 @@ Note: the `/share` skill's default script writes a NEW file into the AIML-Learn 
 
 **AIML learning sessions**, save to:
 
-**Folder:** `/mnt/c/Users/confksq/Project/AIML-Learn/07_ChatHistory/`  
+**Folder:** `/mnt/c/pers/AIML-Learn/07_ChatHistory/` ← **corrected 2026-08-03** (the old
+`/mnt/c/Users/confksq/Project/AIML-Learn/` path is dead)
 **New file per session** — name it descriptively based on session topic + date.
+**Also add a row to `07_ChatHistory/INDEX.md`** (newest first) and bump its file count/size header —
+that index has gone stale three times by being skipped.
 
 ⚠️ The `/share` skill's default script hardcodes the save dir to `PartsModules/` — that folder no longer exists after the 2026-07-18 reorganization, and the bug is what left a loose `Session_ChatHistory_2026-07-10.md` sitting among the lesson files. Always override the script's `save_dir` to `07_ChatHistory/` before running it.
 

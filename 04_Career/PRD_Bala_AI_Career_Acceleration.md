@@ -3,6 +3,7 @@
 **Owner:** Balamurugan Kittappa  
 **Created:** July 4, 2026  
 **Updated:** July 4, 2026 (v2.1) — Retargeted to existing repo `confksq/Learning`; all L1–L8 modules now land under `Project/AIML-Learn/PartsModules/CareerAccelerator/`  
+**Status:** ✅ **DELIVERED 2026-08-03** — 9/9 modules built. ⚠️ **All paths in this document are stale — see the PATH CORRECTION block below before executing anything.**  
 **Source Data:** 4-month Gmail inbox analysis (67+ real JDs, Sept 2025–July 2026)  
 **Goal:** Get shortlisted for Senior AI Engineer roles within 60 days, transition to AI Architect within 18 months.
 
@@ -22,14 +23,25 @@ Project/AIML-Learn/PartsModules/CareerAccelerator/01-Ollama-LocalRAG/"
 
 Claude Code has write access to GitHub and will create files + push directly.
 
-### TARGET LOCATION (v2.1 — authoritative)
-All L1–L8 modules land in the **existing** `confksq/Learning` repo (private) under:
-```
-Project/AIML-Learn/PartsModules/CareerAccelerator/NN-ModuleName/
-```
-This keeps the career-portfolio modules separate from the L01–L21 curriculum and the
-`Questions/` interview bank already in that folder. Any `PartsModules/NN-...` path shown
-in the per-feature sections below is shorthand for the full `CareerAccelerator/` path above.
+### TARGET LOCATION (v2.1 — ⚠️ SUPERSEDED, see below)
+~~All L1–L8 modules land in the **existing** `confksq/Learning` repo (private) under
+`Project/AIML-Learn/PartsModules/CareerAccelerator/NN-ModuleName/`.~~
+
+> ### ⚠️ PATH CORRECTION (2026-08-03) — read this before executing any feature below
+>
+> **Status: ✅ DELIVERED — all 9 CareerAccelerator modules built.** The per-feature sections below
+> are kept as the build record, but **every path in them is dead.** Two things changed after v2.1:
+>
+> | v2.1 said | Actually |
+> |---|---|
+> | Repo `confksq/Learning` | **`confksq/AIML-Learn`** |
+> | `Project/AIML-Learn/PartsModules/CareerAccelerator/` | **`01_Lessons/Part6_AppliedProjects/01-CareerAccelerator/`** |
+> | Working copy `C:\Users\confksq\Project\AIML-Learn\` | **`C:\pers\AIML-Learn\`** (git clone, 2026-08-03) |
+> | `Questions/` interview bank | **`02_Questions/InterviewBank/`** — now 7 tiers, see `00_PRD.md` |
+>
+> `PartsModules/` has not existed since the 2026-07-18 library reorganisation. Do not recreate it.
+> The authoritative file map is `00_START_HERE.md`; current work is tracked in
+> `Consolidation_and_Update_Plan_2026-08-03.md`.
 
 ---
 

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 0b8fd03e-752e-4093-afb5-21fa4946920a
-  modified: 2026-07-19T19:53:32.418Z
+  modified: 2026-08-03T00:00:00.000Z
 ---
 
 **Root:** `C:\pers\AIML-Learn\` (WSL: `/mnt/c/pers/AIML-Learn/`) — **moved 2026-08-03**, now a real
@@ -20,6 +20,14 @@ and a full file map.** Do not rebuild that picture from memory; the file is main
 `04_Career/Consolidation_and_Update_Plan_2026-08-03.md` — **Phases 0, 1, 2, 6 done; Phases 3
 (ML eval metrics), 4 (ANN index internals), 5 (context engineering) remain, ~5–6 hrs.**
 Part 7 = Platform Engineering (L32–L36), **Part 8 = Data Platform (L37 Microsoft Fabric)**.
+
+**Registering a new lesson takes FOUR index updates** — `01_Lessons/00_LearningIndex.md`,
+`00_MAP.md`, `00_CONTENTS.md` (heading tree with line numbers), `00_INDEX.md` (A–Z concepts, insert
+alphabetically + bump the header count). Missing one is how the indexes went stale in July.
+
+**PRDs in `04_Career/` are both DELIVERED and carry stale paths** — `00_PRD.md` (question bank, 7
+tiers / 144 Qs) and `PRD_Bala_AI_Career_Acceleration.md` (v2.1, CareerAccelerator 9/9, has a
+PATH CORRECTION block). Do not execute their path instructions literally.
 
 **Structure (as of 2026-07-19):**
 
