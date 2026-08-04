@@ -8,13 +8,18 @@ metadata:
   modified: 2026-07-19T19:53:32.418Z
 ---
 
-**Root:** `C:\Users\confksq\Project\AIML-Learn\` (WSL: `/mnt/c/Users/confksq/Project/AIML-Learn/`)
+**Root:** `C:\pers\AIML-Learn\` (WSL: `/mnt/c/pers/AIML-Learn/`) — **moved 2026-08-03**, now a real
+git clone of `github.com/confksq/AIML-Learn`. The old `C:\Users\confksq\Project\AIML-Learn\` path is
+dead.
 
 **Read `00_START_HERE.md` first — it is the authoritative index for progress, learning order, gaps,
 and a full file map.** Do not rebuild that picture from memory; the file is maintained, this note is not.
 
-**Status:** Curriculum complete (L01–L31, 6 Parts) · AI-102 ✅ passed · CareerAccelerator 9/9 ✅
-**Current phase:** job search (Synergech, Lorven — see `04_Career/JDCoverage_*.md`) + optional AI-103
+**Status:** Curriculum L01–L37 across **8 Parts** · AI-102 ✅ passed · CareerAccelerator 9/9 ✅
+**Current phase:** job search + closing roadmap gaps per
+`04_Career/Consolidation_and_Update_Plan_2026-08-03.md` — **Phases 0, 1, 2, 6 done; Phases 3
+(ML eval metrics), 4 (ANN index internals), 5 (context engineering) remain, ~5–6 hrs.**
+Part 7 = Platform Engineering (L32–L36), **Part 8 = Data Platform (L37 Microsoft Fabric)**.
 
 **Structure (as of 2026-07-19):**
 
