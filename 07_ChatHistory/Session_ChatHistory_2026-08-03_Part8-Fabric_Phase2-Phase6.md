@@ -2,7 +2,8 @@
 
 **Topic:** Resume interrupted work in `C:\pers\AIML-Learn` · execute Phase 2 (Microsoft Fabric
 module) and Phase 6 (micro-fixes) of `Consolidation_and_Update_Plan_2026-08-03.md`
-**Commits:** `93474a9`, `fa3eb86`, plus PRD/chat-history commit
+**Commits:** `93474a9` (Phase 2 + Phase 6) · `fa3eb86` (repo memory) · `e5883db` (PRDs + this
+transcript + memory refresh) — all **local, not pushed to GitHub**
 **Prior session ended at:** commit `d0e03fa` — window closed mid-Phase 2
 
 ---
@@ -281,12 +282,40 @@ does not build a pipeline.
 
 ## 7. Memory updates
 
-- **`_ClaudeMemory/project_ailearn_progress.md`** — corrected root path to `C:\pers\AIML-Learn\`
-  (now a real git clone); status updated to L01–L37 across 8 Parts; phase status recorded.
-- **New global memory** `project_aiml_learn_library.md` + `MEMORY.md` index line — because the
-  library was **missing from global memory entirely**, which is why resuming took a state
-  reconstruction instead of a lookup. Records the four-index registration requirement for new
-  lessons.
+**Repo memory** (`_ClaudeMemory/`):
+
+- **`project_ailearn_progress.md`** — corrected root path to `C:\pers\AIML-Learn\` (now a real git
+  clone); status updated to L01–L37 across 8 Parts; phase status recorded; added the **four-index
+  registration rule** and a warning that both PRDs carry stale paths.
+- **`feedback_save_chat.md`** — the AIML chat-history path in it was **also stale**
+  (`/mnt/c/Users/confksq/Project/AIML-Learn/`). Corrected to `/mnt/c/pers/AIML-Learn/07_ChatHistory/`
+  and added the "also update `INDEX.md`" step, since skipping it is what left that index stale three
+  separate times.
+
+**Global memory** (`~/.claude/.../memory/`):
+
+- **`project_aiml_learn_library.md`** (new) + `MEMORY.md` index line — the library was **missing
+  from global memory entirely**, which is precisely why resuming required state reconstruction
+  instead of a lookup. Points at `00_START_HERE.md` and the repo's own `_ClaudeMemory/` as the live
+  sources, and records the four-index rule.
+- **`feedback_resume_from_repo_state.md`** (new) — the reconstruction sequence from §1 written down
+  as a reusable method: git log → git status → directory timestamps → plan-of-record doc. Core
+  principle: **the repo is the truth; memory is a pointer to where to look.**
+
+### 7.1 Stale-path pattern worth noting
+
+Three separate stored paths were dead this session, all pointing at the pre-2026-07-18
+`C:\Users\confksq\Project\AIML-Learn\` layout:
+
+| Stale in | Pointed at |
+|---|---|
+| `_ClaudeMemory/project_ailearn_progress.md` | old library root |
+| `_ClaudeMemory/feedback_save_chat.md` | old `07_ChatHistory/` |
+| both `04_Career/` PRDs | old repo name **and** the deleted `PartsModules/` tree |
+
+All four corrected. The pattern: **path-carrying notes rot silently after a reorg** — anything
+recording a location needs re-checking whenever the tree moves, because nothing errors until someone
+executes it literally.
 
 ---
 
@@ -310,9 +339,31 @@ does not build a pipeline.
 
 ---
 
-## 9. Open item
+## 9. Session close — "update the prd and memory, we can do this tomorrow, save the chat too"
 
-**No Q&A drill on L37 yet.** Per the Option C approach the teaching is written and the drill comes
-after Bala has read it. `QA_L37` has 17 questions ready when he wants to run it.
+Bala called the session at this point. Three closing actions, covered in §6, §7 and this file
+itself.
 
-Also flagged for later: drill Tier 7 out loud — STAR answers degrade badly when only read.
+**Corrections made while closing:**
+
+- `07_ChatHistory/INDEX.md` claimed **5** sessions were unindexed; the real count is **7** (four
+  from 2026-07-29, three from 2026-08-02). Header also refreshed: 47 files / ~4.4 MB → **48 files /
+  ~5.1 MB**. Those 7 still have no topic summaries — a small cleanup job outstanding.
+- `09_ML` row 71 (ADF / Synapse) was left at 🟡 rather than upgraded. `L37` explains the Synapse
+  comparison and frames pipelines as ADF-in-Fabric, but it does not *build* a pipeline — closing
+  that row would have been over-claiming.
+
+---
+
+## 10. Open items
+
+1. **No Q&A drill on L37 yet.** Per the Option C approach the teaching is written and the drill
+   comes after Bala has read it. `QA_L37` has 17 questions ready.
+2. **Drill Tier 7 (behavioral) out loud** — STAR answers degrade badly when only read.
+3. **7 unindexed transcripts** in `07_ChatHistory/` (2026-07-29 ×4, 2026-08-02 ×3).
+4. **Nothing pushed to GitHub** this session — four local commits ahead of `origin`.
+5. **Next up: Phase 3** — `Part1_Foundations/L06_1_ML_Evaluation_Metrics.md`, ~2 hrs, written from
+   scratch (the DeepSeek source for it was planned but never generated). Confusion matrix →
+   precision/recall trade-off → F1 vs F-beta → ROC construction → **why AUC flatters imbalanced
+   classifiers** → threshold selection tied to business cost → cross-validation. Healthcare anchor:
+   a false negative on a prior-auth denial costs far more than a false positive.
