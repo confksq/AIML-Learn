@@ -2079,6 +2079,57 @@
    522  ▸ Related
 ```
 
+## Part 8 — Data Platform
+
+
+### Module 37 — Microsoft Fabric: OneLake, Lakehouse, Medallion and the AI Data Platform
+`01_Lessons/Part8_DataPlatform/L37_MicrosoftFabric.md` · 883 lines · 40 topics
+
+```
+    14  ▸ Why This Module Exists
+    46  ▸ Section 1 — Fabric Architecture and the SaaS Model
+    48    · 1.1 The one-line definition
+    56    · 1.2 Why it is not just Synapse rebranded
+    87    · 1.3 The object hierarchy
+   108    · 1.4 The workloads (experiences)
+   124  ▸ Section 2 — OneLake
+   126    · 2.1 What it is
+   152    · 2.2 The one-copy principle
+   167    · 2.3 Shortcuts — the feature that makes adoption realistic
+   196    · 2.4 Delta-Parquet and V-Order
+   215  ▸ Section 3 — Lakehouse vs Warehouse, and Direct Lake
+   217    · 3.1 The two items
+   234    · 3.2 Decision criteria
+   259    · 3.3 Direct Lake — the headline feature
+   296  ▸ Section 4 — The Medallion Architecture, Worked Through
+   304    · 4.0 The worked example (VitalCare prior auth)
+   314    · 4.1 Bronze — land it exactly as it arrived
+   362    · 4.2 Silver — make it correct, one row per real-world thing
+   399    · 4.3 Gold — shape it for how it will be consumed
+   429    · 4.4 How to lay this out in Fabric
+   444    · 4.5 What each hop runs on
+   457  ▸ Section 5 — Dataflows Gen2 vs Pipelines vs Notebooks
+   462    · 5.1 What each one is
+   476    · 5.2 The decision table
+   491    · 5.3 The production pattern
+   519    · 5.4 Two adjacent options worth naming (Mirroring, Copy job)
+   528    · 5.5 Incremental processing — the four mechanisms
+   549    · 5.6 Real-Time Intelligence, briefly
+   566  ▸ Section 6 — Fabric ↔ Azure AI Foundry: Grounding Agents on OneLake
+   571    · 6.1 The framing
+   581    · 6.2 Four integration patterns
+   663    · 6.3 The governance question interviewers use to separate candidates
+   696  ▸ Section 7 — Governance, Capacity and Cost
+   698    · 7.1 Capacity Units and F-SKUs
+   721    · 7.2 Pause and resume — the biggest cost lever
+   734    · 7.3 Smoothing, bursting and throttling
+   766    · 7.4 Security and governance model (RLS · OLS · CLS)
+   811    · 7.5 Cost discipline checklist
+   828  ▸ Section 8 — How This Connects to Everything Else
+   848  ▸ Section 9 — The 60-Second Interview Answer
+   878  ▸ Related
+```
+
 ## Questions & Prep
 
 

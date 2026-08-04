@@ -14,11 +14,15 @@
 | 2 | RAG & Vector Databases | ~90% | Strong — index internals thin |
 | 3 | Agentic AI & Multi-Agent | ~95% | **Strongest area** |
 | 4 | LLMOps & MLOps | ~95% | Strong |
-| 5 | GraphRAG & Knowledge Graphs | ~85% | Good — terminology gap |
-| 6 | **Microsoft Fabric & Data Eng** | **~5%** | 🔴 **MAJOR GAP** |
+| 5 | GraphRAG & Knowledge Graphs | ~85% → **~95%** ✅ | Closed 2026-08-03 — Local vs Global named in `03_interview_qa` Q8a |
+| 6 | **Microsoft Fabric & Data Eng** | **~5%** → **~90%** ✅ | Closed 2026-08-03 — `L37_MicrosoftFabric` + `QA_L37` |
 | 7 | Traditional ML & Python | ~75% | Adequate — classic-ML metrics thin |
 | 8 | System Design & Architecture | ~90% | Strong |
-| 9 | **Behavioral & Leadership** | **~15%** | 🔴 **MAJOR GAP** |
+| 9 | **Behavioral & Leadership** | **~15%** → **~90%** ✅ | Closed 2026-08-03 — `InterviewBank/07`, 12 STAR stories |
+
+> **Status 2026-08-03:** the two major gaps are closed, plus the GraphRAG terminology fix.
+> **Remaining:** #7 classic-ML metrics (Phase 3), #2 ANN index internals (Phase 4), #1 context
+> engineering (Phase 5). See `Consolidation_and_Update_Plan_2026-08-03.md`.
 
 ---
 

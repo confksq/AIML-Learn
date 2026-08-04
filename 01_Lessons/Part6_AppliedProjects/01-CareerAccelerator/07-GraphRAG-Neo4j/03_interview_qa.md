@@ -1,4 +1,4 @@
-# 03 — Interview Q&A: GraphRAG + Neo4j (15 questions, senior level)
+# 03 — Interview Q&A: GraphRAG + Neo4j (16 questions, senior level)
 
 ---
 
@@ -26,6 +26,9 @@ Offline: run an LLM over the corpus to extract entities and relationships, write
 
 **Q8. What is Microsoft GraphRAG?**
 The open-source project that formalizes graph construction: it uses an LLM to extract entities/relationships from a corpus, builds a graph, detects communities (clusters of related entities), and generates community summaries — enabling "global" questions over a whole corpus ("main themes across all documents") that chunk-retrieval can't answer. It's the reference implementation of the pattern.
+
+**Q8a. Explain Local Search vs Global Search in Microsoft GraphRAG.**
+They are the two query modes GraphRAG ships, and the router picks between them by question type. **Local Search** is entity-anchored: it maps the question to specific entities, pulls their neighbourhood (connected nodes, relationships, the text units that mention them), and answers from that subgraph — this is the mode for *"what does X do?"*, *"which dealers are connected to this account?"*, any question with a named starting point. **Global Search** is community-anchored: it runs map-reduce over the pre-computed community summaries (from Q8's community detection), asking each summary to contribute a partial answer, then reduces them into one — this is the mode for *"what are the main themes across all documents?"*, *"what risks recur in this corpus?"*, questions with **no** entry entity, where the answer isn't in any single chunk. The trade-off is direct: Local is cheap and precise but blind to corpus-wide patterns; Global reads every community summary, so it costs far more tokens and is the reason graph construction pays for itself. Interviewers ask this by name — if you only describe traversal, you've described Local Search and missed the half of GraphRAG that vector RAG genuinely cannot do.
 
 **Q9. What's the honest cost trade-off of GraphRAG?**
 Graph construction — LLM entity/relationship extraction over the entire corpus — is expensive and must be re-run as documents change (freshness cost). It's justified only when the questions genuinely require relationship or multi-hop reasoning. Building a graph for questions vector RAG already answers is wasted cost.

@@ -172,16 +172,27 @@ Add what's genuinely missing by name: **dynamic context assembly**, **multi-sour
 
 ## Summary
 
-| Phase | Work | Effort | Priority |
+| Phase | Work | Effort | Status |
 |---|---|---|---|
-| 0 | Consolidate workspace, delete 4 redundant files | 20 min | ⬅️ first |
-| 1 | Behavioral & Leadership bank | 3–4 hrs | 🔴 highest ROI |
-| 2 | Microsoft Fabric module + Q&A | 5–7 hrs | 🔴 largest gap |
-| 3 | ML evaluation metrics + Q&A | 2 hrs | 🟡 |
-| 4 | ANN index internals + Q&A | 1–1.5 hrs | 🟡 |
-| 5 | Context engineering + Q&A | 1.5–2 hrs | 🟡 |
-| 6 | Micro-fixes + index updates | 45 min | ✅ quick wins |
-| | **Total** | **~14–17 hrs** | |
+| 0 | Consolidate workspace, delete redundant files | 20 min | ✅ **DONE** — repo at `C:\pers\AIML-Learn`; 5 of 8 DeepSeek files deleted |
+| 1 | Behavioral & Leadership bank | 3–4 hrs | ✅ **DONE** — `InterviewBank/07_Behavioral_Leadership.md`, 12 STAR stories |
+| 2 | Microsoft Fabric module + Q&A | 5–7 hrs | ✅ **DONE 2026-08-03** — `L37_MicrosoftFabric.md` (883 lines, 9 sections) + `QA_L37` (17 Qs) |
+| 3 | ML evaluation metrics + Q&A | 2 hrs | ⬜ **NEXT** |
+| 4 | ANN index internals + Q&A | 1–1.5 hrs | ⬜ pending — source `641640` still in `deepseekLessons/` |
+| 5 | Context engineering + Q&A | 1.5–2 hrs | ⬜ pending |
+| 6 | Micro-fixes + index updates | 45 min | ✅ **DONE** — GraphRAG Q8a, all 4 indexes, FDE #60, ML #73 |
+| | **Remaining** | **~5–6 hrs** | Phases 3, 4, 5 |
+
+### Completion log
+
+| Date | Done |
+|---|---|
+| 2026-08-03 | Phase 0, Phase 1 (commit `d0e03fa`) |
+| 2026-08-03 | Phase 6 quick wins: GraphRAG **Local vs Global Search** added as Q8a (file now 16 Qs); FDE tracker item **#60 → 🟢**; DeepSeek `917f86` + `6f1547` deleted after harvest |
+| 2026-08-03 | Phase 2: `Part8_DataPlatform/L37_MicrosoftFabric.md` + `QA_L37_MicrosoftFabric.md`; Part 8 registered in `00_LearningIndex.md`, `00_MAP.md`, `00_CONTENTS.md`, `00_INDEX.md` (35 new concepts); ML gap **#73 → 🟢**, **#72 → 🟢** |
+
+**Still in `C:\pers\Resume-May2026\deepseekLessons\`:** `641640` (Phase 4 source), `93db8f` +
+`5143a5` (Phase 2 sources — now harvested, safe to delete).
 
 **After completion:** all 9 roadmap areas at interview-ready depth, from a single canonical repo, with the scattered DeepSeek material either absorbed or deleted.
 

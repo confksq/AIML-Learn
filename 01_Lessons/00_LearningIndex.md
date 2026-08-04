@@ -105,6 +105,16 @@ curriculum deliberately scoped out. Each module leads from something you already
 | 35 | `L35_AI_Assisted_Engineering.md` | Cursor · Copilot · computer-use | L15 | Mostly *doing*, not reading |
 | 36 | `L36_LLM_Observability_FinOps.md` | Observability, tracing, FinOps | L31, L19 | Extends `L31` §4–5 |
 
+### Part 8 — Data Platform · `Part8_DataPlatform/`
+
+*Built 2026-08-03. Closes the largest gap found by `04_Career/Roadmap_Coverage_Check_2026-08-03.md`
+(Fabric & Data Engineering, scored ~5%) and `09_ML` tracker gap #73. This is the **data layer beneath
+the AI layer** — where the data lives, how it gets clean, and how an agent grounds on it.*
+
+| # | File | Topic | Depends on | Notes |
+|---|---|---|---|---|
+| 37 | `L37_MicrosoftFabric.md` | Fabric · OneLake · Lakehouse vs Warehouse · Direct Lake · Medallion · Fabric↔Foundry · Capacity/CU | L06, L20, L09, L13 | §6 (grounding agents on Gold) is the section that matters for architect loops |
+
 ---
 
 ## Why some modules sit out of original numeric order
@@ -209,6 +219,7 @@ L01 (Intro to AI)
 | **Helm, ArgoCD, EKS, service mesh, OpenShift** | `L34_Kubernetes_Helm_GitOps.md` |
 | **Cursor, Copilot practice, computer-use, N8N** | `L35_AI_Assisted_Engineering.md` |
 | **OTel, LangSmith, LiteLLM, FinOps, Grafana** | `L36_LLM_Observability_FinOps.md` |
+| **Fabric, OneLake, Lakehouse, Medallion, Direct Lake, Capacity Units** | `L37_MicrosoftFabric.md` |
 | Memory architecture (incl. episodic) | `02_Questions/HighLevelPrep/HLP01_...md` |
 
 ---
@@ -218,7 +229,7 @@ L01 (Intro to AI)
 | Where | What |
 |---|---|
 | `02_Questions/InterviewBank/` | 6 architect-judgment question sets |
-| `02_Questions/PerChapter/` | Self-test per lesson — `QA_L06`–`QA_L21` and `QA_L32`–`QA_L36`. ⚠️ **None for L01–L05 or L22–L31** |
+| `02_Questions/PerChapter/` | Self-test per lesson — `QA_L06`–`QA_L21` and `QA_L32`–`QA_L37`. ⚠️ **None for L01–L05 or L22–L31** |
 | `04_Career/` | Roadmaps, PRDs, resume, JD coverage, AI-103 gap plan |
 | `05_Assessments/` | VitalCare cloud-agnostic healthcare AI architecture (1,562 lines) |
 | `06_Supplementary/PythonTrack/` | Framework-free Python: raw agent loop, FAISS, PEFT. ⚠️ `AIMLcurriculum*.md` are **syllabi, not lessons** |
@@ -235,4 +246,4 @@ L01 (Intro to AI)
 3. Use `grep -w` for short terms. `EKS` matches "wEEKS"; `Arize` matches "summARIZE".
 
 *Curriculum: AI Solutions Architect — 36 modules, 7 Parts. Renamed to sequence order 2026-06-30;
-reorganised 2026-07-19; Part 7 added 2026-07-26.*
+reorganised 2026-07-19; Part 7 added 2026-07-26; Part 8 added 2026-08-03.*

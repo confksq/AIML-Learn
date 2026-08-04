@@ -143,7 +143,7 @@ Stages group work that should be done together. Order inside a stage respects de
 | 4 | S0 | 27 | Kubernetes — AKS | 🟢🔵 `L20` + live cluster, kubectl, PIM | Azure | Platform | 0 |
 | 5 | S0 | 34 | Infra modernization / platform engineering | 🔵 day job | Azure | Platform | 0 |
 | 6 | S0 | 58 | Azure AI Foundry / agent platform | 🔵🟢 `L17`, `L22` — already prepared | Azure | Resource | 0 |
-| 7 | S0 | 60 | Mentoring / transformation catalyst | 🔵 day job | — | Soft | 0 |
+| 7 | S0 | 60 | Mentoring / transformation catalyst | 🟢 `02_Questions/InterviewBank/07_Behavioral_Leadership.md` Q1–Q3 (mentoring, standards, influence without authority) — written 2026-08-03 | — | Soft | 0 |
 | 8 | S0 | 59 | Problem solving · self-starter · communication | 🟢 `02_Questions/InterviewBank/` + `VitalCare` (101 KB solo) | — | Soft | 0 |
 | 9 | **S1 · Tonight** | 53 | **Cursor AI** | 🟠 `L35` §2, **§7 = do it** — install, `.cursorrules`, ship 1 change | Agnostic | Tooling | 1.0 |
 | 10 | S1 | 54 | GitHub Copilot **as coding practice** | 🟠 `L35` §1, §3 — library's 14 hits are all Copilot Studio/M365 | Both | Tooling | 0.25 |

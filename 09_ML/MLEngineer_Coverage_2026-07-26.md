@@ -101,8 +101,8 @@ library stack, and data engineering.
 | 69 | Data Eng | **Kafka / event streaming ingestion** | 🔴 | Zero hits |
 | 70 | Data Eng | Spark / Databricks | 🟡 | Name-drops in architecture diagrams |
 | 71 | Data Eng | ADF / Synapse | 🟡 | Referenced, no pipeline built |
-| 72 | Data Eng | Delta / Parquet | 🟡 | Mentions |
-| 73 | Data Eng | **Medallion / lakehouse** | 🔴 | Zero hits |
+| 72 | Data Eng | Delta / Parquet | 🟢 | **`L37` §2.4** — Delta log, ACID, time travel, V-Order (upgraded 2026-08-03) |
+| 73 | Data Eng | **Medallion / lakehouse** | 🟢 | **`L37` §3–4** — Lakehouse vs Warehouse, Bronze/Silver/Gold worked through on VitalCare prior-auth (closed 2026-08-03) |
 | 74 | Data Eng | Feature store | 🟡 | 4 mentions in `L06`/`L19`, never taught |
 | 75 | Data Eng | Data quality / contracts / Great Expectations | 🔴 | Contracts + GE zero hits |
 | 76 | Data Eng | Data versioning (DVC) | 🔴 | Syllabus only |
@@ -191,7 +191,6 @@ the full matrix above. This is the study/build worklist.
 | 66 | 🔴 | GenAI / LLM | GANs, VAEs, diffusion | Gap 6, unbuilt |
 | 68 | 🔴 | Data Eng | **Airflow / Dagster** | Zero hits |
 | 69 | 🔴 | Data Eng | **Kafka / event streaming ingestion** | Zero hits |
-| 73 | 🔴 | Data Eng | **Medallion / lakehouse** | Zero hits |
 | 75 | 🔴 | Data Eng | Data quality / contracts / Great Expectations | Zero hits |
 | 76 | 🔴 | Data Eng | Data versioning (DVC) | Syllabus only |
 | 85 | 🔴 | MLOps | **MLflow** (tracking, registry, serving) | 4 one-line mentions |
@@ -257,7 +256,7 @@ of it at once.
 | 1 | **sklearn + XGBoost + MLflow pipeline**, end to end in a notebook | 34, 35, 38, 39, 41, 42, 85, 86 | ~8 hrs |
 | 2 | **SQL module** (Gap 1) — joins, window functions, CTEs, execution plans | 17 | ~4 hrs |
 | 3 | **PyTorch training-loop module** + NumPy/pandas hands-on | 14, 15, 16, 44, 46, 47, 48 | ~10 hrs |
-| 4 | **Data-engineering module** — ADF/Databricks → Delta medallion → feature store | 68–76 | ~10 hrs |
+| 4 | **Data-engineering module** — ADF/Databricks → Delta medallion → feature store | 68–76 | ~10 hrs · **partially built 2026-08-03: `L37_MicrosoftFabric` closes 72, 73 and advances 70/71; remaining = Airflow/Dagster (68), Kafka (69), feature store (74), data contracts/GE (75), DVC (76)** |
 
 Then, in descending value: ML math primer (1–5), SHAP/explainability (101), FastAPI serving (87),
 RL basics (104).

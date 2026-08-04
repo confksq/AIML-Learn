@@ -1,6 +1,6 @@
 # AIML-Learn — Concept Index
 
-**Generated:** 2026-07-19 · **Updated:** 2026-07-26 (Part 7) · **1,145 concepts · 1,272 locations**
+**Generated:** 2026-07-19 · **Updated:** 2026-08-03 (Part 8 — Fabric) · **1,180 concepts · 1,307 locations**
 
 Alphabetical. Look up a term, see how deeply it is covered and exactly where.
 
@@ -10,7 +10,7 @@ Alphabetical. Look up a term, see how deeply it is covered and exactly where.
 | ◐ | **Covered** — explained in a paragraph or table, but briefly |
 | ○ | **Mentioned** — a name-drop, table row, or single clause |
 
-`L##:line` = lesson file and line number. `P6/...` = Part 6 applied projects. `IB/` = interview bank · `HLP01` = high-level prep · `PyTrack/` = Python track · `VitalCare` = assessment.
+`L##:line` = lesson file and line number. `P6/...` = Part 6 applied projects. `IB/` = interview bank (incl. `IB/07_Behavioral`) · `HLP01` = high-level prep · `PyTrack/` = Python track · `VitalCare` = assessment.
 Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 ---
@@ -549,8 +549,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **BPE (Byte Pair Encoding)** — Merge frequent adjacent character pairs  
 ● L11_2:52 · ◐ PyTrack/Part1:31
 
+**Bronze layer** — Raw, append-only, never edited — the replay source  
+● L37:314
+
 **Built-in skills** — Prepackaged enrichment operations  
 ◐ L09:245
+
+**Bursting (Fabric capacity)** — A job temporarily exceeds baseline CU  
+● L37:734
 
 **Business rule validation** — Domain rules on extracted fields  
 ◐ L30:182
@@ -570,11 +576,17 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Canary / blue-green for GenAI** — Quality signals gate promotion  
 ● IB/06_RAI:198
 
+**Capacity Units (CU)** — Fabric's single compute meter across all workloads  
+● L37:698
+
 **Caption (image)** — One-sentence image description  
 ◐ L04:123
 
 **Captions (semantic)** — Highlighted relevant snippets per result  
 ◐ L09:435
+
+**Carry-forward debt** — Deferred CU consumption that accumulates into throttling  
+● L37:734
 
 **Cascading failure** — Bad specialist output reaches physician  
 ◐ L31:39
@@ -596,6 +608,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Chain-of-thought prompting** — Force step-by-step reasoning before answer  
 ● L27:602
+
+**Change Data Feed (Delta)** — Read only rows changed between two table versions  
+◐ L37:528
 
 **Change detection** — Indexer reprocesses only changed docs  
 ◐ L09:212
@@ -680,6 +695,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **ClinicalAgentBus** — C# validate-verify-audit-route implementation  
 ● L29:105
+
+**CLS (column-level security)** — Column denied via SQL GRANT/DENY in the warehouse  
+◐ L37:766
 
 **Cluster analysis** — Grouping similar unlabeled records  
 ◐ L01:211
@@ -966,6 +984,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Data source (Search)** — Connection config to raw data store  
 ◐ L09:70
 
+**Dataflows Gen2** — Low-code Power Query transform, 300+ connectors  
+● L37:462
+
 **Datastore** — Workspace connection to storage location  
 ◐ L06:63
 
@@ -974,6 +995,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **De-identification (Safe Harbor)** — Removing 18 HIPAA identifiers for training  
 ◐ VitalCare:959
+
+**Delta Lake transaction log** — ACID, time travel and MERGE over Parquet via _delta_log  
+● L37:196
 
 **De-noise** — Remove scan speckle and artifacts  
 ● L30:43
@@ -1038,8 +1062,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Dimension truncation** — Storing fewer embedding dimensions  
 ◐ L09:571
 
+**Direct Lake** — VertiPaq reads Delta-Parquet from OneLake — Import speed, live data  
+● L37:259
+
 **Direct prompt injection** — User types override instructions  
 ◐ L15:494 · ◐ L24:223
+
+**DirectQuery fallback** — Silent Direct Lake degradation on unsupported features  
+● L37:259
 
 **Distance metrics** — Cosine, dot product, Euclidean  
 ◐ L13:545
@@ -1076,6 +1106,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Domain segregation (MCP)** — One domain per server rule  
 ◐ L26:262
+
+**Domains (Fabric)** — Group workspaces by business area for federated ownership  
+◐ L37:766
 
 **Dot product** — Equivalent to cosine when normalized  
 ◐ L11_2:361
@@ -1214,6 +1247,12 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 
 ## F
+
+**Fabric data agent** — NL interface over a lakehouse/warehouse, callable as a tool  
+◐ L37:581
+
+**F-SKU** — Pausable Azure-billed Fabric capacity; F64 = free-user threshold  
+● L37:698
 
 **f-strings** — Python string interpolation  
 ◐ L21:82
@@ -1425,6 +1464,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **GKE Autopilot** — No node management, pay per pod  
 ◐ L34:298
 
+**Global Search (GraphRAG)** — Map-reduce over community summaries for corpus-wide themes  
+● P6/07-GraphRAG/03_interview_qa:29
+
 **Global Standard deployment** — Global-routed Azure OpenAI deployment type  
 ○ L17:1054
 
@@ -1433,6 +1475,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Goal misgeneralization** — Correct in training, wrong deployed  
 ○ L11_4:180
+
+**Gold layer** — Consumer-shaped — star schema, aggregates, agent grounding tables  
+● L37:399
 
 **Golden dataset** — Labeled reference set, versioned like code  
 ● IB/06_RAI:112 · ● L19:574 · ● P6/03-RAGAS/01_concepts:88
@@ -1457,6 +1502,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Grafana and Prometheus** — Custom LLM and agent dashboards  
 ● L36:395
+
+**Grain (fact table)** — The one-row-per-what statement; most BI bugs are grain bugs  
+◐ L37:399
 
 **Graph retrieval (UMLS/SNOMED)** — Clinical concept graph for CDS reasoning  
 ◐ VitalCare:543
@@ -1830,6 +1878,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Labels** — Target value model predicts  
 ◐ L01:349
 
+**Lakehouse (Fabric)** — Spark-first item — Files/ + Tables/, read-only SQL endpoint  
+● L37:217
+
 **LangChain** — Python AI orchestration framework  
 ● L21:582 · ● L25:114 · ◐ L16:334 · ◐ PyTrack/1.5-Agents:1375
 
@@ -1935,6 +1986,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **LLMOps maturity levels** — Level 0 manual to 3 advanced  
 ● L19:620
 
+**Local Search (GraphRAG)** — Entity-anchored subgraph retrieval for 'what does X do?'  
+● P6/07-GraphRAG/03_interview_qa:29
+
 **Logit bias** — Boost/ban specific token IDs  
 ◐ PyTrack/Part1:346
 
@@ -2034,6 +2088,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Measuring AI productivity** — Baseline first, cite sample size  
 ● L35:182
 
+**Medallion architecture** — Bronze/Silver/Gold progressive refinement with replay  
+● L37:296
+
 **Medical NER** — Extracts diagnoses, drugs, dosages  
 ◐ L30:136
 
@@ -2087,6 +2144,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Microsoft GraphRAG** — Open-source graph construction project  
 ◐ P6/07-GraphRAG/01_concepts:73
+
+**Mirroring (Fabric)** — Near-real-time DB replication into OneLake, no pipeline  
+◐ L37:519
 
 **Mixture of Experts (MoE)** — Router activates subset of experts per token  
 ● IB/01_Fund:160 · ◐ L11_1:316
@@ -2307,11 +2367,20 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Ollama OpenAI-compatible endpoint** — Swap base URL, keep OpenAI SDK  
 ● P6/01-Ollama/01_concepts:36
 
+**OLS (object-level security)** — Hides whole tables/columns at the semantic model  
+◐ L37:766
+
 **OMOP CDM** — Open research common data model on Iceberg  
 ◐ VitalCare:1326
 
 **On Your Data** — Azure managed RAG data_sources  
 ● L13:1006 · ◐ L12:494
+
+**One-copy principle** — Every engine reads and writes the same Delta-Parquet files  
+● L37:152
+
+**OneLake** — Tenant-wide ADLS Gen2 lake underlying every Fabric item  
+● L37:124
 
 **OnMessageActivityAsync** — Handler for incoming text messages  
 ● L10:96
@@ -2387,6 +2456,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Partitions** — Index shards for storage and throughput  
 ◐ L09:125
+
+**Pause / resume (capacity)** — Largest Fabric cost lever — F-SKU only, not P-SKU  
+● L37:721
 
 **PEFT** — HuggingFace parameter-efficient fine-tuning library  
 ● P6/08-LoRA/01_concepts:79
@@ -2868,6 +2940,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Security Context Constraints** — Why many public images fail on OpenShift  
 ◐ L34:362
 
+**Security trimming** — Permission key on every chunk + mandatory server-side filter  
+● L37:663
+
 **Self-attention** — Tokens attend within same sequence  
 ● L11_1:87 · ● L23:327
 
@@ -2958,6 +3033,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Shift-left policy** — Block before deploy versus detect at runtime  
 ● L33:523
 
+**Shortcuts (OneLake)** — Pointer to external data — no copy, no sync job  
+● L37:167
+
 **Short-term vs long-term memory** — Session truncation vs persisted retrieval  
 ● IB/04_Agents:158
 
@@ -2966,6 +3044,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Silent failure prohibition** — Every outcome must be actionable  
 ◐ L28:145
+
+**Silver layer** — Typed, deduped, conformed — one row per business entity  
+● L37:362
 
 **Similarity metric** — Cosine closeness to reference answer  
 ◐ L17:435
@@ -2985,8 +3066,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Sliding window memory** — Keep last N conversation turns  
 ● L16:1086 · ◐ HLP01:51
 
+**Small-file problem** — Micro-batches create tiny Parquet files; fix with OPTIMIZE/VACUUM  
+● L37:811
+
 **SMART-on-FHIR** — Clinician SSO launch spec for EHR apps  
 ◐ VitalCare:382
+
+**Smoothing (Fabric)** — CU spread over a window — 24h background, minutes interactive  
+● L37:734
 
 **source_nodes** — Built-in citations on response  
 ● P6/05-LlamaIndex/02_architecture:50
@@ -3032,6 +3119,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Stale document cleanup** — Deletes index docs missing from source  
 ◐ L09:1031
+
+**STAR framework** — Situation / Task / Action / Result behavioural answer structure  
+● IB/07_Behavioral:24
 
 **State (TypedDict)** — Typed object flowing through graph  
 ◐ L25:80
@@ -3218,6 +3308,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **Throttling (429) handling** — Backoff; instances don't add quota  
 ● IB/02_Azure:68
+
+**Throttling stages (Fabric)** — Interactive delay -> interactive rejection -> background rejection  
+● L37:734
 
 **Thundering herd** — Synchronized retries re-crash service  
 ◐ L31:67
@@ -3438,6 +3531,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 **Voice styles** — cheerful, customerservice, newscast expressions  
 ◐ L05:271
 
+**V-Order** — Write-time Parquet optimization that makes Direct Lake fast  
+● L37:196
+
 **VotingEnsemble** — Combined multi-model prediction average  
 ◐ L06:245
 
@@ -3453,8 +3549,14 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 ## W
 
+**Warehouse (Fabric)** — T-SQL item with full DML and multi-table transactions  
+● L37:217
+
 **Waterfall Dialogs** — Sequenced multi-step conversation flow  
 ● L10:273
+
+**Watermark + MERGE** — Idempotent incremental load pattern for Silver  
+◐ L37:528
 
 **Weaviate** — Multi-modal open-source vector DB  
 ○ L13:533
@@ -3476,6 +3578,9 @@ Structural contents (every heading, in order) → `00_CONTENTS.md`
 
 **WordPiece** — Likelihood-based merges, ## continuation  
 ● L11_2:125
+
+**Workspace (Fabric)** — Unit of collaboration, permissions, Git and deployment  
+● L37:87
 
 
 ## X

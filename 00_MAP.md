@@ -104,6 +104,16 @@ curriculum deliberately scoped out. Each module leads from something you already
 | 36 | **LLM Observability, Tracing and FinOps**<br>`L36_LLM_Observability_FinOps.md` | 528 | 34 |
 
 
+## Part 8 — Data Platform
+
+*Built 2026-08-03. Closes the largest gap in `Roadmap_Coverage_Check_2026-08-03.md` (~5% coverage)
+and `09_ML` gap #73. The data layer beneath the AI layer.*
+
+| # | Module | Lines | Topics |
+|---|---|---:|---:|
+| 37 | **Microsoft Fabric: OneLake, Lakehouse, Medallion and the AI Data Platform**<br>`L37_MicrosoftFabric.md` | 883 | 40 |
+
+
 ---
 
 ## Also worth knowing
@@ -112,7 +122,8 @@ curriculum deliberately scoped out. Each module leads from something you already
 |---|---|
 | `02_Questions/HighLevelPrep/HLP01_...md` | Memory · tokens · scaling · agents at interview altitude |
 | `02_Questions/InterviewBank/` | 6 architect-judgment question sets |
-| `02_Questions/PerChapter/` | Self-test per lesson — **L06–L21 only, none for L01–L05** |
+| `02_Questions/PerChapter/` | Self-test per lesson — **L06–L21, L32–L37; none for L01–L05 or L22–L31** |
+| `02_Questions/InterviewBank/07_Behavioral_Leadership.md` | **12 STAR stories** — mentoring, conflict, failure, business impact |
 | `06_Supplementary/PythonTrack/` | Framework-free Python: raw agent loop, FAISS, PEFT |
 | `08_Jobs/AscndIntr/PrepPlan/` | Mock interview + defend-assessment |
 | `08_Jobs/FDE/FDE-Prep_Tracker.md` | **FDE-Prep** — 60 JD rows, coverage status, learning order |
