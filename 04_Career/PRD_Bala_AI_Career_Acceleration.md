@@ -36,7 +36,7 @@ Claude Code has write access to GitHub and will create files + push directly.
 > |---|---|
 > | Repo `confksq/Learning` | **`confksq/AIML-Learn`** |
 > | `Project/AIML-Learn/PartsModules/CareerAccelerator/` | **`01_Lessons/Part6_AppliedProjects/01-CareerAccelerator/`** |
-> | Working copy `C:\Users\confksq\Project\AIML-Learn\` | **`C:\pers\AIML-Learn\`** (git clone, 2026-08-03) |
+> | Working copy `C:\Users\confksq\Project\AIML-Learn\` (v2.1, single machine) | **Two active machines**, both real git clones of `confksq/AIML-Learn`: personal `C:\pers\AIML-Learn\` (2026-08-03) and office `C:\Users\confksq\Project\AIML-Learn\` — keep both in sync via push/pull |
 > | `Questions/` interview bank | **`02_Questions/InterviewBank/`** — now 7 tiers, see `00_PRD.md` |
 >
 > `PartsModules/` has not existed since the 2026-07-18 library reorganisation. Do not recreate it.

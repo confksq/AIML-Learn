@@ -47,7 +47,7 @@ interview, but only once it's written down. That is why Stage 0 comes first and 
 
 ## File locations — every reference resolved
 
-All paths relative to `C:\Users\confksq\Project\AIML-Learn\`.
+All paths relative to the repo root (personal `C:\pers\AIML-Learn\` or office `C:\Users\confksq\Project\AIML-Learn\` — both are synced clones of `confksq/AIML-Learn`).
 Line counts verified 2026-07-26. `file:line` anchors point at the exact section.
 
 ### Existing lessons (🟢 / 🟡 rows)
@@ -417,7 +417,7 @@ Use `grep -w` for short or substring-prone terms before concluding anything is c
 
 ## Quick Reference — Module, Status, Full Path
 
-**Base:** `C:\Users\confksq\Project\AIML-Learn\`
+**Base:** repo root — personal `C:\pers\AIML-Learn\` or office `C:\Users\confksq\Project\AIML-Learn\` (synced clones of `confksq/AIML-Learn`)
 **Legend:** 🟢 revise · 🟠 written, study pending (🟠→🟢 needs the module read **and** its `QA_L##` passed)
 
 | # | Module | Status | Full path |

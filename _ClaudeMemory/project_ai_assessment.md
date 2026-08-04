@@ -7,7 +7,7 @@ metadata:
   originSessionId: d5d6585a-6ed6-4321-9af0-1d483592a176
 ---
 
-User is preparing for a competitive "Enterprise AI Lead Assessment — Healthcare Edition (Cloud-Agnostic)" and wants to win it. Files (as of 2026-07-19 reorg) in `C:\Users\confksq\Project\AIML-Learn\05_Assessments\`:
+User is preparing for a competitive "Enterprise AI Lead Assessment — Healthcare Edition (Cloud-Agnostic)" and wants to win it. Files (as of 2026-07-19 reorg) in `05_Assessments\` (repo root — personal `C:\pers\AIML-Learn\` or office `C:\Users\confksq\Project\AIML-Learn\`):
 - `VitalCare_AssessmentBrief.txt` — the original brief
 - `Assessment_Breakdown.md` — structured analysis
 - `VitalCare_AI_Assessment_Response.md` — **the completed 101 KB submission**

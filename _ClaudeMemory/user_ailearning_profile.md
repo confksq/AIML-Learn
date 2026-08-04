@@ -15,7 +15,7 @@ User is learning AI Solutions Architect at JM Family (company). Uses GitHub Copi
 **Learning style:** Interactive/conversational — learns best by asking questions and getting examples, not reading passively. Prefers real-world Azure examples tied to JM Family work patterns.
 
 **Curriculum:** AI Solutions Architect — delivered as 24 lesson files across 4 Parts (L01–L21). Complete.
-- Library root: `C:\Users\confksq\Project\AIML-Learn\` — start at `00_START_HERE.md`
+- Library root: personal machine `C:\pers\AIML-Learn\`, office machine `C:\Users\confksq\Project\AIML-Learn\` (both synced clones of `confksq/AIML-Learn`) — start at `00_START_HERE.md`
 - Detailed subtopics: `06_Supplementary/CurriculumSource/AI_Curriculum_Summary_SubTopic_FnlVer.txt`
 - Hands-on workouts: `06_Supplementary/AI_Curriculum_Workouts.txt` (~45 exercises, C#/.NET/Azure)
 - Study pace: 2 hrs/weekday + 6 hrs/weekend = 22 hrs/week
@@ -34,4 +34,4 @@ User is learning AI Solutions Architect at JM Family (company). Uses GitHub Copi
 
 **Biggest gaps to fill:** AI Agents / Semantic Kernel, Prompt Engineering, Azure AI Foundry, Python basics. AI-102 is done.
 
-**Career roadmap file:** `C:\Users\confksq\Project\AIML-Learn\04_Career\CareerRoadmap_AIEngineer.md`
+**Career roadmap file:** `04_Career\CareerRoadmap_AIEngineer.md` (relative to repo root — personal `C:\pers\AIML-Learn\` or office `C:\Users\confksq\Project\AIML-Learn\`)

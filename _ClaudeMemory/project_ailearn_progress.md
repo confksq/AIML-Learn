@@ -8,9 +8,12 @@ metadata:
   modified: 2026-08-03T00:00:00.000Z
 ---
 
-**Root:** `C:\pers\AIML-Learn\` (WSL: `/mnt/c/pers/AIML-Learn/`) — **moved 2026-08-03**, now a real
-git clone of `github.com/confksq/AIML-Learn`. The old `C:\Users\confksq\Project\AIML-Learn\` path is
-dead.
+**Root — two active machines, both real git clones of `github.com/confksq/AIML-Learn`, kept in sync
+via push/pull (no path is "dead"):**
+- **Personal machine:** `C:\pers\AIML-Learn\` (WSL: `/mnt/c/pers/AIML-Learn/`) — cloned 2026-08-03
+- **Office machine:** `C:\Users\confksq\Project\AIML-Learn\` (WSL: `/mnt/c/Users/confksq/Project/AIML-Learn/`)
+
+Always `git pull` at session start and confirm which machine you're on before trusting a path.
 
 **Read `00_START_HERE.md` first — it is the authoritative index for progress, learning order, gaps,
 and a full file map.** Do not rebuild that picture from memory; the file is maintained, this note is not.
@@ -25,9 +28,10 @@ Part 7 = Platform Engineering (L32–L36), **Part 8 = Data Platform (L37 Microso
 `00_MAP.md`, `00_CONTENTS.md` (heading tree with line numbers), `00_INDEX.md` (A–Z concepts, insert
 alphabetically + bump the header count). Missing one is how the indexes went stale in July.
 
-**PRDs in `04_Career/` are both DELIVERED and carry stale paths** — `00_PRD.md` (question bank, 7
-tiers / 144 Qs) and `PRD_Bala_AI_Career_Acceleration.md` (v2.1, CareerAccelerator 9/9, has a
-PATH CORRECTION block). Do not execute their path instructions literally.
+**PRDs in `04_Career/` are both DELIVERED** — `00_PRD.md` (question bank, 7 tiers / 144 Qs) and
+`PRD_Bala_AI_Career_Acceleration.md` (v2.1, CareerAccelerator 9/9). The latter's PATH CORRECTION
+block was updated 2026-08-04 to reflect both active machines (personal `C:\pers\AIML-Learn\`,
+office `C:\Users\confksq\Project\AIML-Learn\`) — no longer a single "corrected" path.
 
 **Structure (as of 2026-07-19):**
 
