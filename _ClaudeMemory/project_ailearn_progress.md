@@ -29,6 +29,16 @@ alphabetically + bump the header count). Missing one is how the indexes went sta
 tiers / 144 Qs) and `PRD_Bala_AI_Career_Acceleration.md` (v2.1, CareerAccelerator 9/9, has a
 PATH CORRECTION block). Do not execute their path instructions literally.
 
+⚠️ **`_Archive/StaleTrackers/Interview_Prep_AI_Engineer_Complete.md` is stale-by-structure but NOT
+dead content.** It is the delivered output of **PRD Feature 12** (100 Qs in 10 sections A–J) and is
+the **source list** for `02_Questions/Detailed/`, which expands it section by section into
+what/why/when/how + example + trade-off. **A (RAG, 15) and B (Azure Foundry/OpenAI, 15) are done;
+C–J remain** — C (Agents, 15) is next.
+
+⚠️ **Counting questions: `PerChapter/` uses `**Qn.**`, not `### Qn`.** A grep on a single Q-pattern
+returned zero for all 33 PerChapter files, which actually hold 655 questions. Same failure family as
+the `L##`-only grep noted below. `00_QA_FILE_INDEX.md` at repo root has the reconciled counts.
+
 **Structure (as of 2026-07-19):**
 
 ```
@@ -40,7 +50,9 @@ PATH CORRECTION block). Do not execute their path instructions literally.
   Part4_Architecture/       L17–L21
   Part5_AgenticProtocols/   L22–L31  (MCP, A2A, CAG, LangGraph, agent workflow)
   Part6_AppliedProjects/    CareerAccelerator · Dealer · VitalCare · images (NOT sequenced)
-02_Questions/             InterviewBank · PerChapter · HighLevelPrep
+02_Questions/             InterviewBank · PerChapter · HighLevelPrep · Detailed · _tooling
+                          + 00_DRILL_INDEX.md (entry point, ~810 Qs) · Interview_Bible_77Q
+                          · Interview_QA_Resume_Based · Interview_QA_RealWorld_Asked
 04_Career/                roadmaps, PRDs, resume, JD + AI-103 gap analyses
 05_Assessments/           VitalCare architecture response
 06_Supplementary/         PythonTrack (framework-free) · workouts · curriculum source
