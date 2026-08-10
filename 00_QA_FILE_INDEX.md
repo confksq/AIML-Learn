@@ -14,6 +14,8 @@ questions are listed last (rows 47–50).
 | `02_Questions\InterviewBank\` | 7 | 138 | Concept-correct, bullet-thin. Revision layer. |
 | `02_Questions\PerChapter\` | 25 | 655 | Self-test per lesson. Solid as-is. |
 | `02_Questions\HighLevelPrep\` | 1 | prose | Strongest existing asset — interview altitude. |
+| `02_Questions\Detailed\` | 1 | 15 | **Rehearsal layer.** Full WHAT/WHY/WHEN/HOW + example + trade-off per Q. |
+| `02_Questions\Interview_Bible_77Q…` | 1 | 77 | **Largest live asset.** Verbatim spoken answers, 4 sections / 9 parts. |
 | `01_Lessons\Part6` project Q&A | 9 | 141 | Hands-on project defence. |
 | `08_Jobs\AscndIntr\PrepPlan\` | 2 | 11 | Ascendion-specific mock + assessment defence. |
 | `07_ChatHistory\` | 4 | ~32 | Raw dialogue dumps, unstructured. |
@@ -27,6 +29,7 @@ questions are listed last (rows 47–50).
 | # | Questions | File | Tier |
 |---:|---:|---|---|
 | 1 | 100 | `_Archive\StaleTrackers\Interview_Prep_AI_Engineer_Complete.md` | Archived — stale |
+| 1b | 77 | `02_Questions\Interview_Bible_77Q_FDE_AI_Lead.md` — 1,469 lines, verbatim answers | **Bible** |
 | 2 | 35 | `02_Questions\InterviewBank\05_Solution_Architecture.md` | Bank |
 | 3 | 35 | `02_Questions\PerChapter\QA_L12_AzureOpenAI_Services.md` | PerChapter |
 | 4 | 34 | `02_Questions\PerChapter\QA_L07_AzureAIServices_DeepDive.md` | PerChapter |
@@ -69,6 +72,7 @@ questions are listed last (rows 47–50).
 | 41 | 15 | `01_Lessons\Part6_AppliedProjects\01-CareerAccelerator\09-Vertex-AI\03_interview_qa.md` | Project |
 | 42 | 12 | `02_Questions\InterviewBank\07_Behavioral_Leadership.md` | Bank |
 | 43 | 12 | `02_Questions\PerChapter\QA_L35_AI_Assisted_Engineering.md` | PerChapter |
+| 43b | 15 | `02_Questions\Detailed\QA_Detail_A_RAG_Architecture_15Q.md` — 1,332 lines, deep format | **Detailed** |
 | 44 | 11 | `08_Jobs\AscndIntr\PrepPlan\12_Mock_Interview.md` | Ascendion |
 | 45 | 8 | `07_ChatHistory\Session_ChatHistory_2026-06-08-QandA.md` | Chat dump |
 | 46 | 8 | `07_ChatHistory\chathistClaude\ChunkingEmbedQandA.md` | Chat dump |
