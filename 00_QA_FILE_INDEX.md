@@ -14,7 +14,7 @@ questions are listed last (rows 47–50).
 | `02_Questions\InterviewBank\` | 7 | 138 | Concept-correct, bullet-thin. Revision layer. |
 | `02_Questions\PerChapter\` | 25 | 655 | Self-test per lesson. Solid as-is. |
 | `02_Questions\HighLevelPrep\` | 1 | prose | Strongest existing asset — interview altitude. |
-| `02_Questions\Detailed\` | 1 | 15 | **Rehearsal layer.** Full WHAT/WHY/WHEN/HOW + example + trade-off per Q. |
+| `02_Questions\Detailed\` | 2 | 30 | **Rehearsal layer.** Full WHAT/WHY/WHEN/HOW + example + trade-off per Q. |
 | `02_Questions\Interview_Bible_77Q…` | 1 | 77 | **Largest live asset.** Verbatim spoken answers, 4 sections / 9 parts. |
 | `01_Lessons\Part6` project Q&A | 9 | 141 | Hands-on project defence. |
 | `08_Jobs\AscndIntr\PrepPlan\` | 2 | 11 | Ascendion-specific mock + assessment defence. |
@@ -73,6 +73,7 @@ questions are listed last (rows 47–50).
 | 42 | 12 | `02_Questions\InterviewBank\07_Behavioral_Leadership.md` | Bank |
 | 43 | 12 | `02_Questions\PerChapter\QA_L35_AI_Assisted_Engineering.md` | PerChapter |
 | 43b | 15 | `02_Questions\Detailed\QA_Detail_A_RAG_Architecture_15Q.md` — 1,332 lines, deep format | **Detailed** |
+| 43c | 15 | `02_Questions\Detailed\QA_Detail_B_Azure_Foundry_OpenAI_15Q.md` — 1,476 lines, deep format | **Detailed** |
 | 44 | 11 | `08_Jobs\AscndIntr\PrepPlan\12_Mock_Interview.md` | Ascendion |
 | 45 | 8 | `07_ChatHistory\Session_ChatHistory_2026-06-08-QandA.md` | Chat dump |
 | 46 | 8 | `07_ChatHistory\chathistClaude\ChunkingEmbedQandA.md` | Chat dump |
@@ -87,15 +88,42 @@ questions are listed last (rows 47–50).
 
 Per `02_Questions\00_PLAN_InterviewQA_2026-08-08.md`:
 
-1. **Three planned deliverables do not exist yet:**
-   - `Interview_QA_Resume_Based.md` (~65 Q) — defend every resume claim and number
-   - `Interview_QA_Lessons_Based.md` (~90 Q) — concept depth across L01–L37
-   - `Interview_QA_RealWorld_Asked.md` (14 Q) — the questions proven to be asked
+1. ~~**Three planned deliverables do not exist yet**~~ — **RESOLVED 2026-08-10.**
+   - ✅ `02_Questions\Interview_QA_Resume_Based.md` — **70 Q, 4,790 lines.** Defends every
+     resume claim and number. Carries a 22-item `[CONFIRM:]` checklist (Appendix A) and two
+     recommended resume edits (Appendix B).
+   - ❌ `Interview_QA_Lessons_Based.md` — **cancelled.** A full-repo question extraction
+     (1,335 questions / 131 files) showed `PerChapter\` already covers L06–L21 and L32–L37,
+     and L22–L31 carries 45 questions inline in the lesson files. Writing it would have been
+     duplicate work. Rationale in `02_Questions\00_PLAN_InterviewQA_2026-08-08.md` §9.
+   - ✅ `02_Questions\Interview_QA_RealWorld_Asked.md` — **18 Q, 1,795 lines.** The 14 asked
+     questions plus 4 companion deep-dives on the confirmed coverage gaps.
+
+   **Also added:** `02_Questions\00_DRILL_INDEX.md` (single entry point over all 810 curated
+   questions — topic routing, route-by-interview-stage, 10-day schedule) ·
+   `02_Questions\Interview_Bible_77Q_AUDIT_2026-08-10.md` (findings on the Bible — see note 4) ·
+   `02_Questions\_tooling\` (the extraction and dedup scripts).
 
 2. **`PerChapter\` has no Q&A for L01–L05 and L22–L31.** L22–L31 is the entire agentic
    block — Foundry agent lifecycle, CAG vs RAG, hallucination, framework comparison, MCP,
    agent workflow, meta-agents, A2A, OCR pipelines, fault tolerance. This is exactly the
-   material the last five interviews probed.
+   material the last five interviews probed. **Partially mitigated:** that material is now
+   covered at interview altitude by the two files above, but there is still no per-lesson
+   self-test.
+
+4. **⚠️ `Interview_Bible_77Q_FDE_AI_Lead.md` has not been fact-checked at source.** A full
+   audit (`02_Questions\Interview_Bible_77Q_AUDIT_2026-08-10.md`) found **6 factual errors**
+   — invented Azure AI Search tier limits, a partition-key mechanism the service does not
+   have, embedding storage maths off by ~10×, MCP described as a governance standard — plus
+   **4 internal contradictions** (the same 78%→95% and the same $300K each attributed to two
+   different causes; two competing "production incident" stories) and **~20 unfalsifiable
+   precise numbers**, including *"exactly $152,300"*. Strong for structure and phrasing;
+   **not safe to quote verbatim until Tier 1 and Tier 2 of the audit are resolved.**
+
+5. **Overlap is declared, not accidental.** The Bible's Section B (Q48–Q60) and
+   `Interview_QA_RealWorld_Asked.md` answer the same 14 questions — four word-identical. The
+   split is documented at the top of the RealWorld file: **Bible = spoken answer layer,
+   RealWorld = drill layer.** Rehearse from one, prepare from the other.
 
 3. **Row 1 is a trap.** The 100-question archived file is the single largest count in this
    index but is marked stale by the repo's own structure. It is superseded by

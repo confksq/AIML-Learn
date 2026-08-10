@@ -120,6 +120,11 @@ and `09_ML` gap #73. The data layer beneath the AI layer.*
 
 | Where | What |
 |---|---|
+| **`02_Questions/00_DRILL_INDEX.md`** | **Start here for interview prep.** Single entry point over all 810 curated questions — topic routing, route-by-interview-stage, 10-day drill schedule |
+| **`02_Questions/Interview_QA_Resume_Based.md`** | **70 Q** — defend every claim and number on the resume. 22-item `[CONFIRM:]` checklist |
+| **`02_Questions/Interview_QA_RealWorld_Asked.md`** | **18 Q** — the 14 asked across the last five interviews + 4 companion deep-dives on the coverage gaps |
+| `02_Questions/Interview_Bible_77Q_FDE_AI_Lead.md` | 77 Q, verbatim spoken answers — ⚠️ read `Interview_Bible_77Q_AUDIT_2026-08-10.md` first |
+| `02_Questions/00_PLAN_InterviewQA_2026-08-08.md` | Build plan, coverage matrix, duplication-control rules |
 | `02_Questions/HighLevelPrep/HLP01_...md` | Memory · tokens · scaling · agents at interview altitude |
 | `02_Questions/InterviewBank/` | 6 architect-judgment question sets |
 | `02_Questions/PerChapter/` | Self-test per lesson — **L06–L21, L32–L37; none for L01–L05 or L22–L31** |

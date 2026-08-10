@@ -20,6 +20,41 @@ Anything marked **`[FILL: …]`** is a detail only you know — names, team size
 
 ---
 
+## 🛑 CRITICAL — read before rehearsing Q6 or Q11
+
+**Updated 2026-08-09 during Phase 3 of `00_PLAN_InterviewQA_2026-08-08.md`.**
+
+The cost figures that were in Q6 and Q11 — *"$345/month → $21/month"*, *"~$56/month total
+AI spend"*, *"94% reduction"* — **are not measurements from your production system.** They
+originate in `L18_AISolutionArchitecture.md:345-355` as a **worked token-arithmetic
+example**:
+
+```
+  500 queries/day × 30 = 15,000 queries/month × 2,300 tokens
+  GPT-4o:      15,000 × 2,300 ÷ 1M × $10   = $345/month
+  GPT-4o mini: 15,000 × 2,300 ÷ 1M × $0.60 = $20.70/month
+```
+
+That is a formula demonstrating the price differential between two models. It is teaching
+material, not telemetry.
+
+**Why this matters more than it looks.** Your resume claims *"reduced cloud inference costs
+by 30% (~$150K+ annually)"* at JM Family. A story whose punchline is *"total AI spend around
+$56/month"* is not merely a different number — **it is arithmetically incompatible with the
+resume.** You cannot save $150,000 a year on a system that costs $672 a year to run. An
+interviewer who hears the resume claim and then hears this story has caught a contradiction,
+and no recovery from that is good.
+
+**Both stories cannot be told. Q6 and Q11 below have been rewritten to the resume's
+framing** — the one you can defend, which is `Interview_QA_Resume_Based.md` Q29–Q34. The
+mechanisms in the original (model tiering, caching, top-K reduction, embedding caching) are
+correct and are retained; only the fabricated-looking figures are removed.
+
+If the $150K figure is itself uncertain, resolve that first — see `Resume_Based` Appendix A,
+row 9. One defensible number beats two impressive ones.
+
+---
+
 ## The STAR framework
 
 | Letter | What it is | Time to spend | Common mistake |
@@ -121,8 +156,13 @@ One story answers many phrasings. Know these 12 cold rather than memorizing 30 a
 
 - **S:** `[FILL: deadline/context]` — dealer-facing responses had a hard P95 latency requirement of under 2 seconds, and the higher-quality configuration didn't fit the budget.
 - **T:** Decide what to give up, and be able to defend it.
-- **A:** I built an explicit **latency budget** and measured each stage: embedding, retrieval, re-ranking, generation. Generation dominated. The options were a smaller model, fewer retrieved chunks, or dropping re-ranking. I chose **GPT-4o-mini with top-K=3 plus re-ranking**, keeping re-ranking specifically because dropping it degraded answer quality more than the smaller model did — re-ranking was cheap in latency and expensive to lose. I routed the genuinely hard cases — contract analysis, where reasoning depth matters and volume is low (~50/day) — to full GPT-4o on a separate path.
-- **R:** `[FILL: measured P95 achieved]`. Cost landed around **$21/month for invoice Q&A vs ~$345 if we'd used GPT-4o for everything**. The framing I'd keep: not "which model is best" but "which model per workload," with the trade-off documented so it could be revisited.
+- **A:** I built an explicit **latency budget** and measured each stage: embedding, retrieval, re-ranking, generation. Generation dominated. The options were a smaller model, fewer retrieved chunks, or dropping re-ranking. I chose **a smaller model with top-K=3 plus re-ranking**, keeping re-ranking specifically because dropping it degraded answer quality more than the smaller model did — re-ranking was cheap in latency and expensive to lose. I routed the genuinely hard cases — the low-volume, reasoning-heavy path — to the frontier model on a separate route.
+- **R:** `[SUPPLY 6a: measured P95 achieved]`. The framing I'd keep: not "which model is best" but "which model per workload," with the trade-off documented so it could be revisited.
+
+> 🛑 **The "$21 vs $345/month" figures previously here have been removed** — they were the
+> L18 worked example, not your measurement. See the critical note at the top of this file.
+> The *mechanism* above is real and defensible; quote the mechanism, and take the cost
+> number from `Resume_Based` Q29 (30% / ~$150K) if you need one.
 
 **Follow-up probe:** *"What did that cost you?"* — GPT-4o-mini is measurably weaker on multi-step reasoning. I accepted that for structured, repetitive invoice questions where it wasn't needed, and I put a quality evaluation in place to catch it if that assumption stopped holding. The risk was real; it was bounded and monitored, not waved away.
 
@@ -163,10 +203,19 @@ One story answers many phrasings. Know these 12 cold rather than memorizing 30 a
 
 - **S:** My production depth is Azure-native — Semantic Kernel, Azure OpenAI, Azure AI Search, AI Foundry. The market was moving toward Python/LangChain, agentic protocols, and graph-based retrieval, and depth in one stack can quietly become a ceiling.
 - **T:** Close that gap deliberately rather than waiting for a project to force it.
-- **A:** I built a structured curriculum and worked through it hands-on rather than by reading — `[FILL: adjust to what you've actually completed]`: local RAG with Ollama, multi-agent orchestration with crewAI, RAGAS evaluation, GraphRAG with Neo4j, LoRA/QLoRA fine-tuning, and LlamaIndex. Each one is a runnable project, not notes. I deliberately chose the ecosystems adjacent to what I already knew, so the transfer was conceptual rather than starting cold — Semantic Kernel plugins map onto LangChain tools; Azure AI Search hybrid retrieval maps onto Qdrant/FAISS.
-- **R:** `[FILL: what this enabled — a conversation, a POC, a role]`. The approach I'd defend: depth in one stack plus deliberate breadth into two or three others beats shallow familiarity with everything.
+- **A:** I built a structured curriculum and worked through it hands-on rather than by reading. **Nine runnable projects, not notes** — local RAG with Ollama, multi-agent orchestration with crewAI, RAGAS evaluation, HuggingFace Transformers, LlamaIndex, Amazon Bedrock, GraphRAG with Neo4j, LoRA/QLoRA fine-tuning with PEFT, and Vertex AI. Alongside that, a written curriculum of 37 modules covering the ground systematically rather than by whatever a project happened to demand. I deliberately chose ecosystems adjacent to what I already knew, so the transfer was conceptual rather than starting cold — Semantic Kernel plugins map onto LangChain tools; Azure AI Search hybrid retrieval maps onto Qdrant and FAISS; the concepts are shared and only the surface differs.
+- **R:** `[SUPPLY 9a: what this enabled — a conversation you could hold, a POC you could build, a role you could apply for]`. The approach I'd defend: depth in one stack plus deliberate breadth into two or three others beats shallow familiarity with everything.
 
-**Follow-up probe:** *"What's still a gap for you?"* — Name a real one. `[FILL — honest options from your own coverage tracking: production-scale Microsoft Fabric / data-platform work, or large-scale distributed training]`. Naming a real gap and your plan for it is far stronger than claiming full coverage; interviewers discount the latter automatically.
+**Follow-up probe:** *"What's still a gap for you?"* — Name a real one. Three that are honest and defensible, in rough order of how well they land:
+- **I've never trained a model from scratch.** Fine-tuning with LoRA/QLoRA, yes; pre-training, no. Clean to say, and it costs you nothing for an engineering role.
+- **A2A in production.** I understand the protocol and where it fits, but my multi-agent work is orchestration inside systems I own — I haven't run agent-to-agent across an organisational boundary.
+- **Large-scale distributed training.** Adjacent to the first and equally clean.
+
+> Note: *Microsoft Fabric* is no longer an honest gap — `L37_MicrosoftFabric.md` was added
+> 2026-08-03 and Fabric is now on the resume. Don't name a gap you've since closed; it
+> reads as not knowing your own coverage.
+
+Naming a real gap and your plan for it is far stronger than claiming full coverage; interviewers discount the latter automatically.
 
 ---
 
@@ -187,9 +236,14 @@ One story answers many phrasings. Know these 12 cold rather than memorizing 30 a
 
 - **S:** The AI cost model was being driven by a default assumption that the strongest model should serve every workload.
 - **T:** Bring cost under control without a quality regression — a cheaper system that answers worse is not a saving.
-- **A:** I profiled cost by *workload* rather than in aggregate. Invoice Q&A: ~500 queries/day, structured and repetitive. Contract analysis: ~50/day, genuinely needs reasoning depth. I applied **model tiering** (GPT-4o-mini for invoice, GPT-4o for contracts), **Redis caching** on high-repetition queries, **top-K reduction from 10 to 3** with re-ranking to hold quality, and **embedding caching** to avoid re-embedding unchanged chunks on re-index. Critically, I gated each change behind groundedness/relevance evaluation so I could prove quality held.
-- **R:** Invoice Q&A dropped from **~$345/month to ~$21/month** — roughly a **94% reduction on that workload** — with total AI spend around **$56/month** across both. `[FILL: confirm these against actuals before quoting; these are the modelled figures in L18.]` Quality held per the evaluation gate. `[FILL: any downstream outcome — budget approved, scope expanded]`
-- **Trade-off I'd volunteer:** GPT-4o-mini is weaker on multi-step reasoning; that was acceptable *for that workload specifically*, and the evaluation gate existed to catch it if it stopped being true.
+- **A:** The first move was instrumentation, not optimisation — we couldn't attribute spend, so the bill told us the total and nothing else. I tagged every model call with feature, cohort and pipeline stage and got cost-per-call into Azure Monitor. That surfaced the distribution, and the distribution was the finding: a small number of query types dominated, a lot of prompt tokens were re-sent context that hadn't changed, and everything was routed to the frontier model regardless of need. Then four levers in payoff order — **model tiering** (small model for routing, classification and extraction; frontier model for final synthesis), **top-K reduction from 10 to 3** with re-ranking to hold quality, **caching** on high-repetition queries, and **prompt discipline**. Critically, I gated each change behind the evaluation set so I could prove quality held.
+- **R:** **~30% reduction in inference cost, roughly $150K annualised**, with evaluation scores flat — which is the part that matters, because cutting cost by degrading quality isn't a saving. `[SUPPLY 11a: which lever contributed most]` · `[SUPPLY 11b: any downstream outcome — budget approved, scope expanded]`
+- **Trade-off I'd volunteer:** smaller models are measurably weaker on multi-step reasoning; that was acceptable *for those workloads specifically*, and the evaluation gate existed to catch it if that stopped being true.
+
+> **Full technical version:** `Interview_QA_Resume_Based.md` Q29 (the reduction), Q30 (the
+> token-budget middleware), Q31 (tiering), Q32 (cost-drift dashboards), Q33 (caching).
+> This entry is the *behavioural* framing of the same work — lead with the business
+> reasoning, keep the mechanism in reserve for the follow-up.
 
 **Follow-up probe:** *"How do you know quality didn't degrade?"* — Automated evaluation on groundedness, relevance, and coherence before promotion, plus production monitoring for cost and quality drift via Azure Monitor. Without the eval gate this is a cost-cutting story with an unmeasured quality claim attached — which is exactly the version an interviewer should be skeptical of.
 
@@ -206,12 +260,72 @@ One story answers many phrasings. Know these 12 cold rather than memorizing 30 a
 
 ---
 
+## 📋 THE WORKSHEET — what only you can supply
+
+**Phase 3 status (2026-08-09):** everything derivable from the resume, `L18`, and the
+portfolio projects has been filled. Q9 is now complete. Q6 and Q11 have been corrected to
+defensible figures. **What remains below is genuinely yours** — names, outcomes, and three
+stories that have no source anywhere in this repo.
+
+Work top to bottom. **Answer in one or two lines each** — you are supplying facts, not
+drafting prose; the framing is already written around them.
+
+### Tier 1 — three stories that don't exist at all (≈40 min)
+
+These have no content, only scaffolding. Without them, three of the twelve most common
+behavioural prompts have no answer.
+
+| ID | Story | What to supply |
+|---|---|---|
+| **7** | Cross-functional conflict | Who was the other party? What did each side actually want? What was the compromise, and how did you make it reversible? |
+| **8** | Significant failure ⚠ | What did you get wrong, when did you realise, what did it cost, and **what practice did you change afterward?** |
+| **12** | Ambiguous requirements | What was the vague ask? What did you build or run to force the decisions into the open? What came of it? |
+
+> **On Q8 specifically:** this is the hardest one to invent and the most damaging to fumble.
+> Candidates from your own documented history that would work: sizing quota against average
+> rather than peak load (if Q5 was real); shipping before an eval set existed and being
+> unable to tell whether a change made things worse; or not instrumenting cost attribution
+> until the bill forced it — which is implicitly admitted in `Resume_Based` Q29, where the
+> *first* action was instrumentation that should already have existed.
+
+### Tier 2 — outcomes for stories that are otherwise complete (≈20 min)
+
+| ID | Question | Story |
+|---|---|---|
+| 1a | The junior engineer's level and background | Mentoring |
+| 1b | How long you let them sit with the bug before stepping in | Mentoring |
+| 1c | What they could do afterwards that they couldn't before | Mentoring |
+| 2a | Did the standards get adopted? How many prompts migrated? | Standards |
+| 3a | Which team or stakeholder was sceptical, and of what audience | Influence |
+| 3b | Did they adopt it? What scope, what timeline? | Influence |
+| 4a | Who wanted to fine-tune, and how often did the documents change? | Disagreement |
+| 4b | What was decided, and what happened? | Disagreement |
+| 5a | ⚠ **Was the TPM incident real, or a risk you designed against?** | Incident |
+| 5b | If real: what was the immediate mitigation, and the measured recovery? | Incident |
+| 6a | The measured P95 you achieved | Trade-off |
+| 9a | What the upskilling actually enabled | Growth |
+| 10a | Who asked for the guarantee, and what was decided? | Communication |
+| 11a | Which cost lever contributed most of the 30%? | Business impact |
+| 11b | Any downstream outcome — budget approved, scope expanded? | Business impact |
+
+> **5a is the one to be careful with.** If the quota incident was a scenario you designed
+> against rather than an outage you lived through, say so and reframe it as Q8-style
+> capacity-planning judgment. It is still a good story. Presenting a designed-for risk as a
+> lived incident is the kind of thing that unravels under three follow-up questions about
+> what the dashboards looked like that morning.
+
+---
+
 ## Preparation checklist
 
-- [ ] Replace **every** `[FILL: …]` — no placeholders survive into an interview
-- [ ] Verify the L18 cost figures ($345 → $21, ~$56 total) against what you can actually defend; label as *modelled* if that's what they are
-- [ ] Confirm whether Q5's incident is a real incident or a risk you designed against — reframe rather than overstate
+- [ ] **Read the 🛑 critical note at the top of this file** before rehearsing Q6 or Q11
+- [ ] Complete Tier 1 — the three missing stories (7, 8, 12)
+- [ ] Complete Tier 2 — the fifteen outcome facts
+- [ ] Resolve **5a**: real incident or designed-against risk? Reframe rather than overstate
+- [ ] Confirm the **$150K / 30%** figure you can actually defend — `Resume_Based` Appendix A row 9
 - [ ] Never describe **VitalCare** as production; it is an assessment design exercise
+- [ ] Never quote the **$21 / $345 / $56** figures — they are `L18` teaching arithmetic
+- [ ] Don't name **Microsoft Fabric** as a gap; L37 closed it and it's on your resume
 - [ ] Rehearse Q1, Q4, Q5, Q11 out loud — these four cover the highest-frequency prompts
 - [ ] Time each: 2–3 minutes; **Action ≈ 50%**
 - [ ] For each story, prepare the one number you'd defend under scrutiny

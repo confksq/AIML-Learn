@@ -208,9 +208,27 @@ Interviewers ask you to explain agents without naming a framework. That's what t
 
 Everything you own, by folder. Lesson files are listed in the learning-order tables above.
 
-### `02_Questions/` — 25 files
+### `02_Questions/` — interview prep
+
+> **▶ Start at `00_DRILL_INDEX.md`.** The repo holds ~810 curated questions across dozens of
+> files; the drill index is the single entry point — topic routing, route-by-interview-stage,
+> and a 10-day schedule. Added 2026-08-09.
+
+**Interview-prep layer** (built 2026-08-08 → 08-10 per `00_PLAN_InterviewQA_2026-08-08.md`):
+
+| File | What |
+|---|---|
+| `00_DRILL_INDEX.md` | Entry point. What to open, for which interview, in what order |
+| `Interview_QA_Resume_Based.md` | **70 Q** — defends every claim and number on the resume. Appendix A: 22 `[CONFIRM:]` items to resolve. Appendix B: 2 recommended resume edits |
+| `Interview_QA_RealWorld_Asked.md` | **18 Q** — the 14 asked across the last five interviews, plus 4 companions on the confirmed gaps (1M-doc search, compression, KEDA-for-AI, PII) |
+| `Interview_Bible_77Q_FDE_AI_Lead.md` | 77 Q, verbatim spoken answers. ⚠️ **Read the audit first** |
+| `Interview_Bible_77Q_AUDIT_2026-08-10.md` | Findings on the Bible: 6 factual errors, 4 internal contradictions, ~20 unfalsifiable numbers |
+| `Detailed/` | Rehearsal-depth expansions (RAG architecture, Foundry/OpenAI) |
+| `00_PLAN_InterviewQA_2026-08-08.md` | Build plan, coverage matrix, duplication-control rules |
+| `_tooling/` | `qextract.py` / `qdedup.py` — run before adding questions; ≥0.62 Jaccard = duplicate |
 
 **`InterviewBank/`** — architect-judgment questions in WHY / HOW / WHEN / SCALE / DEPLOY format with follow-up probes. Built from `04_Career/00_PRD.md`.
+⚠️ `07_Behavioral_Leadership.md` is **incomplete** — three stories missing entirely and fifteen outcome facts outstanding. See the worksheet at the end of that file.
 
 `01_Fundamentals` · `02_Azure_AI_Platform` · `03_RAG_Architecture` · `04_Agent_Orchestration` · `05_Solution_Architecture` · `06_Responsible_AI_LLMOps`
 
